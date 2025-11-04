@@ -1,0 +1,3636 @@
+[
+  {
+    "doc_id": "AAAI2024",
+    "chunk_id": 1,
+    "content": [
+      "GxVAEs : Two Joint VAEs Generate Hit Molecules from Gene Expression Profiles .",
+      "The de novo generation of hit-like molecules that show bioactivity and drug-likeness is an important task in computer-aided drug discovery .",
+      "Although artificial intelligence can generate molecules with desired chemical properties , most previous studies have ignored the influence of disease-related cellular environments .",
+      "This study proposes a novel deep generative model called GxVAEs to generate hit-like molecules from gene expression profiles by leveraging two joint variational autoencoders ( VAEs ) .",
+      "The first VAE , ProfileVAE , extracts latent features from gene expression profiles .",
+      "The extracted features serve as the conditions that guide the second VAE , which is called MolVAE , in generating hit-like molecules .",
+      "GxVAEs bridge the gap between molecular generation and the cellular environment in a biological system , and produce molecules that are biologically meaningful in the context of specific diseases .",
+      "Experiments and case studies on the generation of therapeutic molecules show that GxVAEs outperforms current state-of-the-art baselines and yield hit-like molecules with potential bioactivity and drug-like properties .",
+      "Hit identification , which involves discovering hit molecules with the desired bioactivity and therapeutic effects within an infinite chemical space , is a critical challenge in drug discovery ( Dobson et al . 2004 ) .",
+      "Traditionally , hit identification campaigns have been conducted using experimental approaches such as high-throughput screening ( HTS ) ( Hertzberg and Pope 2000 ) .",
+      "HTS provides a valuable methodology for identifying hits with desired bioactivity ( Scannell et al . 2022 ) .",
+      "However , the hit rate observed in HTS campaigns tends to be relatively low , which results in many molecules that are inactive or that hold less promise being screened out ( Rahman et al . 2022 ) .",
+      "Additionally , experimental approaches to drug discovery typically rely on laborintensive and time-consuming processes .",
+      "De novo molecular generation using artificial intelligence ( AI ) techniques has emerged as a promising approach for computer-aided drug discovery .",
+      "The power of deep learning and computational chemistry enables the generation of new molecules with desired bioactivity for specific therapeutic targets .",
+      "Deep generative models , such as generative adversarial networks ( GANs ) ( Guimaraes et al . 2017 ; De Cao and Kipf 2018 ; Li et al . 2022 ) and variational autoencoders ( VAEs ) ( Oliveira , Da Silva , and Quiles 2022 ; Dollar et al . 2021 ; Kusner , Paige , and Hernández-Lobato 2017 ; Jin , Barzilay , and Jaakkola 2018 ) accelerate the drug discovery process by employing computational models to generate molecules having a specific bioactivity .",
+      "By capturing the essential features of molecules , deep generative models can produce new molecules with similar structures and related properties .",
+      "Most AI-driven molecular generation models focus on the generation of new molecules with improved chemical properties of interest .",
+      "While omics-based approaches to drug discovery offer promising opportunities , it is essential to understand their limitations ( Kang , Ko , and Mersha 2022 ) .",
+      "Interpretation of omics data in the context of drug discovery also requires a deep understanding of the underlying biological and disease mechanisms .",
+      "In this study , we proposed GxVAEs to generate hit-like molecules from gene expression profiles using two joint VAEs ( i.e . , ProfileVAE and MolVAE ) .",
+      "First , ProfileVAE functions as a feature extractor to extract latent features from gene expression profiles .",
+      "The extracted features are then used as conditions to guide MolVAE in generating hit-like molecules .",
+      "GxVAEs bridges the gap between molecular generation and the cellular environment of a biological system , making the produced molecules more biologically meaningful in the context of specific diseases .",
+      "The main contributions of this study are summarized as follows : • Hit-like molecular generation that considered the cellular environment : This study considers the influence of the cellular environment on specific diseases during the molecular generation process . • A simple but effective model architecture : The combination of two VAEs successfully generated hit-like molecules from gene expression profiles . • Superior performance over state-of-the-art ( SOTA ) models : Experiments and case studies demonstrate that the proposed GxVAEs outperform the current SOTA models for the same objectives .",
+      "De novo molecular generation aims to produce new molecules with specific chemical properties .",
+      "Generally , the data structures used for de novo molecular generation are molecular graphs ( Manolopoulos and Fowler 1992 ) and simplified molecular input line entry system ( SMILES ) strings ( Weininger 1988 ) .",
+      "TransVAE ( Dollar et al . 2021 ) and Gram-marVAE ( Kusner , Paige , and Hernández-Lobato 2017 ) are two deep generative models that produce molecules from SMILES strings using VAEs .",
+      "JTVAE ( Jin , Barzilay , and Jaakkola 2018 ) uses a node tree to generate molecules from a molecular graph ."
+    ],
+    "relations": [
+      [
+        "VAEs:Method",
+        "Part-Of",
+        "GxVAEs:Method"
+      ],
+      [
+        "de novo generation:Task",
+        "SubTask-Of",
+        "computer-aided drug discovery:Task"
+      ],
+      [
+        "GxVAEs:Method",
+        "SubClass-Of",
+        "deep generative model:Method"
+      ],
+      [
+        "variational autoencoders:Method",
+        "Part-Of",
+        "GxVAEs:Method"
+      ],
+      [
+        "VAEs:Method",
+        "Synonym-Of",
+        "variational autoencoders:Method"
+      ],
+      [
+        "ProfileVAE:Method",
+        "SubClass-Of",
+        "VAE:Method"
+      ],
+      [
+        "MolVAE:Method",
+        "SubClass-Of",
+        "VAE:Method"
+      ],
+      [
+        "GxVAEs:Method",
+        "Used-For",
+        "molecular generation:Task"
+      ],
+      [
+        "Hit identification:Task",
+        "SubTask-Of",
+        "drug discovery:Task"
+      ],
+      [
+        "high-throughput screening:Method",
+        "Used-For",
+        "hit identification:Task"
+      ],
+      [
+        "HTS:Method",
+        "Synonym-Of",
+        "high-throughput screening:Method"
+      ],
+      [
+        "artificial intelligence:Method",
+        "Used-For",
+        "novo molecular generation:Task"
+      ],
+      [
+        "AI:Method",
+        "Synonym-Of",
+        "artificial intelligence:Method"
+      ],
+      [
+        "artificial intelligence:Method",
+        "Used-For",
+        "computer-aided drug discovery:Task"
+      ],
+      [
+        "novo molecular generation:Task",
+        "SubTask-Of",
+        "computer-aided drug discovery:Task"
+      ],
+      [
+        "generative adversarial networks:Method",
+        "SubClass-Of",
+        "Deep generative models:Method"
+      ],
+      [
+        "variational autoencoders:Method",
+        "SubClass-Of",
+        "Deep generative models:Method"
+      ],
+      [
+        "GANs:Method",
+        "Synonym-Of",
+        "generative adversarial networks:Method"
+      ],
+      [
+        "VAEs:Method",
+        "Synonym-Of",
+        "variational autoencoders:Method"
+      ],
+      [
+        "variational autoencoders:Method",
+        "Used-For",
+        "drug discovery:Task"
+      ],
+      [
+        "generative adversarial networks:Method",
+        "Used-For",
+        "drug discovery:Task"
+      ],
+      [
+        "Deep generative models:Method",
+        "Used-For",
+        "drug discovery:Task"
+      ],
+      [
+        "omics-based approaches:Method",
+        "Used-For",
+        "drug discovery:Task"
+      ],
+      [
+        "VAEs:Method",
+        "Part-Of",
+        "GxVAEs:Method"
+      ],
+      [
+        "ProfileVAE:Method",
+        "Part-Of",
+        "GxVAEs:Method"
+      ]
+    ]
+  },
+  {
+    "doc_id": "AAAI2024",
+    "chunk_id": 2,
+    "content": [
+      "It first creates a tree-structured scaffold on a substructure and then combines the tree-structured scaffold into a molecule using a graphical message-passing network ( Dai , Dai , and Song 2016 ) .",
+      "MolGAN ( De Cao and Kipf 2018 ) and TransORGAN ( Li et al . 2022 ) are discrete GANs that use reinforcement learning to generate molecular graphs and SMILES strings , respectively .",
+      "With the development of omics data analysis , especially gene expression profiles used in drug discovery ( Turanli et al . 2018 ; Chen et al . 2020 ) , chemists have begun to use comprehensive biological response information to generate therapeutic molecules for the treatment of specific diseases .",
+      "ExpressionGAN ( Méndez-Lucio et al . 2020 ) and TRI-OMPHE ( Kaitoh and Yamanishi 2021 ) are the SOTA deep generative models that are most relevant to our study on generating hit-like molecules for target proteins with no prior annotation of the target training molecules .",
+      "Expres-sionGAN is a GAN model that bridges systems biology and molecular design to produce molecules with a high probability of inducing the desired transcriptome features automatically from gene expression profiles .",
+      "TRIOMPHE first calculates the correlation of ligand-target interactions between the chemically induced transcriptome profiles of cellular responses to molecular treatment and the transcriptome profiles of gene perturbations that reflect cellular responses to gene knockdown or gene overexpression of target proteins .",
+      "Next , a VAE was employed to generate a new molecule with the desired transcriptome profile .",
+      "However , ExpressionGAN generates hit-like molecules with low validity ( > 8.5% ) , and its ability to reproduce known ligands is limited .",
+      "Additionally , TRIOMPHE only utilizes gene expression profiles in correlation calculations , whose VAE is not involved in molecular generation .",
+      "To address these issues , GxVAEs were proposed in this study .",
+      "By bridging the gap between the cellular environment and the generation of ther - The Thirty-Eighth AAAI Conference on Artificial Intelligence ( AAAI - 24 ) apeutic molecules , GxVAEs generate molecules that are biologically meaningful in the context of specific diseases using gene expression profiles .",
+      "Figure 1 shows an overview of the GxVAEs .",
+      "GxVAEs mainly consists of two joint VAEs , namely ProfileVAE and MolVAE .",
+      "ProfileVAE acts as a feature extractor to extract low-dimensional feature vectors from high-dimensional gene expression profiles .",
+      "MolVAE consists of bidirectional GRUs that are conditioned on the features of gene expression profiles using non-canonical SMILES ( i.e . , variant SMILES ( Li and Yamanishi 2023 ) ) strings to generate hitlike molecules .",
+      "Note that teacher forcing ( Yan et al . 2023 ) is used to stabilize the training and accelerate the convergence of the GxVAEs during the training phase of the MolVAE .",
+      "ProfileVAE .",
+      "The goal of Profil-eVAE is to learn the marginal likelihood of gene expression profiles during the following generative process : max EQUATION where E [ • ] is an expectation operation , C is the latent variable , θ and ϕ denote the parameters of the ProfileVAE encoder and ProfileVAE decoder , respectively , and p ϕ ( X | C ) and q θ ( C | X ) are the likelihood function and posterior distribution , respectively .",
+      "The loss function of the ProfileVAE can be formulated as follows : L G ( θ , ϕ , X , C , β ) = E q θ ( C | X ) [ log p ϕ ( X | C ) ] ( 2 ) - β • D KL ( q θ ( C | X ) | | p ϕ ( C ) ) , where β denotes the weight of the KL divergence D KL ( Joyce 2011 ) .",
+      "MolVAE .",
+      "Then , EQUATION ) Note that the feature vectors C of the extracted gene expression profiles are used as the conditions for MolVAE .",
+      "MolVAE aims to maximize the lower bound of the true logmarginal likelihood as follows : EQUATION - D KL ( q ψ ( Z | S ) | | p φ ( Z ) ) .",
+      "Three types of gene expression profiles were used to validate the effectiveness of the proposed GxVAEs . • Chemically induced profiles were collected from the LINCS L1000 database ( Duan et al . 2014 ) .",
+      "Here , gene expression profiles of MCF7 cell line treated with 13 , 755 molecules were used . • Target perturbation profiles were obtained from the LINCS database .",
+      "For example , we analyzed RAC-α serine / threonine-protein kinase ( AKT1 ) , RACβ serine / threonine-protein kinase ( AKT2 ) , Aurora B kinase ( AURKB ) , cysteine synthase A ( CTSK ) , epidermal growth factor receptor ( EGFR ) , histone deacetylase 1 ( HDAC1 ) , mammalian target of rapamycin ( MTOR ) , phosphatidylinositol 3 - kinase catalytic subunit ( PIK3CA ) , decapentaplegic homolog 3 ( SMAD3 ) , and tumor protein p53 ( TP53 ) , which are therapeutic proteins for cancers . • Disease-specific profiles were collected from the crowd extracted expression of differential signatures ( CREEDS ) database ( Wang et al . 2016 ) .",
+      "Validity refers to the ratio of chemically valid molecules generated , which can be verified in practice using the RDKit tool ( Landrum 2013 ) .",
+      "A quantitative estimate of drug-likeness ( QED ) quantifies the likelihood that a molecule is a drug ( Appendix D ) .",
+      "To demonstrate that ProfileVAE has the ability to extract the biological features of gene expression profiles , we compared the distributions of the input gene expression profiles and the reconstructed profiles .",
+      "The distributions of the reconstructed profiles approximate those of the corresponding validation data , which indicates that ProfileVAE extracted the features of the gene expression profiles well , and proved the effectiveness of the proposed GxVAEs . to those in the validation set ."
+    ],
+    "relations": [
+      [
+        "MolVAE:Method",
+        "Part-Of",
+        "GxVAEs:Method"
+      ],
+      [
+        "ProfileVAE:Method",
+        "SubClass-Of",
+        "VAEs:Method"
+      ],
+      [
+        "MolVAE:Method",
+        "SubClass-Of",
+        "VAEs:Method"
+      ],
+      [
+        "ProfileVAE:Method",
+        "SubClass-Of",
+        "feature extractor:Method"
+      ],
+      [
+        "GxVAEs:Method",
+        "Used-For",
+        "molecular generation:Task"
+      ],
+      [
+        "VAEs:Method",
+        "Used-For",
+        "Hit-like molecular generation:Task"
+      ],
+      [
+        "GxVAEs:Method",
+        "Used-For",
+        "Hit-like molecular generation:Task"
+      ],
+      [
+        "VAEs:Method",
+        "Used-For",
+        "molecular generation:Task"
+      ],
+      [
+        "GxVAEs:Method",
+        "Used-For",
+        "molecular generation:Task"
+      ],
+      [
+        "VAEs:Method",
+        "Part-Of",
+        "TransVAE:Method"
+      ],
+      [
+        "VAEs:Method",
+        "Part-Of",
+        "Gram-marVAE:Method"
+      ],
+      [
+        "Gram-marVAE:Method",
+        "SubClass-Of",
+        "deep generative models:Method"
+      ],
+      [
+        "TransVAE:Method",
+        "SubClass-Of",
+        "deep generative models:Method"
+      ],
+      [
+        "reinforcement learning:Method",
+        "Used-For",
+        "MolGAN:Method"
+      ],
+      [
+        "reinforcement learning:Method",
+        "Used-For",
+        "TransORGAN:Method"
+      ],
+      [
+        "TransORGAN:Method",
+        "SubClass-Of",
+        "discrete GANs:Method"
+      ],
+      [
+        "MolGAN:Method",
+        "SubClass-Of",
+        "discrete GANs:Method"
+      ],
+      [
+        "TRI-OMPHE:Method",
+        "SubClass-Of",
+        "deep generative models:Method"
+      ],
+      [
+        "ExpressionGAN:Method",
+        "SubClass-Of",
+        "deep generative models:Method"
+      ],
+      [
+        "Expres-sionGAN:Method",
+        "SubClass-Of",
+        "GAN:Method"
+      ],
+      [
+        "VAE:Method",
+        "Part-Of",
+        "TRIOMPHE:Method"
+      ],
+      [
+        "VAEs:Method",
+        "Part-Of",
+        "GxVAEs:Method"
+      ],
+      [
+        "MolVAE:Method",
+        "Part-Of",
+        "GxVAEs:Method"
+      ],
+      [
+        "ProfileVAE:Method",
+        "Part-Of",
+        "GxVAEs:Method"
+      ],
+      [
+        "ProfileVAE:Method",
+        "SubClass-Of",
+        "VAEs:Method"
+      ]
+    ]
+  },
+  {
+    "doc_id": "AAAI2024",
+    "chunk_id": 3,
+    "content": [
+      "Furthermore , Table 1 lists the statistics for the validation set and molecules generated by the proposed GxVAEs .",
+      "The average , maximum , minimum lengths , and the average molecular weight of the generated SMILES strings were basically consistent with the SMILES strings in the original validation set , indicating that GxVAEs learned the data distributions of the SMILES strings well .",
+      "Table 2 shows the ability of the proposed Gx-VAEs to generate candidate molecules .",
+      "Note that Expres-sionGAN has limited ability to generate valid molecules , thus we only compared GxVAEs to the TRIOMPHE baseline .",
+      "The experimental results demonstrate that the validity of the proposed GxVAEs is three times higher than that of TRIOMPHE for generating ligand-like molecules using the gene expression profiles of the ten target proteins , reaching at least 78.0% ( HDAC1 ) .",
+      "Moreover , the uniqueness of the GxVAEs exceeds that of TRIOMPHE except for PIK3CA ( 93.5% < 97.2% ) .",
+      "Additionally , the novelty of the GxVAEs ( 97.7% ) is close to that of TRIOMPHE .",
+      "Overall , the proposed GxVAEs provided a sufficient number of candidate ligands for the ten target proteins .",
+      "Table 3 compares the Tanimoto coefficients of GxVAEs with those of the two SOTA models .",
+      "The experimental results illustrate that the Tanimoto coefficients of the candidate ligands generated by GxVAEs for the ten target proteins were much higher than those of the two SOTA models .",
+      "For example , the Tanimoto coefficient of GxVAEs for AKT1 was 2.7 and 2.0 times higher than those of the two baselines .",
+      "The chemical structures of the hit-like molecules generated by GxVAEs are all similar to the structures of the known ligands .",
+      "Overall , the proposed GxVAEs show excellent performance in generating hit-like molecules from the gene expression profiles , and the biological activity of the generated molecules far exceeded the SOTA baselines .",
+      "Figure 5 shows the process undertaken by GxVAEs for therapeutic molecular generation .",
+      "Finally , the disease reversal profiles were input into GxVAEs to generate candidate therapeutic molecules .",
+      "We compared the results generated by GxVAEs with those generated by DRAGONET ( Yamanaka et al . 2023 ) .",
+      "For a fair comparison , we used the same datasets on patient gene expression profiles and molecule chemical structures in DRAGONET .",
+      "Figure 6 shows the therapeutic molecules generated by DRAGONET and GxVAEs , as well as the Tanimoto coefficients calculated relative to known approved drugs .",
+      "The Tanimoto coefficients between hydrocortisone and the molecules generated by GxVAEs using the disease reversal profile of patients having atopic dermatitis reached 1.0 .",
+      "This result indicates that GxVAEs effectively captured the structural features of the drugs approved for the treatment of atopic dermatitis .",
+      "Furthermore , the molecules generated by GxVAEs for treating gastric cancer and Alzheimer's disease showed structural features that were similar to those of known approved drugs .",
+      "Thus , the proposed GxVAEs can generate molecules that have higher therapeutic properties than DRAGONET .",
+      "We proposed GxVAEs , which consisted of two joint VAEs ( i.e . , ProfileVAE and MolVAE ) , to generate hit-like molecules from gene expression profiles .",
+      "ProfileVAE extracted the features of the gene expression profiles , which were then used as conditions to guide MolVAE in producing hit-like molecules .",
+      "The experimental results showed that GxVAEs outperformed the current SOTA baselines and efficiently generated hit-like molecules from gene expression profiles .",
+      "Furthermore , we showed the capability of GxVAEs to create molecular structures with the potential therapeutic effects for various diseases from patients ' disease profiles .",
+      "One limitation of GxVAEs is that the diversity may be influenced by the size of the latent space .",
+      "If an implementation of MolVAE adopts a fixed latent vector , it could potentially constrain the diversity of newly generated molecules ."
+    ],
+    "relations": [
+      [
+        "MolVAE:Method",
+        "SubClass-Of",
+        "VAEs:Method"
+      ],
+      [
+        "bidirectional GRUs:Method",
+        "Part-Of",
+        "MolVAE:Method"
+      ],
+      [
+        "MolVAE:Method",
+        "Part-Of",
+        "GxVAEs:Method"
+      ],
+      [
+        "posterior distribution:Method",
+        "Part-Of",
+        "ProfileVAE encoder:Method"
+      ],
+      [
+        "likelihood function:Method",
+        "Part-Of",
+        "ProfileVAE decoder:Method"
+      ],
+      [
+        "KL divergence:Method",
+        "Part-Of",
+        "ProfileVAE:Method"
+      ],
+      [
+        "GxVAEs:Method",
+        "Evaluated-With",
+        "LINCS L1000:Dataset"
+      ],
+      [
+        "CREEDS:Dataset",
+        "Synonym-Of",
+        "crowd extracted expression of differential signatures:Dataset"
+      ],
+      [
+        "QED:Method",
+        "Synonym-Of",
+        "quantitative estimate of drug-likeness:Method"
+      ],
+      [
+        "ProfileVAE:Method",
+        "Part-Of",
+        "GxVAEs:Method"
+      ],
+      [
+        "GxVAEs:Method",
+        "Compare-With",
+        "TRIOMPHE:Method"
+      ],
+      [
+        "GxVAEs:Method",
+        "Compare-With",
+        "TRIOMPHE:Method"
+      ],
+      [
+        "GxVAEs:Method",
+        "Compare-With",
+        "TRIOMPHE:Method"
+      ],
+      [
+        "GxVAEs:Method",
+        "Compare-With",
+        "TRIOMPHE:Method"
+      ],
+      [
+        "GxVAEs:Method",
+        "Used-For",
+        "therapeutic molecular generation:Task"
+      ],
+      [
+        "GxVAEs:Method",
+        "Compare-With",
+        "DRAGONET:Method"
+      ],
+      [
+        "DRAGONET:Method",
+        "Compare-With",
+        "GxVAEs:Method"
+      ],
+      [
+        "GxVAEs:Method",
+        "Compare-With",
+        "DRAGONET:Method"
+      ],
+      [
+        "VAEs:Method",
+        "Part-Of",
+        "GxVAEs:Method"
+      ],
+      [
+        "ProfileVAE:Method",
+        "Part-Of",
+        "GxVAEs:Method"
+      ],
+      [
+        "MolVAE:Method",
+        "Part-Of",
+        "GxVAEs:Method"
+      ],
+      [
+        "ProfileVAE:Method",
+        "SubClass-Of",
+        "VAEs:Method"
+      ],
+      [
+        "MolVAE:Method",
+        "SubClass-Of",
+        "VAEs:Method"
+      ]
+    ]
+  },
+  {
+    "doc_id": "NeurIPS2023-AI4Science",
+    "chunk_id": 1,
+    "content": [
+      "XLUMINA : An Auto-differentiating Discovery Framework for Super-Resolution Microscopy In this work we introduce XLUMINA , an original computational framework designed for the discovery of novel optical hardware in super-resolution microscopy .",
+      "Our framework offers auto-differentiation capabilities , allowing for the fast and efficient simulation and automated design of entirely new optical setups from scratch .",
+      "We showcase its potential by rediscovering three foundational experiments , each one covering different areas in optics : an optical telescope , STED microscopy and the focusing beyond the diffraction limit of a radially polarized light beam .",
+      "With XLUMINA , can we go beyond simple optimization and calibration of known experimental setups , opening the door to potentially uncovering new microscopy concepts within the vast landscape of experimental possibilities .",
+      "FINAL SET-UP AI-based exploration tool Objective function e.g . spot size , ϕ = π FWHMxFWHMy 4 Enormously large search space OPTICS SIMULATOR FINAL SET-UP The space of all possible experimental optical configurations is enormous .",
+      "This is where AI-based exploration techniques could provide enormous benefit , by exploring the space in a fast , unbiased way [ 1 , 2 ] .",
+      "Among them , the discovery of super-resolution ( SR ) methods , which circumvent the classical diffraction limit of light , stand out in particular .",
+      "Examples for versatile and powerful SR techniques are STED [ 10 ] , PALM / F-PALM [ 11 , 12 ] , ( d ) STORM [ 13 , 14 ] , SIM [ 15 ] , and MINFLUX [ 16 ] , with considerable impact in biology [ 17 ] [ 18 ] [ 19 ] , chemistry [ 20 ] and material sciences [ 21 ] for example .",
+      "Rather , this work sets out to discover novel , experimentally viable concepts for advanced optical microscopy that are at-present entirely untapped .",
+      "The simulator can either be called directly by gradient-based optimization techniques , or it can be used for generating the training data for deep-learning-based surrogate models .",
+      "We introduce XLUMINA , an efficient framework with auto-differentiation capabilities [ 23 ] for the ultimate goal of discovering new optical design principles .",
+      "We demonstrate our approach on three foundational optical layouts : a telescope version , the polarization-based beam shaping as used in STED ( stimulated emission depletion ) microscopy [ 10 ] and the sharp focus of a radially polarized light beam [ 24 ] .",
+      "Rather , the future application of XLUMINA is the AI-driven discovery of completely novel physical concepts for advanced optical microscopy .",
+      "Optimization in microscopy Our approach is radically different from previous strategies that employ AI for data-driven design of single optical elements [ 25 , 26 ] or data analysis in microscopy , e.g . denoising , contrast enhancement or point-spread-function ( PSF ) engineering [ 27 ] .",
+      "In contrast , XLUMINA is equipped with tools for simulate , optimize and automatically design new optical setups and concepts from scratch .",
+      "The main approach is the development of efficient PDE-solvers for Maxwell's equations , including efficient ways to compute the gradients of the vast amount of parameters , usually by a physics-inspired technique called the adjoint method [ 38 , 39 ] .",
+      "Interestingly , the adjoint method can be seen as a special case of auto-differentiation ( which we use ) [ 39 ] .",
+      "Several open-source software tools , like Diffractio for light diffraction and interference simulations [ 41 ] , Finesse for simulating gravitational wave detectors [ 42 ] , and POPPY , developed as a part of the simulation package of the James Webb Telescope [ 43 ] , facilitate classical optics phenomena simulations .",
+      "There are also specialized resources like those focusing on the design of Laguerre-Gaussian mode sorters utilizing multi-plane light conversion ( MPLC ) methods [ 44 ] .",
+      "While these software offer optics simulation capabilities , XLUMINA uniquely integrates simulation with AI-driven automated design powered with JAX's autodiff and just-in-time ( jit ) compilation capabilities . 2 Software workflow and performance XLUMINA allows for the simulation of classical optics hardware configurations and enables the optimization and automated discovery of new setup designs .",
+      "The software is developed using JAX [ 45 ] , which provides an advantage of heightened computational speed while seamlessly integrating the auto-differentiation framework [ 23 ] .",
+      "The first benchmark is to rediscover highly impactful microscopy strategies , such as STED microscopy [ 10 ] or the sharp focus of a radially polarized light beam [ 24 ] , as each of these incorporate different ideas or physical properties of light .",
+      "To that end , the algorithm is equipped with an optics simulator , which contains a diverse set of optical manipulation , interaction , and measurement technologies .",
+      "The simulator enables , among many other features , to define light sources ( of any wavelength and power ) , phase masks ( i.e . , spatial light modulators , SLMs ) , polarizers , variable retarders ( e.g . , liquid crystal displays , LCDs ) , diffraction gratings , and high NA lenses to replicate strong focusing conditions .",
+      "Light propagation and diffraction is simulated by two methods , each available for both scalar and vectorial regimes : the fast-Fourier-transform ( FFT ) based numerical integration of the Rayleigh-Sommerfeld ( RS ) diffraction integral [ 46 , 47 ] and the Chirped z-transform ( CZT ) [ 48 ] .",
+      "The CZT is an accelerated version of the RS algorithm , which allows for arbitrary selection and sampling of the region of interest .",
+      "Some functionalities of XLUMINA's optics simulator ( e.g . , optical propagation algorithms , planar lens or amplitude masks ) are inspired in an open-source NumPy-based Python module for diffraction and interferometry simulation , Diffractio [ 41 ] , although we have rewritten and modified these approaches to combine them with JAX's just-in-time ( jit ) functionality .",
+      "On top of that , we developed completely new functions ( e.g . , LCDs or propagation through high NA objective lens with CZT methods , to name a few ) which significantly expand the software capabilities .",
+      "The most important hardware addition on the optical simulator are the SLMs , each pixel of which possesses an independent ( and variable ) phase value ."
+    ],
+    "relations": [
+      [
+        "XLUMINA:Method",
+        "SubClass-Of",
+        "Auto-differentiating Discovery Framework:Method"
+      ],
+      [
+        "Auto-differentiating Discovery Framework:Method",
+        "Used-For",
+        "Super-Resolution Microscopy:Task"
+      ],
+      [
+        "XLUMINA:Method",
+        "Used-For",
+        "Super-Resolution Microscopy:Task"
+      ],
+      [
+        "XLUMINA:Method",
+        "Used-For",
+        "super-resolution microscopy:Task"
+      ],
+      [
+        "SR:Method",
+        "Synonym-Of",
+        "super-resolution:Method"
+      ],
+      [
+        "STED:Method",
+        "SubClass-Of",
+        "SR:Method"
+      ],
+      [
+        "PALM / F-PALM:Method",
+        "SubClass-Of",
+        "SR:Method"
+      ],
+      [
+        "STORM:Method",
+        "SubClass-Of",
+        "SR:Method"
+      ],
+      [
+        "SIM:Method",
+        "SubClass-Of",
+        "SR:Method"
+      ],
+      [
+        "MINFLUX:Method",
+        "SubClass-Of",
+        "SR:Method"
+      ],
+      [
+        "auto-differentiation:Method",
+        "Part-Of",
+        "XLUMINA:Method"
+      ],
+      [
+        "polarization-based beam shaping:Method",
+        "Part-Of",
+        "STED:Method"
+      ],
+      [
+        "stimulated emission depletion:Method",
+        "Synonym-Of",
+        "STED:Method"
+      ],
+      [
+        "XLUMINA:Method",
+        "Used-For",
+        "optical microscopy:Task"
+      ],
+      [
+        "PSF:Method",
+        "Synonym-Of",
+        "point-spread-function:Method"
+      ],
+      [
+        "Diffractio:Method",
+        "Used-For",
+        "light diffraction:Task"
+      ],
+      [
+        "Diffractio:Method",
+        "Used-For",
+        "interference simulations:Task"
+      ],
+      [
+        "Finesse:Method",
+        "Used-For",
+        "simulating gravitational wave detectors:Task"
+      ],
+      [
+        "POPPY:Method",
+        "Used-For",
+        "optics phenomena simulations:Task"
+      ],
+      [
+        "multi-plane light conversion:Method",
+        "Part-Of",
+        "Laguerre-Gaussian:Method"
+      ],
+      [
+        "MPLC:Method",
+        "Synonym-Of",
+        "multi-plane light conversion:Method"
+      ],
+      [
+        "AI-driven automated design:Method",
+        "Part-Of",
+        "XLUMINA:Method"
+      ]
+    ]
+  },
+  {
+    "doc_id": "NeurIPS2023-AI4Science",
+    "chunk_id": 2,
+    "content": [
+      "They serve as a universal approximation for phase masks ( including lenses ) and offer a computational advantage : given a specific pixel resolution , they allow for unrestricted phase design selection .",
+      "In addition , we defined under the name of super-SLM ( sSLM ) a hardware-box-type which consists of two SLMs , each one independently imprinting a phase mask on the horizontal and vertical orthogonal polarization components of the field .",
+      "To include the automated discovery feature , XLUMINA's optical simulator and optimizer are tied together by the loss function .",
+      "Thus , it is essential to reduce the computation time by maximizing the speed of optical simulation functions .",
+      "Thus , we evaluate the performance of our optimized functions against their counterparts in Diffractio by propagating a Gaussian beam within a computational window sized at 2048 × 2048 .",
+      "The average run-time for both Diffractio and our approach is shown in Figure 2a .",
+      "Generally , our methods significantly enhance computational speeds for simulating light diffraction and propagation .",
+      "For instance , we observe a speedup of roughly a factor of 2 for RS and VCZT and about 2.5 for VRS using the CPU .",
+      "CZT has less significant speedup , but there is still a 0.5 - second improvement .",
+      "When it comes to the nature of the optimizer , it can be either direct ( gradient-based ) or deep learningbased ( surrogate models or deep generative models , e.g . , variational autoencoders [ 49 ] ) .",
+      "In this work , we adopt a gradient-based strategy , where the experimental setup's parameters are adjusted iteratively in the steepest descent direction .",
+      "To chose the optimizer , we evaluate the convergence time of two gradient-descent techniques : the Broyden-Fletcher-Goldfarb-Shanno ( BFGS ) algorithm , which numerically computes gradients and higher-order derivative approximations , and the adaptive moment estimation ( ADAM ) , an instance of the stochastic-gradient-descent ( SGD ) method .",
+      "While BFGS is part of the open-source SciPy Python library and operates on the CPU , ADAM is integrated within the JAX library and runs in both CPU and GPU .",
+      "For the evaluation , we simulate a Gaussian beam interacting with a phase mask .",
+      "The objective function is the mean squared error between the detected light and the ground truth , characterized by a Gaussian beam with a spiral phase imprinted on its wavefront .",
+      "Initializing with an arbitrary phase mask configuration , we run both BFGS and ADAM optimizers over different computational windows and devices , as depicted in Fig . 2b .",
+      "On the CPU , BFGS exhibits exponential scaling in convergence time , reaching about 6500 seconds for 250 × 250 pixel window .",
+      "In contrast , ADAM demonstrates superior efficiency , reducing it to roughly 2600 seconds .",
+      "This makes the GPU-accelerated ADAM approach more appropriate for efficient experimentation .",
+      "Overall , the computational performance of XLUMINA highlights its suitability for running complex simulations and optimizations with a high level of efficiency .",
+      "In this section , we showcase the virtual optical designs generated by XLUMINA .",
+      "This arrangement performs optical Fourier transformations of input light with magnifications determined by the ratio f 2 / f 1 .",
+      "To revisit this design with a magnification of 2x , we encoded the virtual setup depicted in Fig . 3a , in which traditional lenses are replaced by spatial light modulators ( SLMs ) .",
+      "The parameter space includes the distances , z 1 , z 2 and z 3 ( measured in millimeters ) and the phase masks ( measured in radians ) of the two SLMs with a resolution of 1024 × 1024 pixels .",
+      "Each sample consists of a Gaussian beam shaped by amplitude masks in various forms ( circles , rectangles , squares and rings ) , with varying sizes and orientations .",
+      "The cost function is the mean squared error between the dataset's output and the detected intensity pattern from the virtual setup .",
+      "The solution depicts lens-like quadratic phases in both SLMs .",
+      "This suggests that phase mask of SLM #1 might be compensating for this deviation .",
+      "On the other hand , we believe that the more precise solution for SLM #2 highlights its critical role in imaging ."
+    ],
+    "relations": [
+      [
+        "STED:Method",
+        "SubClass-Of",
+        "microscopy strategies:Method"
+      ],
+      [
+        "polarized light beam:Method",
+        "SubClass-Of",
+        "microscopy strategies:Method"
+      ],
+      [
+        "spatial light modulators:Method",
+        "SubClass-Of",
+        "phase masks:Method"
+      ],
+      [
+        "SLMs:Method",
+        "Synonym-Of",
+        "spatial light modulators:Method"
+      ],
+      [
+        "liquid crystal displays:Method",
+        "SubClass-Of",
+        "variable retarders:Method"
+      ],
+      [
+        "LCDs:Method",
+        "Synonym-Of",
+        "liquid crystal displays:Method"
+      ],
+      [
+        "FFT:Method",
+        "Synonym-Of",
+        "fast-Fourier-transform:Method"
+      ],
+      [
+        "RS:Method",
+        "Synonym-Of",
+        "Rayleigh-Sommerfeld:Method"
+      ],
+      [
+        "CZT:Method",
+        "Synonym-Of",
+        "Chirped z-transform:Method"
+      ],
+      [
+        "CZT:Method",
+        "SubClass-Of",
+        "RS:Method"
+      ],
+      [
+        "optical propagation algorithms:Method",
+        "SubClass-Of",
+        "XLUMINA's optics simulator:Method"
+      ],
+      [
+        "planar lens:Method",
+        "SubClass-Of",
+        "XLUMINA's optics simulator:Method"
+      ],
+      [
+        "amplitude masks:Method",
+        "SubClass-Of",
+        "XLUMINA's optics simulator:Method"
+      ],
+      [
+        "XLUMINA's optics simulator:Method",
+        "Used-For",
+        "diffraction:Task"
+      ],
+      [
+        "amplitude masks:Method",
+        "Used-For",
+        "diffraction:Task"
+      ],
+      [
+        "planar lens:Method",
+        "Used-For",
+        "diffraction:Task"
+      ],
+      [
+        "optical propagation algorithms:Method",
+        "Used-For",
+        "diffraction:Task"
+      ],
+      [
+        "XLUMINA's optics simulator:Method",
+        "Used-For",
+        "interferometry simulation:Task"
+      ],
+      [
+        "CZT:Method",
+        "Part-Of",
+        "NA objective lens:Method"
+      ],
+      [
+        "SLMs:Method",
+        "Part-Of",
+        "optical simulator:Method"
+      ],
+      [
+        "sSLM:Method",
+        "Synonym-Of",
+        "super-SLM:Method"
+      ],
+      [
+        "SLMs:Method",
+        "Part-Of",
+        "super-SLM:Method"
+      ]
+    ]
+  },
+  {
+    "doc_id": "NeurIPS2023-AI4Science",
+    "chunk_id": 3,
+    "content": [
+      "STED microscopy STED microscopy [ 10 ] is based on excitation and spatially targeted depletion of fluorophores .",
+      "In order to achieve this , a Gaussian-shaped excitation beam and a doughnut-shaped depletion beam are concentrically overlapped .",
+      "This effectively reduces the area of normal fluorescence , which leads to super-resolution imaging .",
+      "In order to generate a doughnut-shaped beam a spiral phase is imprinted into the wavefront of a Gaussian beam .",
+      "To revisit this principle , we virtually construct a simplified version of a STED-type setup as depicted in Fig . 4a .",
+      "It consists of two light sources generating Gaussian beams corresponding to the depletion and excitation beams with wavelengths of 650 nm and 532 nm , respectively .",
+      "Within the depletion beam's optical path , we place an SLM of 2048 × 2048 resolution and a computational pixel size of 1.95µm .",
+      "In this instance , the parameter space is defined by the SLM .",
+      "For this particular instance , the detected intensity corresponds to the radial component , In Fig . 4b , we present the STED spiral phase mask [ 10 ] and the identified solution for ε = 0.7 .",
+      "From a random initial phase mask in the SLM , the system converged into a pattern alike to the spiral phase .",
+      "Other solutions presented noisy phase patterns which failed to achieve the essential doughnut-shaped depletion beam .",
+      "Real-world STED setups demand almost perfect phase patterns ; even the minor misalignment can compromise the super-resolution STED phenomena .",
+      "| E x | 2 + | E y | 2 , Sharper focus for a radially polarized light beam The final benchmark focuses on the generation of an ultra-sharp focus for a radially polarized beam , a feature that breaks the diffraction limit in the longitudinal direction as demonstrated by R .",
+      "The light source emits a 635 nm wavelength Gaussian beam that is linearly polarized .",
+      "The original optical elements are replaced by an sSLM , each component of which has a resolution of 2048 × 2048 pixels and a computational pixel size of 1.46µm .",
+      "Additionally , we place an LCD with variable phase retardance η and orientation angle θ .",
+      "The beam then passes through a high NA objective lens before reaching the detector screen .",
+      "Relevant data on the sSLM's phase masks , optical parameters , and the simulated spot size are showcased in Fig . 5b and Table 1 .",
+      "With regards to Solution #2 , the SLM phase pattern also shows a tilted forked grating of topological charge p = 1 .",
+      "For comparison , we also feature the radial intensity profile of the diffraction-limited linearly polarized beam ( dotted orange line in Fig . 5e ) .",
+      "This was crucial for our purpose to demonstrate how XLUMINA can compute and efficiently rediscover known techniques in advanced microscopy .",
+      "We aim to use XLUMINA to discover new microscopy concepts .",
+      "From here , XLUMINA should be able to extract much more complex solutions which humans might not have thought about yet [ 2 ] .",
+      "In this work , we present an efficient and reliable simulator for advanced optical microscopy .",
+      "The simulator is developed in a modular way , and we plan to significantly expand it by adding more physical properties and features exploited in microscopy , for example , detailed coverage of frequency and time information , which might enable systems such as iSCAT [ 56 ] , structured illumination microscopy [ 57 ] , and localization microscopy [ 58 ] .",
+      "Looking further into the future , one can expect that matter-wave beams ( governed by Schrödinger's equation , which is closely related to the paraxial wave equation , a special case of the electromagnetic field ) can be simulated in the same framework .",
+      "This might allow for the AI-based design of hybrid microscopy techniques using light and complex electron-beams [ 61 ] or coherent beams of high-mass particles [ 62 ] ."
+    ],
+    "relations": [
+      [
+        "Gaussian beam:Method",
+        "Part-Of",
+        "Diffractio:Method"
+      ],
+      [
+        "surrogate models:Method",
+        "SubClass-Of",
+        "deep learningbased:Method"
+      ],
+      [
+        "deep generative models:Method",
+        "SubClass-Of",
+        "deep learningbased:Method"
+      ],
+      [
+        "variational autoencoders:Method",
+        "SubClass-Of",
+        "deep generative models:Method"
+      ],
+      [
+        "Broyden-Fletcher-Goldfarb-Shanno:Method",
+        "SubClass-Of",
+        "gradient-descent techniques:Method"
+      ],
+      [
+        "adaptive moment estimation:Method",
+        "SubClass-Of",
+        "gradient-descent techniques:Method"
+      ],
+      [
+        "BFGS:Method",
+        "Synonym-Of",
+        "Broyden-Fletcher-Goldfarb-Shanno:Method"
+      ],
+      [
+        "ADAM:Method",
+        "Synonym-Of",
+        "adaptive moment estimation:Method"
+      ],
+      [
+        "adaptive moment estimation:Method",
+        "SubClass-Of",
+        "stochastic-gradient-descent:Method"
+      ],
+      [
+        "SGD:Method",
+        "Synonym-Of",
+        "stochastic-gradient-descent:Method"
+      ],
+      [
+        "BFGS:Method",
+        "Compare-With",
+        "ADAM:Method"
+      ],
+      [
+        "phase mask:Method",
+        "Part-Of",
+        "Gaussian beam:Method"
+      ],
+      [
+        "SLMs:Method",
+        "SubClass-Of",
+        "spatial light modulators:Method"
+      ],
+      [
+        "phase masks:Method",
+        "Part-Of",
+        "SLMs:Method"
+      ],
+      [
+        "lens-like quadratic:Method",
+        "Part-Of",
+        "SLMs:Method"
+      ],
+      [
+        "phase mask:Method",
+        "Part-Of",
+        "SLM:Method"
+      ],
+      [
+        "random initial phase mask:Method",
+        "Part-Of",
+        "SLM:Method"
+      ],
+      [
+        "phase masks:Method",
+        "Part-Of",
+        "sSLM's:Method"
+      ],
+      [
+        "simulator:Method",
+        "Used-For",
+        "optical microscopy:Task"
+      ],
+      [
+        "complex electron-beams:Method",
+        "Part-Of",
+        "hybrid microscopy techniques:Method"
+      ],
+      [
+        "coherent beams of high-mass particles:Method",
+        "Part-Of",
+        "hybrid microscopy techniques:Method"
+      ]
+    ]
+  },
+  {
+    "doc_id": "EMNLP2023",
+    "chunk_id": 1,
+    "content": [
+      "Label Words are Anchors : An Information Flow Perspective for Understanding In-Context Learning In-context learning ( ICL ) emerges as a promising capability of large language models ( LLMs ) by providing them with demonstration examples to perform diverse tasks .",
+      "However , the underlying mechanism of how LLMs learn from the provided context remains under-explored .",
+      "In this paper , we investigate the working mechanism of ICL through an information flow lens .",
+      "Our findings reveal that label words in the demonstration examples function as anchors : In-context Learning ( ICL ) has emerged as a powerful capability alongside the development of scaledup large language models ( LLMs ) ( Brown et al . , 2020 ) .",
+      "By instructing LLMs using few-shot demonstration examples , ICL enables them to perform a wide range of tasks , such as text classification ( Min et al . , 2022a ) and mathematical reasoning ( Wei et al . , 2022 ) .",
+      "Despite its significance , the inner working mechanism of ICL remains an open question , garnering considerable interest from research communities ( Xie et al . , 2022 ; Dai et al . , 2022 ; Akyürek et al . , 2022 ; Li et al . , 2023b ) .",
+      "In this paper , we find that the label words serve as anchors that aggregate and distribute information in ICL .",
+      "We first visualize the attention interactive pattern between tokens with a GPT model ( Brown et al . , 2020 ) on sentiment analysis ( Figure 1 ) .",
+      "H 2 : In deep layers , the model extracts the information from label words to form the final prediction .",
+      "Two experiments are designed to validate the hypothesis using GPT2 - XL ( Radford et al . , 2019 ) and GPT-J ( Wang and Komatsuzaki , 2021 ) across several text classification benchmarks . ( 1 ) By blocking the information aggregation path to label words in certain layers , we find that such isolation in shallow layers significantly impairs model performance .",
+      "This indicates that label words collect useful information during forward propagation in shallow layers . ( 2 ) We investigate the relationship between the attention distributions on the label words of the target position and the model's final prediction .",
+      "In summary , these experimental findings suggest that our hypothesis holds well with large language models on real-world datasets .",
+      "Drawing on insights from the information flow perspective , we explore three approaches to enhance ICL's effectiveness , efficiency , and interpretability . ( 1 ) An anchor re-weighting method is introduced , which employs a learnable vector to adjust the significance of different label words in demonstrations , leading to a 16.7% average accuracy boost compared to standard ICL baselines . ( 2 ) For quicker ICL inference , inputs are compressed into pre-calculated anchor representations since model predictions primarily rely on label word activations .",
+      "Testing shows a 1.8 × speedup in inference with only a minimal performance trade-off . ( 3 ) An error analysis of ICL on GPT2 - XL demonstrates that the label confusion matrix aligns closely with the distance distribution of anchor key vectors , implying that errors might result from similar anchor representations .",
+      "These promising applications further validate our hypothesis and shed light on future ICL studies for better transparency of LLMs .",
+      "H 2 : In deep layers , the model makes predictions by extracting information from label words .",
+      "This section aims to discover the inherent patterns in the attention interaction between tokens for a GPT model .",
+      "Following common practice , we use the Taylor expansion ( Michel et al . , 2019 ) to calculate the saliency score for each element of the attention matrix : EQUATION Here , A h , l is the value of the attention matrix of the h-th attention head in the l-th layer , x is the input , and L ( x ) is the loss function of the task , e.g . , the cross-entropy objective for a classification problem .",
+      "We average all attention heads to obtain the saliency matrix I l for the l-th layer .",
+      "I l ( i , j ) represents the significance of the information flow from the j-th word to the i-th word for ICL .",
+      "By observing I l , we can get an intuitive impression that as the layer goes deeper , demonstration label words will become more dominant for the prediction , as depicted in Figure 1 .",
+      "A high S pq demonstrates a strong information extraction from label words for final decision-making .",
+      "Experimental Settings We choose GPT2 - XL from the GPT series ( Radford et al . , 2019 ) as our primary model for investigation , due to its moderate model size ( of 1.5B parameters ) that is suitable for our hardware resource and its decent ICL performance ( Dai et al . , 2022 ) .",
+      "For datasets , we use Stanford Sentiment Treebank Binary ( SST - 2 ) ( Socher et al . , 2013 ) for sentiment analysis , Text REtrieval Conference Question Classification ( TREC ) ( Li and Roth , 2002 ; Hovy et al . , 2001 ) for question type classification , AG's news topic classification dataset ( AGNews ) ( Zhang et al . , 2015 ) for topic classification , and EmoContext ( EmoC ) ( Chatterjee et al . , 2019 ) Results and Analysis Figure 3 reveals that : ( 1 ) in shallow layers , S pq , the significance of the information flow from label words to targeted positions , is low , while S wp , the information flow from the text part to label words is high ; ( 2 ) in deep layers , S pq , the importance of information flow from label words to the targeted position becomes the dominant one .",
+      "Proposed Hypothesis Based on this , we propose the hypothesis that label words function as anchors in the ICL information flow .",
+      "In shallow layers , label words gather information from demonstration examples to form semantic representations for deeper layers , while in deep layers , the model extracts the information from label words to form the final prediction .",
+      "We assume that the information aggregation in ICL relies on the information flow from the text part to label tokens , which is facilitated by the transformer's attention mechanism .",
+      "By manipulating the attention layer in the model to block this flow and examining the model behavior change , we validate the existence of the information aggregation process and its contribution to the final prediction .",
+      "To further validate our findings on larger models , we incorporate GPT-J ( 6B ) ( Wang and Komatsuzaki , 2021 ) in experiments , which exceeds GPT2 - XL in model size and capacity .",
+      "Metrics We use the following metrics to assess the impact of blocking information flow from the text part to label tokens : ( 1 ) Label Loyalty : measures the consistency of output labels with and without isolation . ( 2 ) Word Loyalty : employs the Jaccard similarity to compare the top - 5 predicted words with and without isolation , capturing more subtle model output alterations ( See Appendix C for details ) .",
+      "Low loyalty indicates a profound impact of isolation on model predictions ."
+    ],
+    "relations": [
+      [
+        "ICL:Method",
+        "Synonym-Of",
+        "In-context learning:Method"
+      ],
+      [
+        "LLMs:Method",
+        "Synonym-Of",
+        "large language models:Method"
+      ],
+      [
+        "In-context learning:Method",
+        "Used-For",
+        "large language models:Method"
+      ],
+      [
+        "ICL:Method",
+        "Synonym-Of",
+        "In-context Learning:Method"
+      ],
+      [
+        "LLMs:Method",
+        "Synonym-Of",
+        "large language models:Method"
+      ],
+      [
+        "In-context Learning:Method",
+        "Used-For",
+        "large language models:Method"
+      ],
+      [
+        "ICL:Method",
+        "Used-For",
+        "text classification:Task"
+      ],
+      [
+        "ICL:Method",
+        "Used-For",
+        "mathematical reasoning:Task"
+      ],
+      [
+        "GPT:Method",
+        "Used-For",
+        "sentiment analysis:Task"
+      ],
+      [
+        "deep layers:Method",
+        "Used-For",
+        "prediction:Task"
+      ],
+      [
+        "GPT2 - XL:Method",
+        "Used-For",
+        "text classification:Task"
+      ],
+      [
+        "GPT-J:Method",
+        "Used-For",
+        "text classification:Task"
+      ],
+      [
+        "forward propagation:Method",
+        "Part-Of",
+        "shallow layers:Method"
+      ],
+      [
+        "anchor re-weighting method:Method",
+        "Compare-With",
+        "ICL:Method"
+      ],
+      [
+        "ICL:Method",
+        "Used-For",
+        "GPT2 - XL:Method"
+      ],
+      [
+        "ICL:Method",
+        "Used-For",
+        "LLMs:Method"
+      ],
+      [
+        "deep layers:Method",
+        "Used-For",
+        "predictions:Task"
+      ],
+      [
+        "attention interaction:Method",
+        "Part-Of",
+        "GPT:Method"
+      ],
+      [
+        "cross-entropy objective:Method",
+        "SubClass-Of",
+        "loss function:Method"
+      ],
+      [
+        "cross-entropy objective:Method",
+        "Used-For",
+        "classification:Task"
+      ],
+      [
+        "information extraction:Task",
+        "Used-For",
+        "decision-making:Task"
+      ],
+      [
+        "GPT2 - XL:Method",
+        "SubClass-Of",
+        "GPT:Method"
+      ]
+    ]
+  },
+  {
+    "doc_id": "EMNLP2023",
+    "chunk_id": 2,
+    "content": [
+      "Moreover , similar results were obtained when testing ICL with semantically unrelated labels ( refer to Appendix F .2 ) .",
+      "Figures 5a and 5b delineate correlation metrics for GPT2 - XL and GPT-J , averaged across four datasets .",
+      "The AUCROC l for deep layers approaches 0.8 , illustrating a strong correlation between the attention distributions on label words of the target position and the model's final prediction .",
+      "Moreover , shallow layers show negligible cumulative contributions ( R l ) , with a significant increase in middle and deep layers .",
+      "These results signify the crucial role of deep layers for final prediction , validating that the model extracts information from label words in deep layers to form the final prediction .",
+      "In § 2.3 , we verify that the aforementioned aggregated information on label words is then extracted to form the final prediction in the deep layers .",
+      "Given the considerable role these \" anchors \" fulfill , we find it intuitive to design ICL improvements based on them , as elaborated in § 3 .",
+      "With insights from the validated hypothesis , we propose strategies to boost ICL's accuracy and inference speed .",
+      "We propose an anchor re-weighting method in § 3.1 to adjust the demonstrations ' contributions and improve accuracy .",
+      "In § 3.2 , we explore a context compression technique that reduces original demonstrations to anchor hidden states to speed up ICL inference .",
+      "Besides , in § 3.3 , we utilize anchor distances to perform an analysis to understand the errors ICL made in real-world scenarios .",
+      "These approaches corroborate our hypothesis , pointing to potential paths for future ICL enhancements .",
+      "Based on our analysis in § 2 , we draw parallels between ICL and logistic regression and propose an approach to improve ICL's accuracy by reweighting label anchors . 3.1.1 Method § 2.3 illustrates a strong correlation between the model's output category and the attention distribution ( A ( q , p 1 ) , . . . , A ( q , p C ) ) on label words p 1 , . . . , p C of the target position q in deep layers .",
+      "Inspired by the similarity between ICL and logistic regression , we've incorporated a learnable β i 0 into Eq . ( 7 ) , which is equivalent to adjusting the attention weights A ( q , p i ) : EQUATION Each β i 0 is a learnable parameter , set uniquely for different attention heads and layers .",
+      "Owing to computational constraints , we employ GPT2 - XL for evaluation , excluding GPT-J .",
+      "We compare Anchoring Re-weighting with two baselines : ( 1 ) Vanilla ICL with the same demonstration ( 1 - shot per class ) ( 2 ) Vanilla ICL , where the auxiliary training set of β is included as demonstrations ( 5 - shot per class ) for a fair comparison .",
+      "As Table 1 shows , the proposed anchor reweighting significantly enhances ICL performance , particularly on the SST - 2 and EmoC datasets .",
+      "Besides , adding more demonstrations for vanilla ICL may not bring a stable accuracy boost due to the potential noise introduced , as discussed in Zhao et al . ( 2021 ) .",
+      "Different from vanilla ICL which utilizes the extra examples to form a demonstration , we train a re-weighting vector β to modulate label anchor contributions .",
+      "The consistent improvements of our method suggest that the re-weighting mechanism could be a better alternative to utilize demonstration examples .",
+      "Furthermore , it reiterates the crucial role that anchors play in ICL .",
+      "We further explore a context compression technique that reduces the full demonstration to anchor hidden states for accelerating ICL inference .",
+      "For AGNews , due to the length limit , we only use three demonstrations per class .",
+      "Our Anchor Re-weighting method achieves the best performance overall tasks . from the demonstrations .",
+      "Given the auto-regressive nature of GPT-like models , where hidden states of tokens depend solely on preceding ones , label words ' information aggregation process is independent of subsequent words .",
+      "In our preliminary experiments , concatenating hidden states of label words alone was inadequate for completing the ICL task . 5 This might be due to the critical role of formatting information in helping the model to determine the output space at the target position , 6 as highlighted in Min et al . ( 2022b ) .",
+      "As a solution , we amalgamate the hidden states of both the formatting and the label words , a method we've termed Hidden anchor .",
+      "We compare our Hidden anchor input compression method with two equally efficient baselines .",
+      "Text anchor : This method concatenates the formatting and label text with the input , as opposed to concatenating the hidden states at each layer .",
+      "Hidden random : This approach concatenates the hidden states of formatting and randomly selected nonlabel words ( equal in number to Hidden anchor ) .",
+      "Hidden random-top : To establish a stronger baseline , we randomly select 20 sets of non-label words in Hidden random and report the one with the highest label loyalty ."
+    ],
+    "relations": [
+      [
+        "SST - 2:Dataset",
+        "Synonym-Of",
+        "Stanford Sentiment Treebank Binary:Dataset"
+      ],
+      [
+        "Stanford Sentiment Treebank Binary:Dataset",
+        "Benchmark-For",
+        "sentiment analysis:Task"
+      ],
+      [
+        "TREC:Dataset",
+        "Synonym-Of",
+        "Text REtrieval Conference Question Classification:Dataset"
+      ],
+      [
+        "Text REtrieval Conference Question Classification:Dataset",
+        "Benchmark-For",
+        "question type classification:Task"
+      ],
+      [
+        "AGNews:Dataset",
+        "Synonym-Of",
+        "AG's news topic classification dataset:Dataset"
+      ],
+      [
+        "AG's news topic classification dataset:Dataset",
+        "Benchmark-For",
+        "topic classification:Task"
+      ],
+      [
+        "EmoC:Dataset",
+        "Synonym-Of",
+        "EmoContext:Dataset"
+      ],
+      [
+        "shallow layers:Method",
+        "Compare-With",
+        "deep layers:Method"
+      ],
+      [
+        "deep layers:Method",
+        "Used-For",
+        "prediction:Task"
+      ],
+      [
+        "attention mechanism:Method",
+        "Part-Of",
+        "transformer's:Method"
+      ],
+      [
+        "GPT-J:Method",
+        "Compare-With",
+        "GPT2 - XL:Method"
+      ],
+      [
+        "shallow layers:Method",
+        "Compare-With",
+        "deep layers:Method"
+      ],
+      [
+        "ICL:Method",
+        "Compare-With",
+        "logistic regression:Method"
+      ],
+      [
+        "reweighting label anchors:Method",
+        "Part-Of",
+        "ICL's:Method"
+      ],
+      [
+        "ICL:Method",
+        "Compare-With",
+        "logistic regression:Method"
+      ],
+      [
+        "Anchoring Re-weighting:Method",
+        "Compare-With",
+        "ICL:Method"
+      ],
+      [
+        "Anchoring Re-weighting:Method",
+        "Compare-With",
+        "ICL:Method"
+      ],
+      [
+        "ICL:Method",
+        "Evaluated-With",
+        "SST - 2:Dataset"
+      ],
+      [
+        "ICL:Method",
+        "Evaluated-With",
+        "EmoC:Dataset"
+      ],
+      [
+        "auto-regressive:Method",
+        "Part-Of",
+        "GPT-like models:Method"
+      ],
+      [
+        "Text anchor:Method",
+        "Compare-With",
+        "Hidden anchor:Method"
+      ],
+      [
+        "Hidden anchor:Method",
+        "Compare-With",
+        "Text anchor:Method"
+      ]
+    ]
+  },
+  {
+    "doc_id": "EMNLP2023",
+    "chunk_id": 3,
+    "content": [
+      "The Text anchor method is included to demonstrate that the effectiveness of Hidden anchor is attributed to the aggregation of information in label words , rather than the mere text of label words .",
+      "If we find that Hidden anchor surpasses Text anchor in performance , it solidifies the notion that the aggregated information within label words carries significant importance .",
+      "The Hidden random method is introduced to illustrate that anchor hidden states encapsulate most of the demonstration information among all hidden states .",
+      "We can see from Table 2 that the proposed compression method Hidden anchor achieves the best results among all three compression methods on all metrics and for both models .",
+      "For example , with the GPT-J model , the compression method with anchor states only leads to a 1.5 accuracy drop compared to the uncompressed situation , indicating that the compression introduces negligible information loss .",
+      "Further , we estimate the efficiency improvements over the original ICL .",
+      "Besides , we observe that the acceleration effect is more pronounced in the GPT-J model compared to GPT2 - XL , demonstrating its great potential to apply to larger language models .",
+      "Lastly , we perform an error analysis for ICL by examining the distances between the key vectors in the attention module that correspond to the label words .",
+      "Furthermore , considering the distribution of query vectors q q , we employ a PCA-like method to extract the components of the key vectors along the directions with significant variations in q q , denoted as k ( see Appendix J for details ) .",
+      "We anticipate that the distances between these ks can correspond to the category confusion of the model , thus revealing one possible origin of ICL errors .",
+      "Here , we normalize the distances to a scale of 0 - 1 , with 0 indicating the highest degree of category confusion : EQUATION We utilize the GPT2 - XL model and TREC dataset , as the model displays varying confusion levels between categories on this dataset .",
+      "We use all 500 samples of the TREC test set and use 1 demonstration per class for convenience of analysis .",
+      "The heatmaps display similarity in confusing category pairs , particularly in lighter-colored blocks .",
+      "This high correlation indicates that ICL makes errors in categories with similar label anchors .",
+      "The existing literature on in-context learning analysis can be broadly divided into two streams , each focusing on different aspects .",
+      "The first stream explores the influencing factors of ICL based on input perturbation , such as the order ( Min et al . , 2022b ) , the formatting ( Yoo et al . , 2022 ; Wei et al . , 2022 ) , and the selection of the demonstration ( Liu et al . , 2022 ) .",
+      "Designing proper demonstration construc-tion strategies ( Ye et al . , 2023 ; Li et al . , 2023a ) and calibration techniques ( Zhao et al . , 2021 ; Min et al . , 2022a ) could bring clear boosts to the ICL performance .",
+      "The second stream investigates the inner working mechanism of ICL through different conceptual lenses , such as making an analogy of ICL to gradient descent ( von Oswald et al . , 2022 ; Dai et al . , 2022 ) and viewing the process of ICL as a Bayesian inference ( Xie et al . , 2022 ) .",
+      "In this paper , we provide a novel perspective by examining the information flow in language models to gain an understanding of ICL .",
+      "Our approach offers new insights and demonstrates the potential for leveraging this understanding to improve the effectiveness , efficiency , and interpretability of ICL .",
+      "In this paper , we propose a hypothesis that label words serve as anchors in in-context learning for aggregating and distributing the task-relevant information flow .",
+      "Experimental results with attention manipulation and analysis of predictions correlation consolidate the hypothesis holds well in GPT2 - XL and GPT-J models .",
+      "First , an anchor re-weighting method is proposed to improve ICL accuracy .",
+      "Second , we explore a demonstration compression technique to accelerate ICL inference .",
+      "Lastly , we showcase an analysis framework to diagnose ICL errors on a real-world dataset .",
+      "These promising applications again verify the hypothesis and open up new directions for future investigations on ICL .",
+      "Our study , while providing valuable insights into in-context learning ( ICL ) , has several limitations .",
+      "Additionally , our hypothesis was only examined within conventional ICL paradigms , leaving other ICL paradigms such as the chain of thought prompting ( CoT ) ( Wei et al . , 2022 ) unexplored .",
+      "For models , we use GPT2 - XL ( 1.5B ) ( Radford et al . , 2019 ) and GPT-J ( 6B ) ( Wang and Komatsuzaki , 2021 ) in this paper .",
+      "For datasets , we use a sentiment analysis task , Stanford Sentiment Treebank Binary ( SST - 2 ) ( Socher et al . , 2013 ) , a question type classification task , Text REtrieval Conference Question Classification ( TREC ) ( Li and Roth , 2002 ; Hovy et al . , 2001 ) , a topic classification task , AG's news topic classification dataset ( AGNews ) ( Zhang et al . , 2015 ) , and an emotion classification task , Emo-Context ( EmoC ) ( Chatterjee et al . , 2019 ) ."
+    ],
+    "relations": [
+      [
+        "GPT-J:Method",
+        "Compare-With",
+        "GPT2 - XL:Method"
+      ],
+      [
+        "GPT2 - XL:Method",
+        "SubClass-Of",
+        "larger language models:Method"
+      ],
+      [
+        "GPT-J:Method",
+        "SubClass-Of",
+        "larger language models:Method"
+      ],
+      [
+        "GPT2 - XL:Method",
+        "Evaluated-With",
+        "TREC:Dataset"
+      ],
+      [
+        "demonstration construc-tion strategies:Method",
+        "Used-For",
+        "ICL:Method"
+      ],
+      [
+        "calibration:Method",
+        "Used-For",
+        "ICL:Method"
+      ],
+      [
+        "ICL:Method",
+        "Compare-With",
+        "gradient descent:Method"
+      ],
+      [
+        "ICL:Method",
+        "Compare-With",
+        "Bayesian inference:Method"
+      ],
+      [
+        "ICL:Method",
+        "Used-For",
+        "language models:Method"
+      ],
+      [
+        "anchor re-weighting method:Method",
+        "Part-Of",
+        "ICL:Method"
+      ],
+      [
+        "ICL:Method",
+        "Synonym-Of",
+        "in-context learning:Method"
+      ],
+      [
+        "chain of thought prompting:Method",
+        "Part-Of",
+        "ICL:Method"
+      ],
+      [
+        "CoT:Method",
+        "Synonym-Of",
+        "chain of thought prompting:Method"
+      ],
+      [
+        "Stanford Sentiment Treebank Binary:Dataset",
+        "Benchmark-For",
+        "sentiment analysis:Task"
+      ],
+      [
+        "SST - 2:Dataset",
+        "Synonym-Of",
+        "Stanford Sentiment Treebank Binary:Dataset"
+      ],
+      [
+        "Text REtrieval Conference Question Classification:Dataset",
+        "Benchmark-For",
+        "question type classification:Task"
+      ],
+      [
+        "TREC:Dataset",
+        "Synonym-Of",
+        "Text REtrieval Conference Question Classification:Dataset"
+      ],
+      [
+        "AG's news topic classification dataset:Dataset",
+        "Benchmark-For",
+        "topic classification:Task"
+      ],
+      [
+        "AGNews:Dataset",
+        "Synonym-Of",
+        "AG's news topic classification dataset:Dataset"
+      ],
+      [
+        "Emo-Context:Dataset",
+        "Benchmark-For",
+        "emotion classification:Task"
+      ],
+      [
+        "EmoC:Dataset",
+        "Synonym-Of",
+        "Emo-Context:Dataset"
+      ]
+    ]
+  },
+  {
+    "doc_id": "ICLR2024-AI4Science-Protein",
+    "chunk_id": 1,
+    "content": [
+      "A Multi-Grained Symmetric Differential Equation Model for Learning Protein-Ligand Binding Dynamics In drug discovery , molecular dynamics ( MD ) simulation for protein-ligand binding provides a powerful tool for predicting binding affinities , estimating transport properties , and exploring pocket sites .",
+      "There has been a long history of improving the efficiency of MD simulations through better numerical methods and , more recently , by utilizing machine learning ( ML ) methods .",
+      "To address this issue , we propose NeuralMD , the first ML surrogate that can facilitate numerical MD and provide accurate simulations in protein-ligand binding .",
+      "Specifically , we propose ( 1 ) a BindingNet model that satisfies group symmetry using vector frames and captures the multi-level protein-ligand interactions , and ( 2 ) an augmented neural differential equation solver that learns the trajectory under Newtonian mechanics .",
+      "For the experiment , we design ten single-trajectory and three multi-trajectory binding simulation tasks .",
+      "We show the efficiency and effectiveness of NeuralMD , with a 2000 × speedup over standard numerical MD simulation and outperforming all other ML approaches by up to ~ 80% under the stability metric .",
+      "We further qualitatively show that NeuralMD reaches more stable binding predictions compared to other machine learning methods .",
+      "The molecular dynamics ( MD ) simulation for protein-ligand binding is one of the fundamental tasks in drug discovery [ 1 , 2 , 3 , 4 ] .",
+      "To simulate the protein-ligand dynamics , numerical MD methods have been extensively developed [ 5 , 6 ] .",
+      "To alleviate this issue , machine learning ( ML ) surrogates have been proposed to either augment or replace numerical MD methods to estimate the MD trajectories .",
+      "However , all prior ML approaches for MD simulation are limited to single-system ( e.g . , either small molecules or proteins ) and not protein-ligand complex [ 7 , 8 , 9 ] .",
+      "A primary reason is the lack of large-scale datasets for protein-ligand binding .",
+      "Another critical aspect that needs to be considered in ML-based modeling is the group symmetry present in the proteinligand geometry .",
+      "Specifically , the geometric function over molecular systems should be equivariant to rotation and translation , i.e . , SE ( 3 ) - equivariance .",
+      "DenoisingLD , exhibiting a lower degree of torsion with the natural conformations .",
+      "Other methods collapse heavily , including GNN-MD and VerletMD , where atoms extend beyond the frame for the latter .",
+      "Our Approach : NeuralMD .",
+      "Further , our ML approach NeuralMD preserves the Newtonian mechanics .",
+      "In MD , the movement of atoms is determined by Newton's second law , F = m • a , where F is the force , m is the mass , and a is the acceleration of each atom .",
+      "Thus in NeuralMD , we formulate the trajectory simulation as a second-order ordinary differential equation ( ODE ) or second-order stochastic differential equation ( SDE ) problem .",
+      "To verify the effectiveness and efficiency of NeuralMD , we design ten single-trajectory and three multitrajectory binding simulation tasks .",
+      "We observe that NeuralMD outperforms all other ML methods [ 9 , 23 , 24 , 25 , 26 ] on 12 tasks using recovery metric , and NeuralMD is consistently better by a large gap using the stability metric ( up to ~ 80% ) .",
+      "They are three protein-ligand binding complexes from Protein Data Bank ( PDB ) , as shown in Figure 1 .",
+      "In addition to the backbone level , as a coarser-grained view , we further consider residue-level information for modeling binding interactions , { f ( p ) , x x x ( p ) } , where the coordinate of C α is taken as the residue-level coordinate , i.e . , x x x ( p ) ≜ x x x ( p ) C α .",
+      "Molecular Dynamics Simulations .",
+      "Generally , molecular dynamics ( MD ) describes how each atom in a molecular system moves over time , following Newton's second law of motion : EQUATION where F is the force , m is the mass , a is the acceleration , x x x is the position , and t is the time .",
+      "The numerical MD methods can be classified into classical MD and ab-initio MD , where the difference lies in how the force on each atom is calculated : classical MD uses force field approaches to predict the atomic forces [ 5 ] , while ab-initio MD calculates the forces using quantum mechanical methods , such as density functional theory ( DFT ) [ 6 ] .",
+      "More recently , ML MD methods have opened a new perspective by utilizing the group symmetric tools for geometric representation and energy prediction [ 11 , 12 , 13 , 14 , 15 , 17 , 18 , 19 , 27 ] , as well as the automatic differential tools for trajectory learning [ 28 , 29 , 30 , 31 , 32 , 33 ] .",
+      "Newtonian Dynamics and Langevin Dynamics .",
+      "Newtonian dynamics is suitable for idealized systems with negligible thermal effects or when deterministic trajectories are required , while Langevin dynamics is adopted where thermal effects play a significant role and when the system is being studied at a finite temperature .",
+      "In this work , we propose two versions : an ordinary differential equation ( ODE ) solver and a stochastic differential equation ( SDE ) solver concerning Newtonian dynamics and Langevin dynamics , respectively .",
+      "Noticeably , our experiential dataset , MISATO [ 10 ] , uses Newtonian dynamics with Langevin thermostats , and the information on solvent molecules is not provided .",
+      "We also want to clarify two critical points about this problem setting : ( 1 ) Our task is trajectory prediction , i.e . , positions as labels , and no explicit energy and force are considered as labels .",
+      "ML methods for energy prediction followed with numerical ODE / SDE solver require smaller timestep ( e.g . , 1e - 15 seconds ) , while trajectory prediction , which directly predicts the coordinates over time , is agnostic to the magnitude of the timestep .",
+      "It has two main phases : ( 1 ) A multi-grained SE ( 3 ) - equivariant geometric model , BindingNet .",
+      "It models the protein-ligand complex from three granularities , employing three levels of vector frame basis : atom level for ligands , backbone level for proteins , and residue level for protein-ligand complexes . ( 2 ) A second-order ordinary differential equation ( ODE ) solver and a second-order stochastic differential equation ( SDE ) to learn the Newtonian mechanics .",
+      "We further introduce two attributes : a derivative-space augmentation method for the efficient second-order solver and a conditional adjoint solver for lower memory costs ."
+    ],
+    "relations": [
+      [
+        "Multi-Grained Symmetric Differential Equation:Method",
+        "Used-For",
+        "Learning Protein-Ligand Binding Dynamics:Task"
+      ],
+      [
+        "Learning Protein-Ligand Binding Dynamics:Task",
+        "SubTask-Of",
+        "drug discovery:Task"
+      ],
+      [
+        "Multi-Grained Symmetric Differential Equation:Method",
+        "Used-For",
+        "drug discovery:Task"
+      ],
+      [
+        "MD:Method",
+        "Synonym-Of",
+        "molecular dynamics:Method"
+      ],
+      [
+        "molecular dynamics:Method",
+        "Used-For",
+        "protein-ligand binding:Task"
+      ],
+      [
+        "molecular dynamics:Method",
+        "Used-For",
+        "predicting binding affinities:Task"
+      ],
+      [
+        "molecular dynamics:Method",
+        "Used-For",
+        "estimating transport properties:Task"
+      ],
+      [
+        "molecular dynamics:Method",
+        "Used-For",
+        "exploring pocket sites:Task"
+      ],
+      [
+        "machine learning:Method",
+        "Used-For",
+        "MD simulations:Task"
+      ],
+      [
+        "ML:Method",
+        "Synonym-Of",
+        "machine learning:Method"
+      ],
+      [
+        "NeuralMD:Method",
+        "SubClass-Of",
+        "ML:Method"
+      ],
+      [
+        "NeuralMD:Method",
+        "Used-For",
+        "protein-ligand binding:Task"
+      ],
+      [
+        "NeuralMD:Method",
+        "Compare-With",
+        "ML:Method"
+      ],
+      [
+        "NeuralMD:Method",
+        "Compare-With",
+        "machine learning:Method"
+      ],
+      [
+        "MD:Method",
+        "Synonym-Of",
+        "molecular dynamics:Method"
+      ],
+      [
+        "molecular dynamics:Method",
+        "Used-For",
+        "protein-ligand binding:Task"
+      ],
+      [
+        "protein-ligand binding:Task",
+        "SubTask-Of",
+        "drug discovery:Task"
+      ],
+      [
+        "molecular dynamics:Method",
+        "Used-For",
+        "drug discovery:Task"
+      ],
+      [
+        "numerical MD:Method",
+        "Used-For",
+        "protein-ligand dynamics:Task"
+      ],
+      [
+        "ML:Method",
+        "Synonym-Of",
+        "machine learning:Method"
+      ],
+      [
+        "machine learning:Method",
+        "Used-For",
+        "estimate the MD trajectories:Task"
+      ],
+      [
+        "numerical MD:Method",
+        "Used-For",
+        "estimate the MD trajectories:Task"
+      ],
+      [
+        "ML:Method",
+        "Used-For",
+        "MD simulation:Task"
+      ],
+      [
+        "NeuralMD:Method",
+        "SubClass-Of",
+        "ML:Method"
+      ],
+      [
+        "second-order stochastic differential equation:Method",
+        "Part-Of",
+        "NeuralMD:Method"
+      ],
+      [
+        "second-order ordinary differential equation:Method",
+        "Part-Of",
+        "NeuralMD:Method"
+      ],
+      [
+        "second-order ordinary differential equation:Method",
+        "Used-For",
+        "trajectory simulation:Task"
+      ],
+      [
+        "second-order stochastic differential equation:Method",
+        "Used-For",
+        "trajectory simulation:Task"
+      ],
+      [
+        "ODE:Method",
+        "Synonym-Of",
+        "second-order ordinary differential equation:Method"
+      ],
+      [
+        "SDE:Method",
+        "Synonym-Of",
+        "second-order stochastic differential equation:Method"
+      ],
+      [
+        "NeuralMD:Method",
+        "Used-For",
+        "single-trajectory:Task"
+      ],
+      [
+        "NeuralMD:Method",
+        "Used-For",
+        "multitrajectory binding simulation:Task"
+      ],
+      [
+        "NeuralMD:Method",
+        "Compare-With",
+        "ML:Method"
+      ],
+      [
+        "PDB:Dataset",
+        "Synonym-Of",
+        "Protein Data Bank:Dataset"
+      ],
+      [
+        "MD:Method",
+        "Synonym-Of",
+        "molecular dynamics:Method"
+      ],
+      [
+        "classical MD:Method",
+        "SubClass-Of",
+        "numerical MD:Method"
+      ],
+      [
+        "ab-initio MD:Method",
+        "SubClass-Of",
+        "numerical MD:Method"
+      ],
+      [
+        "classical MD:Method",
+        "Used-For",
+        "predict the atomic forces:Task"
+      ],
+      [
+        "ab-initio MD:Method",
+        "Used-For",
+        "predict the atomic forces:Task"
+      ],
+      [
+        "density functional theory:Method",
+        "Part-Of",
+        "ab-initio MD:Method"
+      ],
+      [
+        "classical MD:Method",
+        "Compare-With",
+        "ab-initio MD:Method"
+      ],
+      [
+        "quantum mechanical:Method",
+        "Part-Of",
+        "ab-initio MD:Method"
+      ],
+      [
+        "density functional theory:Method",
+        "SubClass-Of",
+        "quantum mechanical:Method"
+      ],
+      [
+        "DFT:Method",
+        "Synonym-Of",
+        "density functional theory:Method"
+      ],
+      [
+        "ML MD methods:Method",
+        "Used-For",
+        "geometric representation:Task"
+      ]
+    ]
+  },
+  {
+    "doc_id": "ICLR2024-AI4Science-Protein",
+    "chunk_id": 2,
+    "content": [
+      "This section outlines the structure : the three levels of vector frames in Section 3.1 , the architecture of BindingNet for protein-ligand force prediction in Section 3.2 , the design of NeuralMD for trajectory simulation in Section 3.3 , and implementation details in Section 3.4 .",
+      "To address this issue , we propose BindingNet , a multi-grained SE ( 3 ) - equivariant model , to capture the interactions between a ligand and a protein .",
+      "Such a group symmetric property is called SE ( 3 ) - equivariance .",
+      "Atom-Level Vector Frame for Ligands .",
+      "For each residue in the protein , the coordinates are x x x N , x x x C α , and x x x C , then the backbone-level vector frame for this residue is : EQUATION This is built for each residue , enabling the message passing for a residue-level representation .",
+      "Residue-Level Vector Frame for Protein-Ligand Complexes .",
+      "In this section , we introduce BindingNet , a multi-grained SE ( 3 ) - equivariant geometric model for protein-ligand binding .",
+      "The input of BindingNet is the geometry of the rigid protein and the ligand at time t , while the output is the force on each atom in the ligand .",
+      "Atom-Level Ligand Modeling .",
+      "We first generate the atom embedding using one-hot encoding and then aggregate each atom's embedding , z z z ( l ) , by aggregating all its neighbor's embedding within the cutoff distance c .",
+      "Finally , it is passed through several equivariant message-passing layers ( MPNN ) defined as : EQUATION where MLP ( • ) and Agg ( • ) are the multi-layer perceptron and mean aggregation functions , respectively . vec ∈ R 3 is a vector assigned to each atom and is initialized as 0 .",
+      "The outputs are atom representation and vector ( h h h ( l ) and vec ( l ) ) , and they are passed to the complex module introduced below .",
+      "Backbone-Level Protein Modeling .",
+      "For the coarse-grained modeling of proteins , we consider three backbone atoms in each residue .",
+      "Then , we obtain an equivariant atom representation by aggregating the edge information , ( x x x ( p ) i - x x x ( p ) j ) • z z z ( p ) i , within cutoff distance c .",
+      "Finally , we adopt an equivariant MPNN layer to get the atom-level force as : EQUATION The ultimate force predictions for each atom include two parts : the internal force from the molecule vec ( l ) i and the external force from the protein-ligand interaction vec ( pl ) i j .",
+      "So sum them up , we have : EQUATION These three modules consist BindingNet .",
+      "The BindingNet introduced in Sections 3.1 and 3.2 takes in the molecular system geometry at time t and outputs the forces .",
+      "Then in this section , we describe how we use the neural differential equation solver to predict the coordinates at future snapshots .",
+      "We want to highlight that one ML for MD simulation research line is predicting the energy or force [ 36 , 23 , 9 ] , which will be fed into the numerical integration algorithms for trajectory simulation .",
+      "For accuracy , such an ML-based MD simulation must be at the femtosecond level ( 1e - 15 second ) .",
+      "However , as shown in recent works [ 37 , 38 , 21 ] , minor errors in the ML force field can lead to catastrophic failure for long-time simulations .",
+      "In this paper , however , we overcome this issue by directly learning the extended-timescale MD trajectories ( nanosecond level , 1e - 9 second ) .",
+      "Newtonian dynamics and Langevin dynamics for MD simulation .",
+      "For modeling , we consider using the BindingNet introduced above for force prediction at time τ , as : EQUATION On the other hand , Langevin dynamics introduces a stochastic component for large molecular systems with thermal fluctuations .",
+      "Ultimately , adopting either F ( l ) τ - ODE or F ( l ) τ - SDE as the force prediction F ( l ) τ on each atom , the coordinates at time t can be obtained after integration as : EQUATION ) The training objective is the mean absolute error ( MAE ) between the predicted coordinates and ground-truth coordinates along the whole trajectories : EQUATION ) An illustration of NeuralMD pipeline is in Figure 4 .",
+      "Adjoint method .",
+      "Specifically for protein-ligand complexes with a large volume of atoms , the memory costs have become a main challenge .",
+      "To handle this , we consider the adjoint method [ 28 ] , allowing small step sizes in the integration .",
+      "Roughly speaking , the adjoint method calculates the variational derivative of the trajectory w.r.t . our objective function directly .",
+      "Second-order differential equation .",
+      "The key module of the neural differential method is the differential function [ 28 ] , which returns the first-order derivative .",
+      "To learn the MD trajectory following second-order ODE and SDE , we propose the following formulation of the second-order equation within one integration call : EQUATION ) We mark this as \" func \" in Figure 4 .",
+      "This means we can augment ODE or SDE derivative space by concurrently calculating the accelerations and velocities , allowing simultaneous integration of velocities and positions .",
+      "In this section , we would like to include extra details of NeuralMD .",
+      "As in Equations ( 11 ) and ( 13 ) , both the coordinates and velocities are required inputs for NeuralMD .",
+      "To handle this issue , we propose a surrogate velocity , which is a summation of a predicted velocity by an extra equivariant model and a coordinate momentum , i.e . , v v v ( l ) t = BindingNet-Ligand ( f ( l ) , x x x ( l ) t ) + ( x x x ( l ) t + 1 - x x x ( l ) t ) , where the BindingNet-Ligand is the ligand model described in Section 3.2 ."
+    ],
+    "relations": [
+      [
+        "ML MD methods:Method",
+        "Used-For",
+        "energy prediction:Task"
+      ],
+      [
+        "automatic differential tools:Method",
+        "Used-For",
+        "trajectory learning:Task"
+      ],
+      [
+        "Newtonian dynamics:Method",
+        "Compare-With",
+        "Langevin dynamics:Method"
+      ],
+      [
+        "ODE:Method",
+        "Synonym-Of",
+        "ordinary differential equation:Method"
+      ],
+      [
+        "SDE:Method",
+        "Synonym-Of",
+        "stochastic differential equation:Method"
+      ],
+      [
+        "ordinary differential equation:Method",
+        "Part-Of",
+        "Newtonian dynamics:Method"
+      ],
+      [
+        "stochastic differential equation:Method",
+        "Part-Of",
+        "Langevin dynamics:Method"
+      ],
+      [
+        "Newtonian dynamics:Method",
+        "Evaluated-With",
+        "MISATO:Dataset"
+      ],
+      [
+        "Langevin thermostats:Method",
+        "Part-Of",
+        "Newtonian dynamics:Method"
+      ],
+      [
+        "ML:Method",
+        "Used-For",
+        "energy prediction:Task"
+      ],
+      [
+        "BindingNet:Method",
+        "SubClass-Of",
+        "multi-grained SE ( 3 ) - equivariant geometric model:Method"
+      ],
+      [
+        "ODE:Method",
+        "Synonym-Of",
+        "second-order ordinary differential equation:Method"
+      ],
+      [
+        "SDE:Method",
+        "Synonym-Of",
+        "second-order stochastic differential equation:Method"
+      ],
+      [
+        "BindingNet:Method",
+        "Used-For",
+        "protein-ligand force prediction:Task"
+      ],
+      [
+        "NeuralMD:Method",
+        "Used-For",
+        "trajectory simulation:Task"
+      ],
+      [
+        "BindingNet:Method",
+        "SubClass-Of",
+        "multi-grained SE ( 3 ) - equivariant model:Method"
+      ],
+      [
+        "Atom-Level Vector Frame:Method",
+        "Used-For",
+        "Ligands:Task"
+      ],
+      [
+        "Residue-Level Vector Frame:Method",
+        "Used-For",
+        "Protein-Ligand Complexes:Task"
+      ],
+      [
+        "BindingNet:Method",
+        "SubClass-Of",
+        "multi-grained SE ( 3 ) - equivariant geometric model:Method"
+      ],
+      [
+        "BindingNet:Method",
+        "Used-For",
+        "protein-ligand binding:Task"
+      ],
+      [
+        "one-hot encoding:Method",
+        "Part-Of",
+        "atom embedding:Method"
+      ],
+      [
+        "MPNN:Method",
+        "Synonym-Of",
+        "equivariant message-passing layers:Method"
+      ],
+      [
+        "MLP:Method",
+        "Part-Of",
+        "equivariant message-passing layers:Method"
+      ],
+      [
+        "Agg:Method",
+        "Part-Of",
+        "equivariant message-passing layers:Method"
+      ],
+      [
+        "MLP:Method",
+        "Synonym-Of",
+        "multi-layer perceptron:Method"
+      ],
+      [
+        "Agg:Method",
+        "Synonym-Of",
+        "mean aggregation functions:Method"
+      ],
+      [
+        "neural differential equation solver:Method",
+        "Used-For",
+        "predict the coordinates:Task"
+      ],
+      [
+        "ML:Method",
+        "Used-For",
+        "MD simulation:Task"
+      ],
+      [
+        "numerical integration algorithms:Method",
+        "Used-For",
+        "trajectory simulation:Task"
+      ],
+      [
+        "Langevin dynamics:Method",
+        "Used-For",
+        "MD simulation:Task"
+      ],
+      [
+        "Newtonian dynamics:Method",
+        "Used-For",
+        "MD simulation:Task"
+      ],
+      [
+        "BindingNet:Method",
+        "Used-For",
+        "force prediction:Task"
+      ],
+      [
+        "thermal fluctuations:Method",
+        "Part-Of",
+        "molecular systems:Method"
+      ],
+      [
+        "ODE:Method",
+        "Used-For",
+        "force prediction:Task"
+      ],
+      [
+        "SDE:Method",
+        "Used-For",
+        "force prediction:Task"
+      ],
+      [
+        "MAE:Method",
+        "Synonym-Of",
+        "mean absolute error:Method"
+      ],
+      [
+        "ODE:Method",
+        "Used-For",
+        "MD trajectory:Task"
+      ],
+      [
+        "SDE:Method",
+        "Used-For",
+        "MD trajectory:Task"
+      ],
+      [
+        "ML:Method",
+        "Used-For",
+        "molecular dynamics simulation:Task"
+      ],
+      [
+        "molecular dynamics simulation:Task",
+        "SubTask-Of",
+        "protein-ligand binding:Task"
+      ],
+      [
+        "protein data bank:Dataset",
+        "Benchmark-For",
+        "protein-ligand complexes:Task"
+      ],
+      [
+        "PDB:Dataset",
+        "Synonym-Of",
+        "protein data bank:Dataset"
+      ],
+      [
+        "NMR:Method",
+        "Synonym-Of",
+        "Nuclear Magnetic Resonance:Method"
+      ],
+      [
+        "Cryo-EM:Method",
+        "Synonym-Of",
+        "Cryo-Electron Microscopy:Method"
+      ],
+      [
+        "ML:Method",
+        "Used-For",
+        "force prediction:Task"
+      ]
+    ]
+  },
+  {
+    "doc_id": "ICLR2024-AI4Science-Protein",
+    "chunk_id": 3,
+    "content": [
+      "Update model BindingNet using gradient descent . 9 : end for 10 : end for 4 Experiments Datasets .",
+      "One of the main bottlenecks of studying ML for molecular dynamics simulation in protein-ligand binding is insufficient data .",
+      "Recently , the community has put more effort into gathering the datasets , and we consider MISATO in our work [ 10 ] .",
+      "It is built on 16,972 experimental protein-ligand complexes extracted from the protein data bank ( PDB ) [ 39 ] .",
+      "Such data is obtained using X-ray crystallography , Nuclear Magnetic Resonance ( NMR ) , or Cryo-Electron Microscopy ( Cryo-EM ) , where systematic errors are unavoidable .",
+      "For each protein-ligand complex , the trajectory comprises 100 snapshots in 8 nanoseconds under the fixed temperature and pressure .",
+      "In Appendix E , we list the basic statistics of MISATO , e.g . , the number of atoms in small molecule ligands , and the number of residues in proteins .",
+      "Using ML for energy and force prediction , followed by trajectory prediction using numerical integration method , has been widely explored in the community , e.g . , HDNNPs [ 7 ] , DeePMD [ 9 ] , TorchMD [ 36 ] , and Allegro-LAMMPS [ 23 ] .",
+      "Here we extend this paradigm for binding dynamics and propose VerletMD , which utilizes BindingNet for energy prediction on each snapshot and velocity Verlet algorithm to get the trajectory .",
+      "Additionally , we mainly focus on ML methods for trajectory prediction in this work , i.e . , no energy or force is considered as labels .",
+      "GNN-MD is to apply geometric graph neural networks ( GNNs ) to predict the trajectories in an auto-regressive manner [ 10 , 24 ] .",
+      "More concretely , GNN-MD takes the coordinates and other molecular information as inputs at time t and predicts the coordinates at time t + 1 .",
+      "DenoisingLD ( denoising diffusion for Langevin dynamics ) [ 24 , 25 , 26 ] is a baseline method that models the trajectory prediction as denoising diffusion task [ 40 ] , and the inference for binding trajectory essentially becomes the Langevin dynamics .",
+      "Here , to make the comparison more explicit , we compare these two methods ( GNN-MD and DenoisingLD ) separately .",
+      "We want to highlight that we keep the same backbone model , BindingNet , for energy or force prediction for all the baselines and NeuralMD .",
+      "To evaluate this , we take both the mean absolute error ( MAE ) and mean squared error ( MSE ) between the predicted coordinates and ground-truth coordinates over all snapshots .",
+      "Stability , as highlighted in [ 21 ] , is an important metric for evaluating the predicted MD trajectory .",
+      "The intuition is that the prediction on long-time MD trajectory can enter a pathological state ( e.g . , bond breaking ) , and stability is the measure to quantify such observation .",
+      "Another metric considered is frames per second ( FPS ) [ 21 ] on a single Nvidia-V100 GPU card , and it measures the MD efficiency .",
+      "The first observation is that the baseline VertletMD has a clear performance gap compared to the other methods .",
+      "There are two possible reasons : ( 1 ) Using ML models to predict the energy ( or force ) at each snapshot , and then using a numerical integration algorithm can fail in the long-time simulations [ 21 ] ; ( 2 ) ML for energy prediction methods require more data to train than the ML for coordinate prediction methods , thus they can perform worse in the low-data regime here .",
+      "However , the stability ( % ) can be a distinctive factor in method comparisons , where we observe the two variants of NeuralMD outperform on all 10 tasks up to ~ 80% .",
+      "It is shown that the GNN-MD collapses occasionally , while DenoisingLD stays comparatively structured .",
+      "Meanwhile , NeuralMD is the most stable in all cases .",
+      "One main benefit of using NeuralMD for binding simulation is its efficiency .",
+      "We further approximate the wall time of the numerical method for MD simulation ( PDB 5WIJ ) .",
+      "A more challenging task is to test the generalization ability of NeuralMD among different trajectories .",
+      "The MISATO dataset includes 13,765 protein-ligand complexes , and we first create two small datasets by randomly sampling 100 and 1k complexes , respectively .",
+      "We also consider the whole MISATO dataset , where the data split has already been provided .",
+      "First , we can observe that VerletMD has worse performance on all three datasets , and the performance gap with other methods is even larger compared to the single-trajectory prediction .",
+      "The other two baselines , GNN-MD and DenoisingLD , show similar performance , while NeuralMD outperforms in all datasets .",
+      "Notice that stability ( % ) remains more distinguishable than the two trajectory recovery metrics ( MAE and MSE ) .",
+      "To sum up , we devise NeuralMD , an ML framework that incorporates a novel multi-grained group symmetric network architecture and second-order Newtonian mechanics , enabling accurate predictions of binding dynamics in a large timescale .",
+      "Not only is such a timescale critical for understanding the dynamic nature of the ligand-protein complex , but our work marks the first approach in developing a framework to predict coordinates for MD simulation in protein-ligand binding .",
+      "We quantitatively and qualitatively verify that NeuralMD achieves superior performance on 13 binding dynamics tasks .",
+      "Currently , we are using the MISATO dataset , a protein-ligand dynamics dataset with a large timestep .",
+      "However , NeuralMD is agnostic to the timestep , and it can also be applied to binding dynamics datasets with timestep as a femtosecond ."
+    ],
+    "relations": [
+      [
+        "numerical integration method:Method",
+        "Used-For",
+        "trajectory prediction:Task"
+      ],
+      [
+        "HDNNPs:Method",
+        "Used-For",
+        "trajectory prediction:Task"
+      ],
+      [
+        "DeePMD:Method",
+        "Used-For",
+        "trajectory prediction:Task"
+      ],
+      [
+        "TorchMD:Method",
+        "Used-For",
+        "trajectory prediction:Task"
+      ],
+      [
+        "Allegro-LAMMPS:Method",
+        "Used-For",
+        "trajectory prediction:Task"
+      ],
+      [
+        "HDNNPs:Method",
+        "SubClass-Of",
+        "numerical integration method:Method"
+      ],
+      [
+        "DeePMD:Method",
+        "SubClass-Of",
+        "numerical integration method:Method"
+      ],
+      [
+        "TorchMD:Method",
+        "SubClass-Of",
+        "numerical integration method:Method"
+      ],
+      [
+        "Allegro-LAMMPS:Method",
+        "SubClass-Of",
+        "numerical integration method:Method"
+      ],
+      [
+        "BindingNet:Method",
+        "Part-Of",
+        "VerletMD:Method"
+      ],
+      [
+        "velocity Verlet algorithm:Method",
+        "Part-Of",
+        "VerletMD:Method"
+      ],
+      [
+        "BindingNet:Method",
+        "Used-For",
+        "energy prediction:Task"
+      ],
+      [
+        "ML:Method",
+        "Used-For",
+        "trajectory prediction:Task"
+      ],
+      [
+        "graph neural networks:Method",
+        "Part-Of",
+        "GNN-MD:Method"
+      ],
+      [
+        "GNNs:Method",
+        "Synonym-Of",
+        "graph neural networks:Method"
+      ],
+      [
+        "GNN-MD:Method",
+        "Used-For",
+        "predict the trajectories:Task"
+      ],
+      [
+        "DenoisingLD:Method",
+        "Synonym-Of",
+        "denoising diffusion for Langevin dynamics:Method"
+      ],
+      [
+        "DenoisingLD:Method",
+        "Used-For",
+        "trajectory prediction:Task"
+      ],
+      [
+        "DenoisingLD:Method",
+        "Used-For",
+        "denoising diffusion task:Task"
+      ],
+      [
+        "DenoisingLD:Method",
+        "Used-For",
+        "binding trajectory:Task"
+      ],
+      [
+        "GNN-MD:Method",
+        "Compare-With",
+        "DenoisingLD:Method"
+      ],
+      [
+        "NeuralMD:Method",
+        "Used-For",
+        "force prediction:Task"
+      ],
+      [
+        "BindingNet:Method",
+        "Used-For",
+        "force prediction:Task"
+      ],
+      [
+        "MAE:Method",
+        "Synonym-Of",
+        "mean absolute error:Method"
+      ],
+      [
+        "MSE:Method",
+        "Synonym-Of",
+        "mean squared error:Method"
+      ],
+      [
+        "ML:Method",
+        "Used-For",
+        "predict the energy:Task"
+      ],
+      [
+        "numerical integration algorithm:Method",
+        "Used-For",
+        "long-time simulations:Task"
+      ],
+      [
+        "ML:Method",
+        "Used-For",
+        "energy prediction:Task"
+      ],
+      [
+        "ML:Method",
+        "Used-For",
+        "coordinate prediction:Task"
+      ],
+      [
+        "GNN-MD:Method",
+        "Compare-With",
+        "DenoisingLD:Method"
+      ],
+      [
+        "numerical method:Method",
+        "Used-For",
+        "MD simulation:Task"
+      ],
+      [
+        "PDB 5WIJ:Dataset",
+        "Benchmark-For",
+        "MD simulation:Task"
+      ],
+      [
+        "numerical method:Method",
+        "Evaluated-With",
+        "PDB 5WIJ:Dataset"
+      ],
+      [
+        "VerletMD:Method",
+        "Used-For",
+        "single-trajectory prediction:Task"
+      ],
+      [
+        "NeuralMD:Method",
+        "Compare-With",
+        "GNN-MD:Method"
+      ],
+      [
+        "NeuralMD:Method",
+        "Compare-With",
+        "DenoisingLD:Method"
+      ],
+      [
+        "multi-grained group symmetric network:Method",
+        "Part-Of",
+        "NeuralMD:Method"
+      ],
+      [
+        "NeuralMD:Method",
+        "SubClass-Of",
+        "ML:Method"
+      ],
+      [
+        "NeuralMD:Method",
+        "Used-For",
+        "binding dynamics:Task"
+      ],
+      [
+        "MD simulation:Task",
+        "SubTask-Of",
+        "protein-ligand binding:Task"
+      ],
+      [
+        "NeuralMD:Method",
+        "Used-For",
+        "binding dynamics:Task"
+      ],
+      [
+        "MISATO:Dataset",
+        "Benchmark-For",
+        "protein-ligand dynamics:Task"
+      ],
+      [
+        "NeuralMD:Method",
+        "Used-For",
+        "binding dynamics:Task"
+      ]
+    ]
+  },
+  {
+    "doc_id": "CVPR2023",
+    "chunk_id": 1,
+    "content": [
+      "3D Registration with Maximal Cliques As a fundamental problem in computer vision , 3D point cloud registration ( PCR ) aims to seek the optimal pose to align a point cloud pair .",
+      "In this paper , we present a 3D registration method with maximal cliques ( MAC ) .",
+      "The key insight is to loosen the previous maximum clique constraint , and mine more local consensus information in a graph for accurate pose hypotheses generation : 1 ) A compatibility graph is constructed to render the affinity relationship between initial correspondences . 2 ) We search for maximal cliques in the graph , each of which represents a consensus set .",
+      "We perform node-guided clique selection then , where each node corresponds to the maximal clique with the greatest graph weight . 3 ) Transformation hypotheses are computed for the selected cliques by the SVD algorithm and the best hypothesis is used to perform registration .",
+      "Extensive experiments on U3M , 3DMatch , 3DLoMatch and KITTI demonstrate that MAC effectively increases registration accuracy , outperforms various state-of-the-art methods and boosts the performance of deep-learned methods .",
+      "MAC combined with deep-learned methods achieves stateof-the-art registration recall of 95.7% / 78.9% on 3DMatch / 3DLoMatch .",
+      "Given two 3D scans of the same object ( or scene ) , the goal of PCR is to estimate a six-degree-of-freedom ( 6 - DoF ) pose transformation that accurately aligns the two input point clouds .",
+      "Using pointto-point feature correspondences is a popular and robust solution to the PCR problem .",
+      "The problem of 3D registration by handling correspondences with outliers has been studied for decades .",
+      "We classify them into geometric-only and deep-learned methods .",
+      "For geometric-only methods [ 5 , 6 , 21 , 30 , 31 , [ 38 ] [ 39 ] [ 40 ] [ 41 ] , random sample consensus ( RANSAC ) and its variants perform an iterative sampling strategy for registration .",
+      "Although RANSAC-based methods are simple and efficient , their performance is highly vulnerable when the outlier rate increases , and it requires a large number of iterations to obtain acceptable results .",
+      "Also , a series of global registration methods based on branch-and-bound ( BnB ) are proposed to search the 6D parameter space and obtain the optimal global solution .",
+      "Except for this watermark , it is identical to the accepted version ; the final published version of the proceedings is available on IEEE Xplore . one module in the registration process , such as investigating more discriminate keypoint feature descriptors or more effective correspondence selection techniques , while the others [ 22 , 29 , 43 ] focus on registration in an end-to-end manner .",
+      "However , deep-learned based methods require a large amount of data for training and usually lack generalization on different datasets .",
+      "In this paper , we propose a geometric-only 3D registration method based on maximal cliques ( MAC ) .",
+      "The key insight is to loosen the previous maximum clique constraint , and mine more local consensus information in a graph to generate accurate pose hypotheses .",
+      "Compared with the maximum clique , MAC is a looser constraint and is able to mine more local information in a graph .",
+      "Finally , transformation hypotheses are computed for the selected cliques by the SVD algorithm .",
+      "The best hypothesis is selected to perform registration using popular hypothesis evaluation metrics in the RANSAC family .",
+      "To summarize , our main contributions are as follows : • We introduce a hypothesis generation method named MAC .",
+      "Our MAC method is able to mine more local information in a graph , compared with the previous maximum clique constraint .",
+      "Notably , our geometric-only MAC method outperforms several state-of-the-art deep learning methods [ 3 , 9 , 19 , 27 ] .",
+      "MAC can also be inserted as a module into multiple deep-learned frameworks [ 1 , 10 , 18 , 29 , 43 ] to boost their performance .",
+      "MAC combined with GeoTransformer achieves the state-of-the-art registration recall of 95.7% / 78.9% on 3DMatch / 3DLoMatch .",
+      "Various geometric-only methods [ 6 , 8 , 20 , 36 , 45 ] have been proposed recently .",
+      "Typically , RANSAC and its variants [ 5 , 13 , 30 , 31 , [ 38 ] [ 39 ] [ 40 ] remain the dominant approaches to the problem of estimating a 6 - DoF pose from correspondences .",
+      "RANSAC iteratively samples correspondences from the initial set , generating and evaluating geometric estimations for each subset until a satisfactory solution is obtained .",
+      "Efficient and robust evaluation metrics are extremely important for using RANSAC to achieve accurate registration .",
+      "To address the current problems of timeconsuming and noise-sensitive evaluation metrics , [ 40 ] analyzes the contribution of inliers and outliers during the computation and proposed several metrics that can effectively improve the registration performance of RANSAC .",
+      "For example , Rusu et al . [ 31 ] presented the simple consensus-based initial alignment ( SAC-IA ) method , which samples correspondences spread out on the point cloud and leverages the Huber penalty for evaluation .",
+      "Graph cut RANSAC ( GC-RANSAC ) [ 5 ] uses the graph-cut algorithm before model re-fitting in the local optimization step .",
+      "Compatibility-guided sample consensus ( CG-SAC ) [ 30 ] additionally considers the normal information of key points during the sampling process .",
+      "Yang et al . [ 39 ] proposed the sample consensus by sampling compatibility triangles ( SAC-COT ) method , which generates estimations by ranking and sampling ternary loops from the compatibility graph .",
+      "A series of globally optimal methods based on BnB have been proposed recently .",
+      "Yang et al . [ 41 ] proposed globally optimal ICP ( GO-ICP ) , which rationalizes the planning of ICP update tasks at different stages , and its biggest advantage is that it minimizes the local optimum .",
+      "Bustos and Chin [ 6 ] presented guaranteed outlier removal ( GORE ) , which calculates the tight lower bound and tight upper bound for each correspondence and reduces the size of correspondence set by rejecting true outliers .",
+      "Motivated by GORE , Li [ 21 ] proposed a polynomial time outlier removal method , which seeks the tight lower and upper bound by calculating the costs of correspondence matrix ( CM ) and augmented correspondence matrix ( ACM ) .",
+      "However , BnB techniques are sensitive to the cardinality of the input and are time-consuming for large-scale inputs .",
+      "In addition to geometric-only methods , recent works also adopt deep learning techniques to perform PCR .",
+      "FCGF [ 10 ] computes the features in a single pass through a fully convolutional neural network without keypoint detection .",
+      "D3Feat [ 4 ] uses a fully convolutional network to obtain local information of point clouds and a joint learning framework to achieve 3D local feature detection and description .",
+      "Predator [ 18 ] applies an attention mechanism to extract salient points in overlapping regions of the point clouds , thus achieving robust registration in the presence of low overlap rates .",
+      "Spinnet [ 1 ] extracts local features which are rotationally invariant and sufficiently informative to enable accurate registration .",
+      "Deep global registration ( DGR ) [ 9 ] and 3DReg-Net [ 27 ] classify a given correspondence by training endto-end neural networks and using operators such as sparse convolution and point-by-point MLP .",
+      "PointDSC [ 3 ] explicitly explores spatial consistency for removing outlier correspondences and 3D point cloud registration .",
+      "Fu et al . [ 14 ] proposed a registration framework that utilizes deep graph matching ( RGM ) that can find robust and accurate pointto-point correspondences .",
+      "More recently , several methods [ 29 , 43 ] follow the detection-free methods and estimate the transformation in an end-to-end way .",
+      "CoFiNet [ 43 ] extracts correspondences from coarse to fine without keypoint detection .",
+      "GeoTransformer [ 29 ] learns geometric features for robust superpoint matching and is robust in low-overlap cases and invariant to rigid transformation .",
+      "MAC ( c1 ) = ( c1 , c3 , c4 , c5 ) MAC ( c3 ) = ( c1 , c3 , c4 , c5 ) MAC ( c2 ) = ( c2 , c6 , c7 ) … MAC ( c9 ) = ( c1 , c9 , c10 ) MAC ( c10 ) = ( c1 , c9 , c10 ) Node-guided maximal cliques c7 c7 c6 c6 c2 c2 c5 c5 c4 c4 c3 c3 c1 c1 R3 , t3 c10 c10 c9 c9 c1 c1 While deep learning techniques have demonstrated a great potential for PCR , these methods require a large amount of training data and their generalization is not always promising .",
+      "By contrast , MAC does not require any training data and achieves more advanced performance than several deep-learned methods .",
+      "Moreover , MAC can be served as a drop-on module in deep learning frameworks to boost their performance ."
+    ],
+    "relations": [
+      [
+        "Maximal Cliques:Method",
+        "Used-For",
+        "3D Registration:Task"
+      ],
+      [
+        "3D Registration:Task",
+        "SubTask-Of",
+        "computer vision:Task"
+      ],
+      [
+        "3D point cloud registration:Task",
+        "SubTask-Of",
+        "computer vision:Task"
+      ],
+      [
+        "PCR:Task",
+        "Synonym-Of",
+        "3D point cloud registration:Task"
+      ],
+      [
+        "maximal cliques:Method",
+        "Part-Of",
+        "3D registration method:Method"
+      ],
+      [
+        "MAC:Method",
+        "Synonym-Of",
+        "maximal cliques:Method"
+      ],
+      [
+        "SVD:Method",
+        "Used-For",
+        "registration:Task"
+      ],
+      [
+        "MAC:Method",
+        "Evaluated-With",
+        "U3M:Dataset"
+      ],
+      [
+        "MAC:Method",
+        "Evaluated-With",
+        "3DMatch:Dataset"
+      ],
+      [
+        "MAC:Method",
+        "Evaluated-With",
+        "3DLoMatch:Dataset"
+      ],
+      [
+        "MAC:Method",
+        "Used-For",
+        "registration:Task"
+      ],
+      [
+        "U3M:Dataset",
+        "Benchmark-For",
+        "registration:Task"
+      ],
+      [
+        "3DMatch:Dataset",
+        "Benchmark-For",
+        "registration:Task"
+      ],
+      [
+        "3DLoMatch:Dataset",
+        "Benchmark-For",
+        "registration:Task"
+      ],
+      [
+        "KITTI:Dataset",
+        "Benchmark-For",
+        "registration:Task"
+      ],
+      [
+        "MAC:Method",
+        "Part-Of",
+        "deep-learned methods:Method"
+      ],
+      [
+        "MAC:Method",
+        "Part-Of",
+        "deep-learned methods:Method"
+      ],
+      [
+        "deep-learned methods:Method",
+        "Used-For",
+        "registration:Task"
+      ],
+      [
+        "3DLoMatch:Dataset",
+        "Benchmark-For",
+        "registration:Task"
+      ],
+      [
+        "3DMatch:Dataset",
+        "Benchmark-For",
+        "registration:Task"
+      ],
+      [
+        "deep-learned methods:Method",
+        "Evaluated-With",
+        "3DMatch:Dataset"
+      ],
+      [
+        "deep-learned methods:Method",
+        "Evaluated-With",
+        "3DLoMatch:Dataset"
+      ],
+      [
+        "6 - DoF:Task",
+        "Synonym-Of",
+        "six-degree-of-freedom:Task"
+      ],
+      [
+        "PCR:Task",
+        "Used-For",
+        "six-degree-of-freedom:Task"
+      ],
+      [
+        "random sample consensus:Method",
+        "SubClass-Of",
+        "geometric-only methods:Method"
+      ],
+      [
+        "RANSAC:Method",
+        "Synonym-Of",
+        "random sample consensus:Method"
+      ],
+      [
+        "random sample consensus:Method",
+        "Used-For",
+        "registration:Task"
+      ],
+      [
+        "branch-and-bound:Method",
+        "Part-Of",
+        "global registration methods:Method"
+      ],
+      [
+        "BnB:Method",
+        "Synonym-Of",
+        "branch-and-bound:Method"
+      ],
+      [
+        "maximal cliques:Method",
+        "Part-Of",
+        "geometric-only 3D registration method:Method"
+      ],
+      [
+        "MAC:Method",
+        "Synonym-Of",
+        "maximal cliques:Method"
+      ],
+      [
+        "MAC:Method",
+        "Compare-With",
+        "maximum clique:Method"
+      ],
+      [
+        "RANSAC:Method",
+        "Used-For",
+        "registration:Task"
+      ],
+      [
+        "MAC:Method",
+        "Compare-With",
+        "maximum clique:Method"
+      ],
+      [
+        "geometric-only MAC method:Method",
+        "Compare-With",
+        "deep learning methods:Method"
+      ],
+      [
+        "MAC:Method",
+        "Part-Of",
+        "deep-learned frameworks:Method"
+      ],
+      [
+        "MAC:Method",
+        "Part-Of",
+        "GeoTransformer:Method"
+      ],
+      [
+        "GeoTransformer:Method",
+        "Used-For",
+        "registration:Task"
+      ],
+      [
+        "3DMatch:Dataset",
+        "Benchmark-For",
+        "registration:Task"
+      ],
+      [
+        "3DLoMatch:Dataset",
+        "Benchmark-For",
+        "registration:Task"
+      ],
+      [
+        "GeoTransformer:Method",
+        "Evaluated-With",
+        "3DMatch:Dataset"
+      ],
+      [
+        "GeoTransformer:Method",
+        "Evaluated-With",
+        "3DLoMatch:Dataset"
+      ],
+      [
+        "RANSAC:Method",
+        "Used-For",
+        "registration:Task"
+      ],
+      [
+        "RANSAC:Method",
+        "Used-For",
+        "registration:Task"
+      ],
+      [
+        "SAC-IA:Method",
+        "Synonym-Of",
+        "consensus-based initial alignment:Method"
+      ],
+      [
+        "GC-RANSAC:Method",
+        "Synonym-Of",
+        "Graph cut RANSAC:Method"
+      ],
+      [
+        "graph-cut:Method",
+        "Part-Of",
+        "Graph cut RANSAC:Method"
+      ],
+      [
+        "CG-SAC:Method",
+        "Synonym-Of",
+        "Compatibility-guided sample consensus:Method"
+      ],
+      [
+        "SAC-COT:Method",
+        "Synonym-Of",
+        "sampling compatibility triangles:Method"
+      ],
+      [
+        "GO-ICP:Method",
+        "Synonym-Of",
+        "globally optimal ICP:Method"
+      ],
+      [
+        "GORE:Method",
+        "Synonym-Of",
+        "guaranteed outlier removal:Method"
+      ],
+      [
+        "CM:Method",
+        "Synonym-Of",
+        "correspondence matrix:Method"
+      ],
+      [
+        "ACM:Method",
+        "Synonym-Of",
+        "augmented correspondence matrix:Method"
+      ],
+      [
+        "geometric-only methods:Method",
+        "Used-For",
+        "PCR:Task"
+      ],
+      [
+        "deep learning:Method",
+        "Used-For",
+        "PCR:Task"
+      ],
+      [
+        "fully convolutional neural network:Method",
+        "Part-Of",
+        "FCGF:Method"
+      ],
+      [
+        "fully convolutional network:Method",
+        "Part-Of",
+        "D3Feat:Method"
+      ],
+      [
+        "joint learning framework:Method",
+        "Part-Of",
+        "D3Feat:Method"
+      ],
+      [
+        "joint learning framework:Method",
+        "Used-For",
+        "3D local feature detection:Task"
+      ],
+      [
+        "attention mechanism:Method",
+        "Part-Of",
+        "Predator:Method"
+      ],
+      [
+        "Predator:Method",
+        "Used-For",
+        "registration:Task"
+      ],
+      [
+        "Spinnet:Method",
+        "Used-For",
+        "registration:Task"
+      ],
+      [
+        "DGR:Method",
+        "Synonym-Of",
+        "Deep global registration:Method"
+      ],
+      [
+        "neural networks:Method",
+        "Part-Of",
+        "Deep global registration:Method"
+      ],
+      [
+        "neural networks:Method",
+        "Part-Of",
+        "3DReg-Net:Method"
+      ],
+      [
+        "sparse convolution:Method",
+        "Part-Of",
+        "neural networks:Method"
+      ],
+      [
+        "point-by-point MLP:Method",
+        "Part-Of",
+        "neural networks:Method"
+      ],
+      [
+        "PointDSC:Method",
+        "Used-For",
+        "point cloud registration:Task"
+      ],
+      [
+        "deep graph matching:Method",
+        "Used-For",
+        "registration:Task"
+      ],
+      [
+        "RGM:Method",
+        "Synonym-Of",
+        "deep graph matching:Method"
+      ]
+    ]
+  },
+  {
+    "doc_id": "CVPR2023",
+    "chunk_id": 2,
+    "content": [
+      "An initial correspondence set C initial = { c } is formed by matching feature descriptors , where c = ( p s , p t ) .",
+      "MAC estimates the 6 - DoF pose transformation between P s and P t from C initial .",
+      "Here , we consider two approaches to construct a compatibility graph . • First Order Graph .",
+      "The first order graph ( FOG ) is constructed based on the rigid distance constraint between the correspondence pair ( c i , c j ) , which can be quantitatively measured as : EQUATION The compatibility score between c i and c j is given as : EQUATION where d cmp is a distance parameter .",
+      "Since the compatibility graph is undirected , the weight matrix W F OG is symmetric . • Second Order Graph .",
+      "The second order graph ( SOG ) evolves from FOG .",
+      "The weight matrix W SOG can be calculated as : EQUATION where ⊙ represents the element-wise product between two matrices .",
+      "In Sec . 4.5 , we experimentally compare FOG and SOG in our MAC framework .",
+      "A maximal clique is a clique that cannot be extended by adding any nodes .",
+      "In particular , the maximal clique with the most nodes is the maximum clique of a graph .",
+      "Searching for Maximal cliques .",
+      "To generate hypotheses , RANSAC-based methods repeatedly take random samples from the correspondence set .",
+      "Previous works [ 23 , 24 , 28 , 36 ] focus on searching for maximum cliques in the graph , however , the maximum clique is a very tight constraint that only focuses on the global consensus information in a graph .",
+      "Instead , we loosen the constraint and leverage maximal cliques to mine more local graph information .",
+      "By using the igraph maximal cliques function in the igraph 1 C + + library , which makes use of a modified Bron-Kerbosch algorithm [ 12 ] , the search of maximal cliques can be very efficient .",
+      "Node-guided Clique Selection .",
+      "First , we calculate the weight for each clique in MAC initial .",
+      "Given a clique C i = ( V i , E i ) , the weight w Ci is calculated as : EQUATION where w ej represents the weight of edge e j in W SOG .",
+      "A node may be included by multiple maximal cliques and we 1 https : / / igraph.org only retain the one with the greatest weight for that node .",
+      "Then , duplicated cliques are removed from the rest , obtaining MAC selected .",
+      "We could send these maximal cliques directly to the following stages for 3D registration .",
+      "However , when | V | is quite large , the number of retained maximal cliques can still be very large .",
+      "Here , we propose several techniques to further filter the maximal cliques . • Normal consistency .",
+      "In the maximal cliques , we find that the normal consistency is satisfied between each correspondence .",
+      "The following inequality ought to hold if c i and c j are normal consistent : EQUATION where t α is a threshold for determining whether the angular differences are similar . • Clique ranking .",
+      "We organize MAC selected in a descending order using the clique's weight w Ci .",
+      "Each maximal clique filtered from the previous step represents a consistent set of correspondences .",
+      "By applying the SVD algorithm to each consistency set , we can obtain a set of 6 - DoF pose hypotheses . • Instance-equal SVD .",
+      "Transformation estimation of correspondences is often implemented with SVD .",
+      "Instance-equal means that the weights of all correspondences are equal . • Weighted SVD .",
+      "Assigning weights to correspondences is commonly adopted by recent PCR methods [ 8 , 9 , 27 , 29 ] .",
+      "Here , we take the primary eigenvalues of W SOG as correspondence weights .",
+      "The final goal of MAC is to estimate the optimal 6 - DoF rigid transformation ( composed of a rotation pose R * ∈ SO ( 3 ) and a translation pose t * ∈ R 3 ) that maximizes the objective function as follow : EQUATION where c i ∈ C initial , N = | C initial | , and s ( c i ) represents the score of c i .",
+      "We consider several RANSAC hypothesis evaluation metrics here [ 40 ] , including mean average error ( MAE ) , mean square error ( MSE ) and inlier count .",
+      "The best hypothesis is taken to perform 3D registration then .",
+      "We consider four datasets , i.e , the objectscale dataset U3M [ 26 ] , the scene-scale indoor datasets 3DMatch [ 44 ] & 3DLoMatch [ 18 ] , and the scene-scale outdoor dataset KITTI [ 15 ] .",
+      "U3M has 496 point cloud pairs . 3DLoMatch is the subset of 3DMatch , where the overlap rate of the point cloud pairs ranges from 10% to 30% , which is very challenging .",
+      "For KITTI , we follow [ 3 , 8 ] and obtain 555 pairs of point clouds for testing .",
+      "In addition , we employ the rotation error ( RE ) and translation error ( TE ) to evaluate the registration results on the scene-scale dataset .",
+      "By referring to the settings in [ 9 ] , the registration is considered successful when the RE ≤ 15 ° , TE ≤ 30 cm on 3DMatch & 3DLoMatch datasets , and RE ≤ 5 ° , TE ≤ 60 cm on KITTI dataset .",
+      "We define a dataset's registration accuracy as the ratio of success cases to the number of point cloud pairs to be registered .",
+      "Our method is implemented in C + + based on the point cloud library ( PCL ) [ 32 ] and igraph library .",
+      "For U3M , we use the Harris3D ( H3D ) [ 33 ] keypoint detector and the signatures of histograms of orientation ( SHOT ) [ 34 ] descriptor for initial correspondence generation as in [ 42 ] .",
+      "For 3DMatch and 3DLoMatch datasets , we use the fast point features histograms ( FPFH ) [ 31 ] descriptor and fully convolutional geometric features ( FCGF ) [ 10 ] descriptor to generate the initial correspondence set .",
+      "Here , the following methods are tested , including SAC-COT [ 39 ] , OSAC [ 37 ] , SAC-IA [ 31 ] , RANSAC [ 13 ] , SC 2 - PCR [ 8 ] , FGR [ 45 ] , GO-ICP [ 41 ] , and PPF [ 11 ] , where the former four are RANSAC-based methods .",
+      "The results indicate that MAC performs best and significantly outperforms all tested RANSAC-fashion estimators , such as SAC-COT , OSAC , SAC-IA , and RANSAC .",
+      "The registration performance of MAC based on the MAE evaluation metric is the best on U3M .",
+      "PCR methods comparison .",
+      "Both geometric-only and deep-learned methods are considered for comparison , including SM [ 20 ] , FGR [ 45 ] , RANSAC [ 13 ] , TEASER + + [ 36 ] , CG-SAC [ 30 ] , SC 2 - PCR [ 8 ] , 3DRegNet [ 27 ] , DGR [ 9 ] , DHVR [ 19 ] and PointDSC [ 3 ] .",
+      "The following conclusions can be made : 1 ) regardless of which descriptor is used , MAC outperforms all compared methods on both 3DMatch and 3DLoMatch datasets , indicating its strong ability to register indoor scene point clouds ; 2 ) even compared with deep-learned methods , MAC still achieves better performance without any data training ; 3 ) in addition to the registration recall ( RR ) metric , MAC achieves the best RE and TE metrics .",
+      "This indicates that registrations by MAC are very accurate and MAC is able to align low overlapping data .",
+      "Boosting deep-learned methods with MAC .",
+      "Several kinds of state-of-the-art deep-learned methods are integrated with MAC for evaluation ."
+    ],
+    "relations": [
+      [
+        "deep learning techniques:Method",
+        "Used-For",
+        "PCR:Task"
+      ],
+      [
+        "MAC:Method",
+        "Compare-With",
+        "deep-learned methods:Method"
+      ],
+      [
+        "MAC:Method",
+        "Part-Of",
+        "deep learning:Method"
+      ],
+      [
+        "FOG:Method",
+        "Synonym-Of",
+        "first order graph:Method"
+      ],
+      [
+        "SOG:Method",
+        "Synonym-Of",
+        "second order graph:Method"
+      ],
+      [
+        "second order graph:Method",
+        "SubClass-Of",
+        "FOG:Method"
+      ],
+      [
+        "FOG:Method",
+        "Compare-With",
+        "SOG:Method"
+      ],
+      [
+        "SOG:Method",
+        "Part-Of",
+        "MAC:Method"
+      ],
+      [
+        "FOG:Method",
+        "Part-Of",
+        "MAC:Method"
+      ],
+      [
+        "Bron-Kerbosch algorithm:Method",
+        "Used-For",
+        "maximal cliques:Method"
+      ],
+      [
+        "maximal cliques:Method",
+        "Used-For",
+        "3D registration:Task"
+      ],
+      [
+        "normal consistency:Method",
+        "Part-Of",
+        "maximal cliques:Method"
+      ],
+      [
+        "MAE:Method",
+        "Synonym-Of",
+        "mean average error:Method"
+      ],
+      [
+        "MSE:Method",
+        "Synonym-Of",
+        "mean square error:Method"
+      ],
+      [
+        "3DLoMatch:Dataset",
+        "SubClass-Of",
+        "3DMatch:Dataset"
+      ],
+      [
+        "3DMatch:Dataset",
+        "Benchmark-For",
+        "registration:Task"
+      ],
+      [
+        "3DLoMatch:Dataset",
+        "Benchmark-For",
+        "registration:Task"
+      ],
+      [
+        "KITTI:Dataset",
+        "Benchmark-For",
+        "registration:Task"
+      ],
+      [
+        "PCL:Method",
+        "Synonym-Of",
+        "point cloud library:Method"
+      ],
+      [
+        "Harris3D:Method",
+        "Evaluated-With",
+        "U3M:Dataset"
+      ],
+      [
+        "signatures of histograms of orientation:Method",
+        "Evaluated-With",
+        "U3M:Dataset"
+      ],
+      [
+        "H3D:Method",
+        "Synonym-Of",
+        "Harris3D:Method"
+      ],
+      [
+        "SHOT:Method",
+        "Synonym-Of",
+        "signatures of histograms of orientation:Method"
+      ],
+      [
+        "fully convolutional geometric features:Method",
+        "Evaluated-With",
+        "3DMatch:Dataset"
+      ],
+      [
+        "fast point features histograms:Method",
+        "Evaluated-With",
+        "3DMatch:Dataset"
+      ],
+      [
+        "fast point features histograms:Method",
+        "Evaluated-With",
+        "3DLoMatch:Dataset"
+      ],
+      [
+        "fully convolutional geometric features:Method",
+        "Evaluated-With",
+        "3DLoMatch:Dataset"
+      ],
+      [
+        "FPFH:Method",
+        "Synonym-Of",
+        "fast point features histograms:Method"
+      ],
+      [
+        "FCGF:Method",
+        "Synonym-Of",
+        "fully convolutional geometric features:Method"
+      ],
+      [
+        "SAC-COT:Method",
+        "SubClass-Of",
+        "RANSAC-based methods:Method"
+      ],
+      [
+        "OSAC:Method",
+        "SubClass-Of",
+        "RANSAC-based methods:Method"
+      ],
+      [
+        "SAC-IA:Method",
+        "SubClass-Of",
+        "RANSAC-based methods:Method"
+      ],
+      [
+        "RANSAC:Method",
+        "SubClass-Of",
+        "RANSAC-based methods:Method"
+      ],
+      [
+        "MAC:Method",
+        "Compare-With",
+        "RANSAC-fashion estimators:Method"
+      ],
+      [
+        "SAC-COT:Method",
+        "SubClass-Of",
+        "RANSAC-fashion estimators:Method"
+      ],
+      [
+        "OSAC:Method",
+        "SubClass-Of",
+        "RANSAC-fashion estimators:Method"
+      ],
+      [
+        "SAC-IA:Method",
+        "SubClass-Of",
+        "RANSAC-fashion estimators:Method"
+      ],
+      [
+        "RANSAC:Method",
+        "SubClass-Of",
+        "RANSAC-fashion estimators:Method"
+      ],
+      [
+        "MAC:Method",
+        "Compare-With",
+        "SAC-COT:Method"
+      ],
+      [
+        "MAC:Method",
+        "Compare-With",
+        "OSAC:Method"
+      ],
+      [
+        "MAC:Method",
+        "Compare-With",
+        "SAC-IA:Method"
+      ],
+      [
+        "MAC:Method",
+        "Compare-With",
+        "RANSAC:Method"
+      ],
+      [
+        "MAC:Method",
+        "Used-For",
+        "registration:Task"
+      ],
+      [
+        "U3M:Dataset",
+        "Benchmark-For",
+        "registration:Task"
+      ],
+      [
+        "MAE:Method",
+        "Part-Of",
+        "MAC:Method"
+      ],
+      [
+        "MAC:Method",
+        "Evaluated-With",
+        "U3M:Dataset"
+      ],
+      [
+        "geometric-only:Method",
+        "Compare-With",
+        "deep-learned methods:Method"
+      ],
+      [
+        "MAC:Method",
+        "Evaluated-With",
+        "3DMatch:Dataset"
+      ],
+      [
+        "MAC:Method",
+        "Evaluated-With",
+        "3DLoMatch:Dataset"
+      ],
+      [
+        "MAC:Method",
+        "Compare-With",
+        "deep-learned methods:Method"
+      ],
+      [
+        "MAC:Method",
+        "Used-For",
+        "registration:Task"
+      ],
+      [
+        "MAC:Method",
+        "Used-For",
+        "registrations:Task"
+      ],
+      [
+        "MAC:Method",
+        "Part-Of",
+        "deep-learned methods:Method"
+      ],
+      [
+        "MAC:Method",
+        "Part-Of",
+        "deep-learned methods:Method"
+      ],
+      [
+        "MAC:Method",
+        "Used-For",
+        "registration:Task"
+      ],
+      [
+        "3DLoMatch:Dataset",
+        "Benchmark-For",
+        "registration:Task"
+      ],
+      [
+        "3DMatch:Dataset",
+        "Benchmark-For",
+        "registration:Task"
+      ],
+      [
+        "MAC:Method",
+        "Evaluated-With",
+        "3DMatch:Dataset"
+      ],
+      [
+        "MAC:Method",
+        "Evaluated-With",
+        "3DLoMatch:Dataset"
+      ],
+      [
+        "MAC:Method",
+        "Used-For",
+        "registration:Task"
+      ],
+      [
+        "FPFH:Method",
+        "Part-Of",
+        "MAC:Method"
+      ],
+      [
+        "FCGF:Method",
+        "Part-Of",
+        "MAC:Method"
+      ],
+      [
+        "MAC:Method",
+        "Compare-With",
+        "geometric-only method:Method"
+      ],
+      [
+        "SC 2 - PCR:Method",
+        "SubClass-Of",
+        "geometric-only method:Method"
+      ],
+      [
+        "MAC:Method",
+        "Compare-With",
+        "SC 2 - PCR:Method"
+      ],
+      [
+        "MAC:Method",
+        "Used-For",
+        "registration:Task"
+      ],
+      [
+        "GC:Method",
+        "Synonym-Of",
+        "geometric consistency:Method"
+      ],
+      [
+        "graph construction approaches:Method",
+        "Part-Of",
+        "MAC:Method"
+      ],
+      [
+        "SOG:Method",
+        "Used-For",
+        "registration:Task"
+      ],
+      [
+        "FOG:Method",
+        "Used-For",
+        "registration:Task"
+      ]
+    ]
+  },
+  {
+    "doc_id": "CVPR2023",
+    "chunk_id": 3,
+    "content": [
+      "The considered methods are FCGF [ 10 ] , SpinNet [ 1 ] , Predator [ 18 ] , CoFiNet [ 43 ] and Geo-Transformer [ 29 ] .",
+      "Remarkably , MAC dramatically improves the registration recall under all tested methods on both 3DMatch and 3DLoMatch datasets .",
+      "Notably , the performance of Spin-Net , Predator and CoFiNet after boosting by MAC exceeds In Table 4 , the results of DGR [ 9 ] , PointDSC [ 3 ] , TEASER + + [ 36 ] , RANSAC [ 13 ] , CG-SAC [ 30 ] , SC 2 - PCR [ 8 ] and MAC are reported for comparison .",
+      "As shown by the table , in terms of the registration recall performance , MAC presents the best and is tied for the best results with FPFH and FCGF descriptor settings , respectively .",
+      "MAC also has a lower TE than the state-ofthe-art geometric-only method SC 2 - PCR .",
+      "The registration experiments on the object , indoor scene , and outdoor scene datasets consistently verify that MAC holds good generalization ability in different application contexts .",
+      "In this section , we perform ablation studies and analysis experiments on both 3DMatch and 3DLoMatch datasets .",
+      "Table 8 presents the time efficiency analysis of MAC .",
+      "Performing feature matching selection .",
+      "Before 3D registration , a popular way is to perform outlier rejection to reduce the correspondence set .",
+      "Here we employ geometric consistency ( GC ) [ 7 ] , which is independent of the feature space and associates the largest consistent cluster relating to the compatibility among correspondences .",
+      "This demonstrates that MAC can still perform well even if the initial correspondence set is directly utilized as input without any filtering .",
+      "We test the performance of MAC by using different graph construction approaches .",
+      "Also , the registration recall obtained by using SOG is 0.12% higher than using FOG when combined with FPFH , and 0.56% higher when combined with FCGF on 3DLoMatch .",
+      "Therefore , SOG is more suitable for MAC .",
+      "Maximum or maximal clique .",
+      "To justify the advantages of maximal cliques , we change the search strategy of MAC to the maximum cliques and test the registration performance .",
+      "As shown in Row 1 and 9 in Table 5 , applying maximal cliques surpasses maximum by 9.8% when combined with FPFH , and 5.55% higher when combined with FCGF on 3DMatch .",
+      "Besides , the registration recall obtained by using maximal cliques is 8.03% higher than using the maximum cliques when combined with FPFH and 10.45% higher when combined with FCGF on 3DLoMatch .",
+      "There are several reasons for this : 1 ) maximal cliques include the maximum cliques and additionally consider local graph constraints , so the search for maximal cliques can make use of both local and global information in the compatibility graph ; 2 ) the maximum clique is a very tight constraint which requires maximizing the number of mutually compatible correspondences , but it does not guarantee the opti-mal result .",
+      "Node-guided clique selection .",
+      "We compare the performance with and without node-guided ( NG ) clique selection for maximal cliques search .",
+      "Comparing Row 1 and 4 in Table 5 , using NG achieves a recall improvement of 0.37% when combined with FPFH , and 0.5% improvement when combined with FCGF on 3DMatch .",
+      "Also , using NG achieves a recall improvement of 0.23% with FPFH and 0.73% improvement with FCGF on 3DLoMatch .",
+      "It is worth noting that while NG improves recall , the mean RE and mean TE are also decreasing .",
+      "For example , NG reduces the mean RE by 0.1 ° and the mean TE by 0.11 cm with FPFH on 3DLoMatch .",
+      "Different approaches for clique filtering .",
+      "We test the effectiveness of the two filtering methods , normal consistency and clique ranking . 1 ) Normal consistency : comparing Row 1 and 8 in Table 5 , NC slightly degrades MAC's performance . 2 ) Clique ranking : Row 10 to 14 demonstrate that the registration recall tends to increase as K increases , suggesting that larger K yields a subset of cliques that generate more correct hypotheses .",
+      "Employing instance-equal or weighted SVD .",
+      "The comparisons of instance-equal and weighted SVD are shown in Rows 1 and 5 of Table 5 Weighted SVD is slightly inferior to instance-equal SVD .",
+      "This suggests that samples in MACs are already very consistent , indicating no additional weighting strategies are required .",
+      "Here we compare three evaluation metrics , including MAE , MSE and inlier count , for MAC hypothesis evaluation .",
+      "As shown in Row 1 , 6 and 7 , MAC with MAE achieves the best performance .",
+      "In Table 5 , MAE achieves a recall improvement of 0.24% when combined with FPFH , and 0.31% improvement when combined with FCGF on 3DMatch compared with the commonly used inlier count metric .",
+      "Also , MAE has a 1.74% improvement when combined with FPFH , and 0.05% when combined with FCGF on 3DLoMatch compared with inlier count .",
+      "MAE is also very effective in reducing RE and TE .",
+      "Comparison with RANSAC hypotheses .",
+      "We evaluate the quality of the generated hypotheses by comparing the hypotheses from RANSAC and MAC with the ground truth transformation .",
+      "Compared to RANSAC , which randomly selects correspondences and generates hypotheses from the correspondence set without geometric constraints , MAC effectively generates more convincing hypotheses from maximal cliques in the compatibility graph , which fully exploits the consensus information in the graph .",
+      "The performance upper bound of MAC .",
+      "This can test the performance upper bound of MAC .",
+      "We vary the judging threshold for the number of generated correct hypotheses and report the results in Impressively , MAC - 1 achieves registration recalls of 98.46% / 91.24% on 3DMatch / 3DLoMatch .",
+      "This indicates that even on low overlapping datasets , MAC is able to produce correct hypotheses for most point cloud pairs .",
+      "In addition , we can deduce that MAC's performance can be further improved with better hypothesis evaluation metrics .",
+      "Time consumption of MAC .",
+      "The following observations can be made . 1 ) In general , MAC can complete 3D registration in only tens of milliseconds when the number of correspondences is smaller than 1000 .",
+      "Note that MAC is implemented on the CPU only . 2 ) As the number of correspondences increases from 250 to 2500 , there is an increase in time cost for graph construction due to W SOG computation taking more time . 3 ) When the number of correspondences reaches 5000 , there is a large rise in the time cost of MAC's registration .",
+      "The significant increase in the input size makes the search for maximal cliques more timeconsuming .",
+      "However , MAC is not sensitive to the cardinality of the input correspondence set , as verified in Table 3 .",
+      "Hence , using sparse inputs for MAC can produce outstanding performance while making registration efficient .",
+      "In this paper , we presented MAC to solve PCR by using the maximal clique constraint to generate precise pose hypotheses from correspondences .",
+      "Our method achieves state-of-the-art performance on all tested datasets and can adapt to deep-learned methods to boost their performance .",
+      "As shown in Table 7 and Table 1 , MAC produces accurate hypotheses but may fail to find them ."
+    ],
+    "relations": [
+      [
+        "3DLoMatch:Dataset",
+        "Benchmark-For",
+        "registration:Task"
+      ],
+      [
+        "FPFH:Method",
+        "Part-Of",
+        "SOG:Method"
+      ],
+      [
+        "FCGF:Method",
+        "Part-Of",
+        "SOG:Method"
+      ],
+      [
+        "SOG:Method",
+        "Compare-With",
+        "FOG:Method"
+      ],
+      [
+        "FPFH:Method",
+        "Part-Of",
+        "FOG:Method"
+      ],
+      [
+        "FCGF:Method",
+        "Part-Of",
+        "FOG:Method"
+      ],
+      [
+        "SOG:Method",
+        "Evaluated-With",
+        "3DLoMatch:Dataset"
+      ],
+      [
+        "FOG:Method",
+        "Evaluated-With",
+        "3DLoMatch:Dataset"
+      ],
+      [
+        "SOG:Method",
+        "Part-Of",
+        "MAC:Method"
+      ],
+      [
+        "MAC:Method",
+        "Used-For",
+        "registration:Task"
+      ],
+      [
+        "maximum cliques:Method",
+        "Used-For",
+        "registration:Task"
+      ],
+      [
+        "FPFH:Method",
+        "Compare-With",
+        "FCGF:Method"
+      ],
+      [
+        "FPFH:Method",
+        "Evaluated-With",
+        "3DMatch:Dataset"
+      ],
+      [
+        "FCGF:Method",
+        "Evaluated-With",
+        "3DMatch:Dataset"
+      ],
+      [
+        "maximal cliques:Method",
+        "Used-For",
+        "registration:Task"
+      ],
+      [
+        "FCGF:Method",
+        "Part-Of",
+        "maximal cliques:Method"
+      ],
+      [
+        "FPFH:Method",
+        "Part-Of",
+        "maximal cliques:Method"
+      ],
+      [
+        "FPFH:Method",
+        "Part-Of",
+        "maximum cliques:Method"
+      ],
+      [
+        "FCGF:Method",
+        "Part-Of",
+        "maximum cliques:Method"
+      ],
+      [
+        "3DLoMatch:Dataset",
+        "Evaluated-With",
+        "maximum cliques:Method"
+      ],
+      [
+        "FPFH:Method",
+        "Compare-With",
+        "FCGF:Method"
+      ],
+      [
+        "FPFH:Method",
+        "Evaluated-With",
+        "3DLoMatch:Dataset"
+      ],
+      [
+        "FCGF:Method",
+        "Evaluated-With",
+        "3DLoMatch:Dataset"
+      ],
+      [
+        "maximum cliques:Method",
+        "Part-Of",
+        "maximal cliques:Method"
+      ],
+      [
+        "NG:Method",
+        "Synonym-Of",
+        "node-guided:Method"
+      ],
+      [
+        "FPFH:Method",
+        "Part-Of",
+        "NG:Method"
+      ],
+      [
+        "FCGF:Method",
+        "Part-Of",
+        "NG:Method"
+      ],
+      [
+        "NG:Method",
+        "Evaluated-With",
+        "3DMatch:Dataset"
+      ],
+      [
+        "FPFH:Method",
+        "Evaluated-With",
+        "3DMatch:Dataset"
+      ],
+      [
+        "FCGF:Method",
+        "Evaluated-With",
+        "3DMatch:Dataset"
+      ],
+      [
+        "FPFH:Method",
+        "Part-Of",
+        "NG:Method"
+      ],
+      [
+        "FCGF:Method",
+        "Part-Of",
+        "NG:Method"
+      ],
+      [
+        "NG:Method",
+        "Evaluated-With",
+        "3DLoMatch:Dataset"
+      ],
+      [
+        "FPFH:Method",
+        "Evaluated-With",
+        "3DLoMatch:Dataset"
+      ],
+      [
+        "FCGF:Method",
+        "Evaluated-With",
+        "3DLoMatch:Dataset"
+      ],
+      [
+        "FPFH:Method",
+        "Part-Of",
+        "NG:Method"
+      ],
+      [
+        "NG:Method",
+        "Evaluated-With",
+        "3DLoMatch:Dataset"
+      ],
+      [
+        "FPFH:Method",
+        "Evaluated-With",
+        "3DLoMatch:Dataset"
+      ],
+      [
+        "NC:Method",
+        "Part-Of",
+        "MAC's:Method"
+      ],
+      [
+        "Clique ranking:Method",
+        "Used-For",
+        "registration:Task"
+      ],
+      [
+        "Weighted SVD:Method",
+        "Compare-With",
+        "instance-equal SVD:Method"
+      ],
+      [
+        "MAE:Method",
+        "Part-Of",
+        "MAC:Method"
+      ],
+      [
+        "FPFH:Method",
+        "Part-Of",
+        "MAE:Method"
+      ],
+      [
+        "FCGF:Method",
+        "Part-Of",
+        "MAE:Method"
+      ],
+      [
+        "FPFH:Method",
+        "Compare-With",
+        "FCGF:Method"
+      ],
+      [
+        "FPFH:Method",
+        "Evaluated-With",
+        "3DMatch:Dataset"
+      ],
+      [
+        "FCGF:Method",
+        "Evaluated-With",
+        "3DMatch:Dataset"
+      ],
+      [
+        "MAE:Method",
+        "Evaluated-With",
+        "3DMatch:Dataset"
+      ],
+      [
+        "inlier count:Method",
+        "Evaluated-With",
+        "3DMatch:Dataset"
+      ],
+      [
+        "MAE:Method",
+        "Compare-With",
+        "inlier count:Method"
+      ],
+      [
+        "FPFH:Method",
+        "Part-Of",
+        "MAE:Method"
+      ],
+      [
+        "FCGF:Method",
+        "Part-Of",
+        "MAE:Method"
+      ],
+      [
+        "FPFH:Method",
+        "Compare-With",
+        "FCGF:Method"
+      ],
+      [
+        "MAE:Method",
+        "Evaluated-With",
+        "3DLoMatch:Dataset"
+      ],
+      [
+        "FCGF:Method",
+        "Evaluated-With",
+        "3DLoMatch:Dataset"
+      ],
+      [
+        "inlier count:Method",
+        "Evaluated-With",
+        "3DLoMatch:Dataset"
+      ],
+      [
+        "MAE:Method",
+        "Compare-With",
+        "inlier count:Method"
+      ],
+      [
+        "RANSAC:Method",
+        "Compare-With",
+        "MAC:Method"
+      ],
+      [
+        "MAC:Method",
+        "Used-For",
+        "registration:Task"
+      ],
+      [
+        "3DLoMatch:Dataset",
+        "Benchmark-For",
+        "registration:Task"
+      ],
+      [
+        "3DMatch:Dataset",
+        "Benchmark-For",
+        "registration:Task"
+      ],
+      [
+        "MAC:Method",
+        "Evaluated-With",
+        "3DMatch:Dataset"
+      ],
+      [
+        "MAC:Method",
+        "Evaluated-With",
+        "3DLoMatch:Dataset"
+      ],
+      [
+        "MAC:Method",
+        "Used-For",
+        "3D registration:Task"
+      ],
+      [
+        "MAC's:Method",
+        "Used-For",
+        "registration:Task"
+      ],
+      [
+        "MAC:Method",
+        "Used-For",
+        "registration:Task"
+      ],
+      [
+        "maximal clique:Method",
+        "Part-Of",
+        "MAC:Method"
+      ],
+      [
+        "MAC:Method",
+        "Used-For",
+        "PCR:Task"
+      ]
+    ]
+  },
+  {
+    "doc_id": "ICLR2024-AI4Material",
+    "chunk_id": 1,
+    "content": [
+      "MOFDIFF : COARSE-GRAINED DIFFUSION FOR METAL-ORGANIC FRAMEWORK DESIGN Metal-organic frameworks ( MOFs ) are of immense interest in applications such as gas storage and carbon capture due to their exceptional porosity and tunable chemistry .",
+      "In this work , we propose MOFDiff : a coarse-grained ( CG ) diffusion model that generates CG MOF structures through a denoising diffusion process over the coordinates and identities of the building blocks .",
+      "Equivariant graph neural networks are used for the diffusion model to respect the permutational and roto-translational symmetries .",
+      "A denoising diffusion process conditional on z generates the building block identities and coordinates .",
+      "To address the challenges above , we propose MOFDiff , a coarse-grained diffusion model for generating 3D MOF structures that leverages the modular and hierarchical structure of MOFs ( Figure 1 ( a ) ) .",
+      "We train MOFDiff on BW-DB and use MOFDiff to generate and optimize MOF structures for carbon capture .",
+      "We propose to learn a contrastive embedding to represent the vast building block design space . • We formulate a diffusion process for generating coarse-grained MOF 3D structures .",
+      "In order to construct a compact representation of building blocks for diffusion-based modeling , we use a contrastive learning approach [ Hadsell et al . , 2006 , Chen et al . , 2020 ] to embed building blocks into a low dimensional latent space .",
+      "A building block i is encoded as a vector b i using a GemNet-OC encoder [ Gasteiger et al . , 2021 [ Gasteiger et al . , , 2022 ] ] , an SE ( 3 ) - invariant graph neural network model .",
+      "We then train the GNN building block encoder using a contrastive loss to map small geometric variations of the same building block to similar latent vectors in the embedding space .",
+      "The projected embedding is obtained by projecting the building block embedding b i using a multi-layer perceptron ( MLP ) projection head : s i , j = ⋯ ⋯ ⋯ ⋯ ⋯ p i = MLP ( b i ) .",
+      "MOFDiff .",
+      "The MOFDiff model is composed of four components ( Figure 1 ( a ) ) : ( 1 ) A periodic GemNet-OC encoder5 that outputs a latent vector z = PGNN E ( M C ) ; ( 2 ) an MLP predictor that predicts the lattice parameters and the number of building blocks from the latent code z : L , K = MLP L , K ( z ) ; ( 3 ) a periodic GemNet-OC denoiser that outputs SE ( 3 ) - equivariant scores to denoise random structures to CG MOF structures conditional on the latent code : s A C , s X C = PGNN D ( M C t , z ) , where s A C , s X C are the predicted scores for building block identities A C and coordinates X C , and M C t is a noisy CG structure at time t in the diffusion process ; ( 4 ) an MLP predictor that predicts properties c ( such as CO 2 working capacity ) from z : ĉ = MLP P ( z ) .",
+      "We design an assembly algorithm that optimizes the building block orientations to match the connection points of adjacent building blocks such that the MOF becomes connected ( visualized in Figure 4 ) .",
+      "This optimization algorithm places Gaussian densities at the position of each connection point and maximizes the overlap of these densities between compatible connection points .",
+      "The radius of the Gaussian densities is gradually reduced in the optimization process : at the beginning , the radius is high , so the optimization problem is smoother , and it is simpler to find an approximate solution ."
+    ],
+    "relations": [
+      [
+        "COARSE-GRAINED DIFFUSION:Method",
+        "Used-For",
+        "METAL-ORGANIC FRAMEWORK DESIGN:Task"
+      ],
+      [
+        "MOFs:Method",
+        "Synonym-Of",
+        "Metal-organic frameworks:Method"
+      ],
+      [
+        "Metal-organic frameworks:Method",
+        "Used-For",
+        "gas storage:Task"
+      ],
+      [
+        "Metal-organic frameworks:Method",
+        "Used-For",
+        "carbon capture:Task"
+      ],
+      [
+        "MOFDiff:Method",
+        "SubClass-Of",
+        "coarse-grained ( CG ) diffusion model:Method"
+      ],
+      [
+        "MOFDiff:Method",
+        "Used-For",
+        "CG MOF:Task"
+      ],
+      [
+        "MOFDiff:Method",
+        "SubClass-Of",
+        "coarse-grained diffusion model:Method"
+      ],
+      [
+        "MOFDiff:Method",
+        "Trained-With",
+        "BW-DB:Dataset"
+      ],
+      [
+        "MOFDiff:Method",
+        "Used-For",
+        "carbon capture:Task"
+      ],
+      [
+        "BW-DB:Dataset",
+        "Benchmark-For",
+        "carbon capture:Task"
+      ],
+      [
+        "contrastive learning:Method",
+        "Used-For",
+        "diffusion-based modeling:Task"
+      ],
+      [
+        "GemNet-OC:Method",
+        "SubClass-Of",
+        "graph neural network:Method"
+      ],
+      [
+        "contrastive loss:Method",
+        "Part-Of",
+        "GNN building block encoder:Method"
+      ]
+    ]
+  },
+  {
+    "doc_id": "ICLR2024-AI4Material",
+    "chunk_id": 2,
+    "content": [
+      "Details regarding the assembly algorithm are included in Appendix A .2 .",
+      "Our experiments aim to evaluate two capabilities of MOFDiff : 1 .",
+      "Can MOFDiff design functional MOF structures optimized for carbon capture ?",
+      "We train and evaluate our method on the BW-DB dataset , which contains 304k MOFs with less than 20 building blocks ( as defined by the metal-oxo decomposition algorithm ) from the 324k MOFs in Boyd et al . 2019 .",
+      "We use 289k MOFs ( 95% ) for training and the rest for validation .",
+      "We do not keep a test split , as we evaluate our generative model on random sampling and inverse design capabilities .",
+      "For the relaxed structure , we adopt MOFChecker [ Jablonka , 2023 ] to check validity .",
+      "MOFChecker includes a variety of criteria : the presence of metal and organic elements , porosity , no overlapping atoms , no non-physical atomic valences or coordination environments , no atoms or molecules disconnected from the primary MOF structure , and no excessively large atomic charges .",
+      "For novelty , we adopt the MOF identifier extracted by MOFid and say a MOF is novel if its MOFid differs from any other MOFs in the training dataset .",
+      "We also count the number of unique generations by filtering out replicate samples using their MOFid .",
+      "MOFDiff generates valid and novel MOFs .",
+      "We randomly sample 10,000 latent vectors from N ( 0 , I ) , decode through MOFDiff , assemble , and apply force field relaxation to obtain the atomic structures .",
+      "For faithful evaluation , we carry out grand canonical Monte Carlo ( GCMC ) simulations to calculate the gas adsorption properties of MOF structures .",
+      "In the appendix , Figure 11 shows the benchmark results of our implementation compared to the original labels of BW-DB , which demonstrate a strong positive correlation with our implementation underestimating the original labels by an average of around 30% .",
+      "MOFDiff is trained over the original BW-DB labels and uses latent-space optimization to maximize the BW-DB property values .",
+      "MOFDiff discovers promising candidates for carbon capture ."
+    ],
+    "relations": [
+      [
+        "MLP:Method",
+        "Synonym-Of",
+        "multi-layer perceptron:Method"
+      ],
+      [
+        "GemNet-OC:Method",
+        "Part-Of",
+        "MOFDiff:Method"
+      ],
+      [
+        "MLP:Method",
+        "Part-Of",
+        "MOFDiff:Method"
+      ],
+      [
+        "GemNet-OC:Method",
+        "Part-Of",
+        "MOFDiff:Method"
+      ],
+      [
+        "MLP:Method",
+        "Part-Of",
+        "MOFDiff:Method"
+      ],
+      [
+        "MOFDiff:Method",
+        "Used-For",
+        "carbon capture:Task"
+      ],
+      [
+        "MOFid:Method",
+        "Compare-With",
+        "MOFs:Method"
+      ],
+      [
+        "GCMC:Method",
+        "Synonym-Of",
+        "grand canonical Monte Carlo:Method"
+      ],
+      [
+        "MOFDiff:Method",
+        "Trained-With",
+        "BW-DB:Dataset"
+      ],
+      [
+        "MOFDiff:Method",
+        "Used-For",
+        "carbon capture:Task"
+      ],
+      [
+        "DFT:Method",
+        "Synonym-Of",
+        "density functional theory:Method"
+      ],
+      [
+        "GCMC:Method",
+        "Used-For",
+        "carbon capture:Task"
+      ],
+      [
+        "GCMC:Method",
+        "Evaluated-With",
+        "BW-DB:Dataset"
+      ]
+    ]
+  },
+  {
+    "doc_id": "ICLR2024-AI4Material",
+    "chunk_id": 3,
+    "content": [
+      "After conducting the validity checks described in Section 4.1 , we find 2054 MOFs that are valid , novel , and unique ( Figure 8 ( a ) ) .",
+      "These 2054 MOFs are then simulated with our GCMC workflow to compute gas adsorption properties .",
+      "Given the systematic differences between the original labels of BW-DB and those calculated with our reimplemented GCMC workflow , we randomly sampled 5,000 MOFs from the BW-DB dataset and recalculated the gas adsorption properties using our GCMC workflow to provide a fair baseline for comparison .",
+      "We observe that MOFDiff From an efficiency perspective , GCMC simulations take orders of magnitude more computational time ( tens of minutes to hours ) than other components of the MOF design pipeline ( seconds to tens of seconds ) .",
+      "These simulations can also be made more accurate at significantly higher computational costs ( days ) by converging sampling to tighter confidence intervals or using more advanced techniques , such as including blocking spheres , which prohibit Monte Carlo insertion of gas molecules into kinetically prohibited pores of the MOF , and calculating atomic charges with density functional theory ( DFT ) .",
+      "Therefore , the efficiency of a MOF design pipeline can be evaluated by the average number of GCMC simulations required to find one qualifying MOF for carbon capture applications .",
+      "Naively sampling from the BW-DB dataset requires , on average , 58.1 GCMC simulations to find one MOF with a working capacity of more than 2 mol / kg .",
+      "Beyond efficiency , MOFDiff's generation flexibility also allows it to discover top MOF candidates that are outstanding for carbon capture .",
+      "We compute gas adsorption properties of 18 MOFs that have been investigated for CO 2 adsorption from previous literature [ Madden et al . , 2017 , Coelho et al . , 2016 , González-Zamora and Ibarra , 2017 , Boyd et al . , 2019 ] using our GCMC simulation workflow .",
+      "MOFDiff can discover highly promising candidates , making up 9 out of the top 10 MOFs .",
+      "This comparison confirms MOFDiff's capability in advancing functional MOF design .",
+      "We proposed MOFDiff , a coarse-grained diffusion model for metal-organic framework design .",
+      "Our work presents a complete pipeline of representation , generative model , structural relaxation , and molecular simulation to address a specific carbon capture materials design problem .",
+      "We then design an assembly algorithm to realize the all-atom MOF structures and characterize their properties with molecular simulations .",
+      "MOFDiff can generate valid and novel MOF structures covering a wide range of structural properties as well as optimize MOFs for carbon capture applications that surpass state-of-the-art MOFs in molecular simulations ."
+    ],
+    "relations": [
+      [
+        "MOFDiff's:Method",
+        "Used-For",
+        "carbon capture:Task"
+      ],
+      [
+        "MOFDiff:Method",
+        "SubClass-Of",
+        "coarse-grained diffusion model:Method"
+      ],
+      [
+        "MOFDiff:Method",
+        "Used-For",
+        "metal-organic framework design:Task"
+      ],
+      [
+        "coarse-grained diffusion model:Method",
+        "Used-For",
+        "metal-organic framework design:Task"
+      ],
+      [
+        "representation:Method",
+        "Used-For",
+        "carbon capture materials design:Task"
+      ],
+      [
+        "generative model:Method",
+        "Used-For",
+        "carbon capture materials design:Task"
+      ],
+      [
+        "structural relaxation:Method",
+        "Used-For",
+        "carbon capture materials design:Task"
+      ],
+      [
+        "molecular simulation:Method",
+        "Used-For",
+        "carbon capture materials design:Task"
+      ],
+      [
+        "MOFDiff:Method",
+        "Used-For",
+        "MOFs:Method"
+      ],
+      [
+        "MOFDiff:Method",
+        "Used-For",
+        "carbon capture:Task"
+      ],
+      [
+        "MOFs:Method",
+        "Used-For",
+        "carbon capture:Task"
+      ],
+      [
+        "MOFs:Method",
+        "Used-For",
+        "molecular simulations:Task"
+      ]
+    ]
+  }
+]
