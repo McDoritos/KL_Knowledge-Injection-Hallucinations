@@ -8,7 +8,37 @@
 | Extract KG from LLM responses                   | `test.jsonl`, `test_ood.jsonl`          | Automatically extract a KG from the generated LLM responses.                                     |
 | Evaluate hallucinations (with RefChecker)       | `test.jsonl` and `test_ood.jsonl`       | Compare the "golden" KG (from the dataset) with the LLM's KG, and measure the hallucination rate.|
 
-### Questions 
+Extract the “golden standard” Knowledge Graph
+
+Use: train.jsonl and dev.jsonl
+- These are the annotated and trusted datasets, ideal for training and validating your KG extraction model.
+- You don’t use test or test_ood here because they are meant for final evaluation, not training.
+
+Generate questions for each document
+
+Use: Preferably train.jsonl (or all)
+- train contains many diverse examples, perfect for generating question–answer pairs used during training.
+- You can include dev and test for more coverage, but the focus here is training the question generation process, not evaluation.
+
+Perform Knowledge Injection (RAG, etc.)
+
+Use: test.jsonl
+- This is the main test set, used to evaluate how well the LLM answers questions with and without knowledge injection.
+- Avoid using train or dev here to prevent data leakage or bias.
+
+Extract KG from LLM responses
+
+Use: test.jsonl and test_ood.jsonl
+- These are your evaluation datasets — test checks performance on familiar domains, while test_ood measures generalization to unseen scientific domains.
+- You don’t use train or dev here, since the goal is evaluation only.
+
+Assess hallucinations (RefChecker or similar)
+
+Use: test.jsonl and test_ood.jsonl
+- They allow comparing the golden standard KG from the dataset with the KG extracted from the LLM’s answers.
+- This way, you can measure both accuracy and robustness of your Knowledge Injection methods.
+
+### Questions (Must be revised, questions must be related with the triplets)
 Q1 — (Easy, factual recall)
 
 Question: According to the RCN excerpt, what does “RCN” stand for?
