@@ -1,0 +1,59 @@
+What method is used to transfer a transformer-based masked language model to a new language?
+
+Which task is the proposed model evaluated on?
+
+What dataset is used as the source for creating XQuAD?
+
+What relationship exists between multilingual BERT (mBERT) and the zero-shot cross-lingual transfer task?
+
+Which method introduces a new embedding matrix while freezing other model layers?
+
+What datasets are used to benchmark the multilingual and monolingual transfer models?
+
+What is the relationship between the Cross-lingual Question Answering Dataset (XQuAD) and the SQuAD v1.1 dataset?
+
+What method incorporates adapter modules for language-specific transformations?
+
+Which method achieves competitive results with multilingual pre-training approaches?
+
+What datasets are used to evaluate the joint multilingual models (JOINTMULTI) and monolingual transfer models (MONOTRANS)?
+
+What relationship exists between the Word in Context (WiC) task and the evaluation of contextual representations?
+
+Which datasets are used for semantic probing of learned representations?
+
+What relationship exists between Cross-lingual Question Answering and language understanding?
+
+What methods are compared in the experiments (e.g., JOINTMULTI, MONOTRANS, CLWE)?
+
+What dataset is used to train the models with masked language modeling (MLM) and next sentence prediction (NSP)?
+
+What relationship exists between JOINTPAIR models and shared subword vocabulary?
+
+Which method performs poorly compared to other models in cross-lingual benchmarks?
+
+What dataset is used to evaluate the model’s performance in natural language inference?
+
+Which method demonstrates that modeling multiple languages does not harm representation quality?
+
+What relationship exists between monolingual transformer models and multilingual performance?
+
+Which dataset is introduced as a comprehensive benchmark for cross-lingual model evaluation?
+
+Which method uses feed-forward adapter modules during language transfer?
+
+What relationship exists between semantic probing tasks (WiC, SCWS) and model evaluation?
+
+Which methods use Wikipedia as the primary training corpus?
+
+What datasets are used to test zero-shot cross-lingual transfer performance?
+
+Which method aligns cross-lingual word embeddings using VecMap?
+
+Which dataset helps evaluate cross-lingual generalization ability?
+
+Which methods include multilingual joint training compared to lexical-level mapping?
+
+What relationship exists between cross-lingual transfer and masked language modeling objectives?
+
+Which task involves identifying answer spans in context paragraphs across multiple languages?
