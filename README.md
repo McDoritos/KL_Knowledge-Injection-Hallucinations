@@ -1,5 +1,34 @@
 # kl-project-2025
 
+### Process
+Each json file has:
+- Documents
+- Setences that belong to the documents
+- Relations between the information in these senteces
+
+Questions should be asked about each document in order for the LLM to output triplets in the format specified by the scier dataset. this relationships follow the following structure:
+$$[subject:label,relationship,object:label]$$
+
+The labels of each entity and the relationships are part of a set of predefined values which are the following:
+- Label:
+    - Method
+    - Task
+    - Dataset
+- Relation:
+    - Used-For
+    - Part-Of
+    - Compare-With
+    - SubClass-Of
+    - Synonym-Of
+    - Evaluated-With
+    - Benchmark-For
+    - Trained-With
+    - SubTask-Of
+
+LLMs in these experiment should be prompted with the relevant instructions for the correct extraction of these triplets for further comparassion. Beyond this the *SciER Dataset* is extremely extensive so a subset of the documents present in the different json files should be used for the experiment to be viable
+
+### Usage of files
+
 | Stage of Your Methodology                       | Relevant Files                          | How to Use                                                                                       |
 | ----------------------------------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------ |
 | Extract the "golden standard" Knowledge Graph   | `train.jsonl` and `dev.jsonl`           | Train or validate a KG extractor that creates graphs from the articles.                          |
