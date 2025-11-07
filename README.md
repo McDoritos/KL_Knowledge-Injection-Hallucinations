@@ -1,33 +1,51 @@
 # kl-project-2025
 
-### Process
-Each json file has:
-- Documents
-- Setences that belong to the documents
-- Relations between the information in these senteces
+# Process
+Each JSON file in the *SciERC dataset* contains:
+- **Documents**
+- **Sentences** belonging to those documents
+- **Relations** between entities within those sentences
 
-Questions should be asked about each document in order for the LLM to output triplets in the format specified by the scier dataset. this relationships follow the following structure:
-$$[subject:label,relationship,object:label]$$
+The goal is to generate **questions for each document** so that the LLM can produce **triplets** in the same structured format as defined by the SciERC dataset.  
+These triplets follow the structure:
 
-The labels of each entity and the relationships are part of a set of predefined values which are the following:
-- Label:
-    - Method
-    - Task
-    - Dataset
-- Relation:
-    - Used-For
-    - Part-Of
-    - Compare-With
-    - SubClass-Of
-    - Synonym-Of
-    - Evaluated-With
-    - Benchmark-For
-    - Trained-With
-    - SubTask-Of
+$$[subject:label, relationship, object:label]$$
+---
+## Entity and Relation Labels
 
-LLMs in these experiment should be prompted with the relevant instructions for the correct extraction of these triplets for further comparassion. Beyond this the *SciER Dataset* is extremely extensive so a subset of the documents present in the different json files should be used for the experiment to be viable
+Both entities and relations are constrained to a predefined set of valid labels.
 
-### Usage of files
+### Entity Labels
+- **Method**
+- **Task**
+- **Dataset**
+
+### Relation Labels
+- **Used-For**
+- **Part-Of**
+- **Compare-With**
+- **SubClass-Of**
+- **Synonym-Of**
+- **Evaluated-With**
+- **Benchmark-For**
+- **Trained-With**
+- **SubTask-Of**
+---
+## Experimental Procedure
+
+During the experiment, the LLM must be **prompted with clear and specific instructions** to ensure the correct extraction of these triplets for later comparison.
+
+Because the *SciERC dataset* is quite extensive, only a **subset** of the available documents from the different JSON files should be used.  
+This makes the experiment computationally feasible while maintaining representative coverage of entity and relation types.
+---
+## Gold Standard Construction
+
+The **gold standard Knowledge Graph (KG)**, used as the reference for evaluation, must correspond **exactly** to the same set of documents for which the LLM-generated triplets were produced.  
+
+Including any additional documents in the gold standard that were **not** part of the LLM question set would introduce **bias** into the comparison process.
+---
+
+# Usage of files
 
 | Stage of Your Methodology                       | Relevant Files                          | How to Use                                                                                       |
 | ----------------------------------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------ |
@@ -67,7 +85,7 @@ Use: test.jsonl and test_ood.jsonl
 - They allow comparing the golden standard KG from the dataset with the KG extracted from the LLM’s answers.
 - This way, you can measure both accuracy and robustness of your Knowledge Injection methods.
 
-### Questions (Must be revised, questions must be related with the triplets)
+# Questions (Must be revised, questions must be related with the triplets)
 Q1 — (Easy, factual recall)
 
 Question: According to the RCN excerpt, what does “RCN” stand for?
