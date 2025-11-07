@@ -1,0 +1,139 @@
+What method is introduced in this work to improve vision-language representation learning?
+
+What relationship exists between GrOVLE and Word2Vec in terms of model adaptation?
+
+Which methods are compared to GrOVLE in the experiments?
+
+What relationship exists between GrOVLE and Visual Word2Vec?
+
+What relationship exists between GrOVLE and WordNet?
+
+What relationship exists between GrOVLE and Visual Genome?
+
+What datasets are used to evaluate GrOVLE’s performance?
+
+Which tasks are used to assess GrOVLE’s effectiveness?
+
+What relationship exists between GrOVLE and multi-task training?
+
+Which method incorporates hierarchical language relations from WordNet?
+
+Which method integrates visual context from Visual Genome?
+
+Which datasets are mentioned for vision-language experiments?
+
+What relationship exists between Visual Genome and image annotations?
+
+What relationship exists between Visual Genome and QA pairs?
+
+Which method adapts Word2Vec using knowledge from WordNet and Visual Genome?
+
+Which task involves image-sentence retrieval?
+
+Which tasks involve generation-based evaluation (e.g., captioning, VQA)?
+
+What relationship exists between Visual Question Answering (VQA) and vision-language tasks?
+
+What relationship exists between Phrase Grounding and retrieval-based tasks?
+
+Which datasets are used for Phrase Grounding?
+
+Which dataset corresponds to image-captioning evaluation?
+
+What relationship exists between Flickr30K and image-sentence retrieval?
+
+What relationship exists between MSCOCO and image-sentence retrieval?
+
+Which dataset is used for Phrase Grounding experiments?
+
+Which dataset is used for Text-to-Clip retrieval?
+
+Which methods are evaluated on multiple vision-language tasks simultaneously?
+
+What relationship exists between multi-task training and GrOVLE?
+
+Which methods perform better on retrieval-based tasks compared to generation-based tasks?
+
+What relationship exists between Average Embedding and LSTM architectures?
+
+Which methods use Self-Attention mechanisms?
+
+What relationship exists between Self-Attention and Average Embedding models?
+
+What relationship exists between LSTM and retrieval performance?
+
+Which methods show better performance on retrieval-style tasks?
+
+Which methods perform similarly on ReferIt phrase grounding?
+
+What relationship exists between Word2Vec and FastText in terms of model architecture?
+
+What relationship exists between FastText and character n-grams?
+
+Which methods are designed to generate sentence-level embeddings?
+
+Which method uses a BiLSTM with max pooling for sentence encoding?
+
+What relationship exists between InferSent and the Natural Language Inference (NLI) task?
+
+Which method is trained using the NLI task?
+
+What relationship exists between NLI and sentence-pair classification?
+
+Which method is trained using Masked Language Modeling (MLM) and Next Sentence Prediction (NSP)?
+
+What relationship exists between BERT and MLM/NSP objectives?
+
+What relationship exists between Word2Vec and Continuous Bag of Words (CBOW)?
+
+Which method introduces CBOW and Skip-Gram architectures?
+
+What relationship exists between Word2Vec and the CBOW model?
+
+Which methods are pretrained dense vector representations?
+
+What relationship exists between GloVe and Word2Vec embeddings?
+
+Which methods extend Word2Vec using retrofitting or Fisher vector post-processing?
+
+What relationship exists between HGLMM and Fisher vectors?
+
+Which method uses Fisher vectors to enhance Word2Vec embeddings?
+
+What relationship exists between PCA and dimensionality reduction in VL tasks?
+
+Which method applies PCA for improved numerical stability?
+
+What relationship exists between WordNet retrofitting and performance improvement?
+
+Which methods benefit from visual grounding for improved retrieval accuracy?
+
+What relationship exists between Word2Vec pretrained on Google News and baseline performance?
+
+Which methods outperform Word2Vec on specific vision-language tasks?
+
+What relationship exists between BERT and InferSent in terms of VL performance?
+
+Which method achieves higher accuracy on Flickr30K Entities?
+
+Which tasks exhibit the highest variance across fine-tuned models?
+
+What relationship exists between fine-tuning and performance variance?
+
+Which methods perform best on image-sentence retrieval tasks?
+
+What relationship exists between Self-Attention and performance on retrieval-style tasks?
+
+Which method achieves +7.9 mean recall improvement on Flickr30K?
+
+What relationship exists between GrOVLE and transfer learning across VL tasks?
+
+Which methods use attention mechanisms to improve image captioning?
+
+What relationship exists between LSTM-based attention and caption generation?
+
+Which method applies dual attention for VQA tasks?
+
+What relationship exists between Dual Attention and feed-forward networks?
+
+Which methods are most effective for vision-language transfer?

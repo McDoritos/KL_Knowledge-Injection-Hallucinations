@@ -1,0 +1,874 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d3" for="edge" attr.name="chunk_id" attr.type="long" />
+  <key id="d2" for="edge" attr.name="doc_id" attr.type="string" />
+  <key id="d1" for="edge" attr.name="relation" attr.type="string" />
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="object detection">
+      <data key="d0">Task</data>
+    </node>
+    <node id="dense prediction tasks">
+      <data key="d0">Task</data>
+    </node>
+    <node id="semantic/instance segmentation">
+      <data key="d0">Task</data>
+    </node>
+    <node id="CARAFE">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Content - Aware ReAssembly of FEatures">
+      <data key="d0">Method</data>
+    </node>
+    <node id="super resolution">
+      <data key="d0">Task</data>
+    </node>
+    <node id="inpainting">
+      <data key="d0">Task</data>
+    </node>
+    <node id="semantic segmentation">
+      <data key="d0">Task</data>
+    </node>
+    <node id="feature upsampling">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Feature Pyramid Network">
+      <data key="d0">Method</data>
+    </node>
+    <node id="U - Net">
+      <data key="d0">Method</data>
+    </node>
+    <node id="ContentAware ReAssembly of Features">
+      <data key="d0">Method</data>
+    </node>
+    <node id="instance segmentation">
+      <data key="d0">Task</data>
+    </node>
+    <node id="image inpainting">
+      <data key="d0">Task</data>
+    </node>
+    <node id="Faster RCNN">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Global&amp;Local">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Places">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="GUM">
+      <data key="d0">Method</data>
+    </node>
+    <node id="guided upsampling">
+      <data key="d0">Method</data>
+    </node>
+    <node id="localizing objects with bounding - boxes">
+      <data key="d0">Task</data>
+    </node>
+    <node id="Object detection">
+      <data key="d0">Task</data>
+    </node>
+    <node id="Region Proposal Network">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Faster - RCNN">
+      <data key="d0">Method</data>
+    </node>
+    <node id="RPN">
+      <data key="d0">Method</data>
+    </node>
+    <node id="spatial pooling">
+      <data key="d0">Method</data>
+    </node>
+    <node id="PSPNet">
+      <data key="d0">Method</data>
+    </node>
+    <node id="content - aware reassembly of features">
+      <data key="d0">Method</data>
+    </node>
+    <node id="interpolations">
+      <data key="d0">Method</data>
+    </node>
+    <node id="upsampling operators">
+      <data key="d0">Method</data>
+    </node>
+    <node id="deconvolution">
+      <data key="d0">Method</data>
+    </node>
+    <node id="dynamic filter">
+      <data key="d0">Method</data>
+    </node>
+    <node id="content - aware operators">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Spatial attention">
+      <data key="d0">Method</data>
+    </node>
+    <node id="STN">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Spatial Transformer Networks">
+      <data key="d0">Method</data>
+    </node>
+    <node id="DCN">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Deformable Convolutional Networks">
+      <data key="d0">Method</data>
+    </node>
+    <node id="FPN">
+      <data key="d0">Method</data>
+    </node>
+    <node id="feature pyramids">
+      <data key="d0">Method</data>
+    </node>
+    <node id="top - down pathway">
+      <data key="d0">Method</data>
+    </node>
+    <node id="lateral connections">
+      <data key="d0">Method</data>
+    </node>
+    <node id="deconvolution layer">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Mask R - CNN">
+      <data key="d0">Method</data>
+    </node>
+    <node id="UperNet">
+      <data key="d0">Method</data>
+    </node>
+    <node id="PPM">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Pyramid Pooling Module">
+      <data key="d0">Method</data>
+    </node>
+    <node id="FUSE">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Multi - level Feature Fusion">
+      <data key="d0">Method</data>
+    </node>
+    <node id="multi - level feature fusion module">
+      <data key="d0">Method</data>
+    </node>
+    <node id="U - net">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Partial Conv">
+      <data key="d0">Method</data>
+    </node>
+    <node id="ADE 2 0 k">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="Places dataset">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="ResNet - 5 0">
+      <data key="d0">Method</data>
+    </node>
+    <node id="MMDetection">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Detectron">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Mask RCNN">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Image Inpainting">
+      <data key="d0">Task</data>
+    </node>
+    <node id="Paritial Conv">
+      <data key="d0">Method</data>
+    </node>
+    <node id="nearest neighbor interpolation">
+      <data key="d0">Method</data>
+    </node>
+    <node id="N.C.">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Nearest + Conv">
+      <data key="d0">Method</data>
+    </node>
+    <node id="B.C.">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Bilinear + Conv">
+      <data key="d0">Method</data>
+    </node>
+    <node id="P.S.">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Pixel Shuffle">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Deconv">
+      <data key="d0">Method</data>
+    </node>
+    <node id="representative learning based upsampling">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Spatial Attention">
+      <data key="d0">Method</data>
+    </node>
+    <node id="upsamplers">
+      <data key="d0">Method</data>
+    </node>
+    <node id="PSANet">
+      <data key="d0">Method</data>
+    </node>
+    <node id="sigmoid">
+      <data key="d0">Method</data>
+    </node>
+    <node id="kernel normalizer">
+      <data key="d0">Method</data>
+    </node>
+    <node id="sigmoid with normalization">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Softmax">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Sigmoid">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Sigmoid Normalized">
+      <data key="d0">Method</data>
+    </node>
+    <node id="upsampling operator">
+      <data key="d0">Method</data>
+    </node>
+    <node id="image restoration">
+      <data key="d0">Task</data>
+    </node>
+    <node id="super - resolution">
+      <data key="d0">Task</data>
+    </node>
+    <edge source="object detection" target="dense prediction tasks" id="object detection_dense prediction tasks_146120936_1_0">
+      <data key="d1">SubTask-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="object detection" target="dense prediction tasks" id="object detection_dense prediction tasks_146120936_1_10">
+      <data key="d1">Used-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="semantic/instance segmentation" target="dense prediction tasks" id="semantic/instance segmentation_dense prediction tasks_146120936_1_1">
+      <data key="d1">SubTask-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="CARAFE" target="Content - Aware ReAssembly of FEatures" id="CARAFE_Content - Aware ReAssembly of FEatures_146120936_1_2">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="CARAFE" target="Content - Aware ReAssembly of FEatures" id="CARAFE_Content - Aware ReAssembly of FEatures_146120936_3_38">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="CARAFE" target="ContentAware ReAssembly of Features" id="CARAFE_ContentAware ReAssembly of Features_146120936_1_8">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="CARAFE" target="instance segmentation" id="CARAFE_instance segmentation_146120936_1_9">
+      <data key="d1">Used-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="CARAFE" target="instance segmentation" id="CARAFE_instance segmentation_146120936_1_40">
+      <data key="d1">Used-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="CARAFE" target="instance segmentation" id="CARAFE_instance segmentation_146120936_2_41">
+      <data key="d1">Used-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="CARAFE" target="instance segmentation" id="CARAFE_instance segmentation_146120936_3_14">
+      <data key="d1">Used-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="CARAFE" target="Faster RCNN" id="CARAFE_Faster RCNN_146120936_1_14">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="CARAFE" target="Faster RCNN" id="CARAFE_Faster RCNN_146120936_2_21">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="CARAFE" target="content - aware reassembly of features" id="CARAFE_content - aware reassembly of features_146120936_1_28">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="CARAFE" target="upsampling operators" id="CARAFE_upsampling operators_146120936_1_31">
+      <data key="d1">Compare-With</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="CARAFE" target="upsampling operators" id="CARAFE_upsampling operators_146120936_3_11">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="CARAFE" target="interpolations" id="CARAFE_interpolations_146120936_1_32">
+      <data key="d1">Compare-With</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="CARAFE" target="deconvolution" id="CARAFE_deconvolution_146120936_1_33">
+      <data key="d1">Compare-With</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="CARAFE" target="content - aware operators" id="CARAFE_content - aware operators_146120936_1_35">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="CARAFE" target="object detection" id="CARAFE_object detection_146120936_1_39">
+      <data key="d1">Used-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="CARAFE" target="semantic segmentation" id="CARAFE_semantic segmentation_146120936_1_41">
+      <data key="d1">Used-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="CARAFE" target="image inpainting" id="CARAFE_image inpainting_146120936_2_0">
+      <data key="d1">Used-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="CARAFE" target="image inpainting" id="CARAFE_image inpainting_146120936_3_27">
+      <data key="d1">Used-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="CARAFE" target="Mask RCNN" id="CARAFE_Mask RCNN_146120936_2_25">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="CARAFE" target="Mask RCNN" id="CARAFE_Mask RCNN_146120936_2_39">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="CARAFE" target="Mask RCNN" id="CARAFE_Mask RCNN_146120936_3_20">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="CARAFE" target="Mask RCNN" id="CARAFE_Mask RCNN_146120936_3_36">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="CARAFE" target="Global&amp;Local" id="CARAFE_Global&amp;Local_146120936_2_32">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="CARAFE" target="Global&amp;Local" id="CARAFE_Global&amp;Local_146120936_3_29">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="CARAFE" target="Paritial Conv" id="CARAFE_Paritial Conv_146120936_2_33">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="CARAFE" target="FPN" id="CARAFE_FPN_146120936_2_34">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="CARAFE" target="FPN" id="CARAFE_FPN_146120936_3_19">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="CARAFE" target="nearest neighbor interpolation" id="CARAFE_nearest neighbor interpolation_146120936_2_40">
+      <data key="d1">Compare-With</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="CARAFE" target="UperNet" id="CARAFE_UperNet_146120936_3_21">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="CARAFE" target="UperNet" id="CARAFE_UperNet_146120936_3_24">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="CARAFE" target="Partial Conv" id="CARAFE_Partial Conv_146120936_3_31">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="CARAFE" target="upsampling operator" id="CARAFE_upsampling operator_146120936_3_37">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="CARAFE" target="image restoration" id="CARAFE_image restoration_146120936_3_39">
+      <data key="d1">Used-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="CARAFE" target="super - resolution" id="CARAFE_super - resolution_146120936_3_40">
+      <data key="d1">Used-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="super resolution" target="dense prediction tasks" id="super resolution_dense prediction tasks_146120936_1_3">
+      <data key="d1">SubTask-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="inpainting" target="dense prediction tasks" id="inpainting_dense prediction tasks_146120936_1_4">
+      <data key="d1">SubTask-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="semantic segmentation" target="dense prediction tasks" id="semantic segmentation_dense prediction tasks_146120936_1_5">
+      <data key="d1">SubTask-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="semantic segmentation" target="dense prediction tasks" id="semantic segmentation_dense prediction tasks_146120936_1_12">
+      <data key="d1">Used-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="feature upsampling" target="Feature Pyramid Network" id="feature upsampling_Feature Pyramid Network_146120936_1_6">
+      <data key="d1">Used-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="feature upsampling" target="U - Net" id="feature upsampling_U - Net_146120936_1_7">
+      <data key="d1">Used-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Feature Pyramid Network" target="object detection" id="Feature Pyramid Network_object detection_146120936_2_2">
+      <data key="d1">Used-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Feature Pyramid Network" target="instance segmentation" id="Feature Pyramid Network_instance segmentation_146120936_2_3">
+      <data key="d1">Used-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="instance segmentation" target="dense prediction tasks" id="instance segmentation_dense prediction tasks_146120936_1_11">
+      <data key="d1">Used-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="instance segmentation" target="Object detection" id="instance segmentation_Object detection_146120936_1_24">
+      <data key="d1">SubTask-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="image inpainting" target="dense prediction tasks" id="image inpainting_dense prediction tasks_146120936_1_13">
+      <data key="d1">Used-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Faster RCNN" target="semantic segmentation" id="Faster RCNN_semantic segmentation_146120936_1_15">
+      <data key="d1">Used-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Faster RCNN" target="Global&amp;Local" id="Faster RCNN_Global&amp;Local_146120936_1_16">
+      <data key="d1">Compare-With</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Faster RCNN" target="Places" id="Faster RCNN_Places_146120936_1_17">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Faster RCNN" target="image inpainting" id="Faster RCNN_image inpainting_146120936_1_19">
+      <data key="d1">Used-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Global&amp;Local" target="Places" id="Global&amp;Local_Places_146120936_1_18">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Global&amp;Local" target="image inpainting" id="Global&amp;Local_image inpainting_146120936_1_21">
+      <data key="d1">Used-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Global&amp;Local" target="image inpainting" id="Global&amp;Local_image inpainting_146120936_2_17">
+      <data key="d1">Used-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Global&amp;Local" target="Image Inpainting" id="Global&amp;Local_Image Inpainting_146120936_2_30">
+      <data key="d1">Used-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Places" target="image inpainting" id="Places_image inpainting_146120936_1_20">
+      <data key="d1">Benchmark-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="GUM" target="guided upsampling" id="GUM_guided upsampling_146120936_1_22">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="GUM" target="representative learning based upsampling" id="GUM_representative learning based upsampling_146120936_3_6">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="GUM" target="CARAFE" id="GUM_CARAFE_146120936_3_8">
+      <data key="d1">Compare-With</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="localizing objects with bounding - boxes" target="Object detection" id="localizing objects with bounding - boxes_Object detection_146120936_1_23">
+      <data key="d1">SubTask-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Region Proposal Network" target="Faster - RCNN" id="Region Proposal Network_Faster - RCNN_146120936_1_25">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="RPN" target="Region Proposal Network" id="RPN_Region Proposal Network_146120936_1_26">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="spatial pooling" target="PSPNet" id="spatial pooling_PSPNet_146120936_1_27">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="interpolations" target="upsampling operators" id="interpolations_upsampling operators_146120936_1_29">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="upsampling operators" target="Global&amp;Local" id="upsampling operators_Global&amp;Local_146120936_3_28">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="upsampling operators" target="Partial Conv" id="upsampling operators_Partial Conv_146120936_3_30">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="deconvolution" target="upsampling operators" id="deconvolution_upsampling operators_146120936_1_30">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="deconvolution" target="Mask RCNN" id="deconvolution_Mask RCNN_146120936_2_38">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="dynamic filter" target="content - aware operators" id="dynamic filter_content - aware operators_146120936_1_34">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Spatial attention" target="CARAFE" id="Spatial attention_CARAFE_146120936_1_36">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="STN" target="Spatial Transformer Networks" id="STN_Spatial Transformer Networks_146120936_1_37">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="DCN" target="Deformable Convolutional Networks" id="DCN_Deformable Convolutional Networks_146120936_1_38">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="FPN" target="Feature Pyramid Network" id="FPN_Feature Pyramid Network_146120936_2_1">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="FPN" target="Feature Pyramid Network" id="FPN_Feature Pyramid Network_146120936_2_11">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="FPN" target="UperNet" id="FPN_UperNet_146120936_2_12">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="FPN" target="UperNet" id="FPN_UperNet_146120936_2_14">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="FPN" target="ResNet - 5 0" id="FPN_ResNet - 5 0_146120936_2_29">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="FPN" target="Faster RCNN" id="FPN_Faster RCNN_146120936_2_36">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="FPN" target="Faster RCNN" id="FPN_Faster RCNN_146120936_3_0">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="FPN" target="Mask RCNN" id="FPN_Mask RCNN_146120936_2_37">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="FPN" target="object detection" id="FPN_object detection_146120936_3_15">
+      <data key="d1">Used-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="FPN" target="instance segmentation" id="FPN_instance segmentation_146120936_3_17">
+      <data key="d1">Used-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="feature pyramids" target="FPN" id="feature pyramids_FPN_146120936_2_4">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="top - down pathway" target="feature pyramids" id="top - down pathway_feature pyramids_146120936_2_5">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="lateral connections" target="feature pyramids" id="lateral connections_feature pyramids_146120936_2_6">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="deconvolution layer" target="Mask R - CNN" id="deconvolution layer_Mask R - CNN_146120936_2_7">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="deconvolution layer" target="Mask R - CNN" id="deconvolution layer_Mask R - CNN_146120936_3_12">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="deconvolution layer" target="FPN" id="deconvolution layer_FPN_146120936_3_13">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="UperNet" target="semantic segmentation" id="UperNet_semantic segmentation_146120936_2_8">
+      <data key="d1">Used-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="UperNet" target="ADE 2 0 k" id="UperNet_ADE 2 0 k_146120936_3_23">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="UperNet" target="PSPNet" id="UperNet_PSPNet_146120936_3_25">
+      <data key="d1">Compare-With</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="UperNet" target="PSANet" id="UperNet_PSANet_146120936_3_26">
+      <data key="d1">Compare-With</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="PPM" target="Pyramid Pooling Module" id="PPM_Pyramid Pooling Module_146120936_2_9">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="PPM" target="PSPNet" id="PPM_PSPNet_146120936_2_10">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="FUSE" target="Multi - level Feature Fusion" id="FUSE_Multi - level Feature Fusion_146120936_2_13">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="multi - level feature fusion module" target="UperNet" id="multi - level feature fusion module_UperNet_146120936_2_15">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="U - net" target="image inpainting" id="U - net_image inpainting_146120936_2_16">
+      <data key="d1">Used-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Partial Conv" target="image inpainting" id="Partial Conv_image inpainting_146120936_2_18">
+      <data key="d1">Used-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="ADE 2 0 k" target="semantic segmentation" id="ADE 2 0 k_semantic segmentation_146120936_2_19">
+      <data key="d1">Benchmark-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Places dataset" target="image inpainting" id="Places dataset_image inpainting_146120936_2_20">
+      <data key="d1">Benchmark-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="ResNet - 5 0" target="Faster RCNN" id="ResNet - 5 0_Faster RCNN_146120936_2_22">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="ResNet - 5 0" target="Mask RCNN" id="ResNet - 5 0_Mask RCNN_146120936_2_26">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="MMDetection" target="Faster RCNN" id="MMDetection_Faster RCNN_146120936_2_23">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="MMDetection" target="Mask RCNN" id="MMDetection_Mask RCNN_146120936_2_28">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Detectron" target="Faster RCNN" id="Detectron_Faster RCNN_146120936_2_24">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Detectron" target="Mask RCNN" id="Detectron_Mask RCNN_146120936_2_27">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Mask RCNN" target="object detection" id="Mask RCNN_object detection_146120936_3_16">
+      <data key="d1">Used-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Mask RCNN" target="instance segmentation" id="Mask RCNN_instance segmentation_146120936_3_18">
+      <data key="d1">Used-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Paritial Conv" target="Image Inpainting" id="Paritial Conv_Image Inpainting_146120936_2_31">
+      <data key="d1">Used-For</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="nearest neighbor interpolation" target="FPN" id="nearest neighbor interpolation_FPN_146120936_2_35">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="N.C." target="Nearest + Conv" id="N.C._Nearest + Conv_146120936_3_1">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="B.C." target="Bilinear + Conv" id="B.C._Bilinear + Conv_146120936_3_2">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="P.S." target="Pixel Shuffle" id="P.S._Pixel Shuffle_146120936_3_3">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Pixel Shuffle" target="representative learning based upsampling" id="Pixel Shuffle_representative learning based upsampling_146120936_3_5">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Pixel Shuffle" target="CARAFE" id="Pixel Shuffle_CARAFE_146120936_3_9">
+      <data key="d1">Compare-With</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Deconv" target="representative learning based upsampling" id="Deconv_representative learning based upsampling_146120936_3_4">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Deconv" target="CARAFE" id="Deconv_CARAFE_146120936_3_10">
+      <data key="d1">Compare-With</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Spatial Attention" target="CARAFE" id="Spatial Attention_CARAFE_146120936_3_7">
+      <data key="d1">Compare-With</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="upsamplers" target="UperNet" id="upsamplers_UperNet_146120936_3_22">
+      <data key="d1">Part-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="sigmoid" target="kernel normalizer" id="sigmoid_kernel normalizer_146120936_3_32">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="sigmoid with normalization" target="kernel normalizer" id="sigmoid with normalization_kernel normalizer_146120936_3_33">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Softmax" target="Sigmoid" id="Softmax_Sigmoid_146120936_3_34">
+      <data key="d1">Compare-With</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Sigmoid Normalized" target="Sigmoid" id="Sigmoid Normalized_Sigmoid_146120936_3_35">
+      <data key="d1">Compare-With</data>
+      <data key="d2">146120936</data>
+      <data key="d3">3</data>
+    </edge>
+  </graph>
+</graphml>

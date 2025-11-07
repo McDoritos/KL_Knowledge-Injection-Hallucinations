@@ -1,0 +1,1012 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d3" for="edge" attr.name="chunk_id" attr.type="long" />
+  <key id="d2" for="edge" attr.name="doc_id" attr.type="string" />
+  <key id="d1" for="edge" attr.name="relation" attr.type="string" />
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="VQA">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Visual Question Answering">
+      <data key="d0">Task</data>
+    </node>
+    <node id="LASSO optimization problem">
+      <data key="d0">Task</data>
+    </node>
+    <node id="ranking">
+      <data key="d0">Task</data>
+    </node>
+    <node id="computer vision">
+      <data key="d0">Task</data>
+    </node>
+    <node id="basic question dataset">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="Noise Generator">
+      <data key="d0">Method</data>
+    </node>
+    <node id="main question">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="MQ">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="BQD">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="GBQD">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="General Basic Question Dataset">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="YNBQD">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="Yes/No Basic Question Dataset">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="LASSO ranking method">
+      <data key="d0">Method</data>
+    </node>
+    <node id="BQD ranking">
+      <data key="d0">Task</data>
+    </node>
+    <node id="NLP">
+      <data key="d0">Task</data>
+    </node>
+    <node id="natural language progressing">
+      <data key="d0">Task</data>
+    </node>
+    <node id="BiLingual Evaluation Understudy">
+      <data key="d0">Method</data>
+    </node>
+    <node id="BLEU">
+      <data key="d0">Method</data>
+    </node>
+    <node id="machine translation">
+      <data key="d0">Task</data>
+    </node>
+    <node id="METEOR">
+      <data key="d0">Method</data>
+    </node>
+    <node id="stemming and synonym matching">
+      <data key="d0">Task</data>
+    </node>
+    <node id="ROUGE">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Recall Oriented Understudy of Gisting Evaluation">
+      <data key="d0">Method</data>
+    </node>
+    <node id="CIDEr">
+      <data key="d0">Method</data>
+    </node>
+    <node id="image captioning">
+      <data key="d0">Task</data>
+    </node>
+    <node id="BQ ranking">
+      <data key="d0">Task</data>
+    </node>
+    <node id="BQs">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="LASSO ranking">
+      <data key="d0">Method</data>
+    </node>
+    <node id="deep learning">
+      <data key="d0">Method</data>
+    </node>
+    <node id="fine - grained classification">
+      <data key="d0">Task</data>
+    </node>
+    <node id="multimodal language modeling">
+      <data key="d0">Task</data>
+    </node>
+    <node id="MLB">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Multimodal Low - rank Bi - linear">
+      <data key="d0">Method</data>
+    </node>
+    <node id="RNN">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Recurrent Neural Networks">
+      <data key="d0">Method</data>
+    </node>
+    <node id="CNN">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Convolutional Neural Networks">
+      <data key="d0">Method</data>
+    </node>
+    <node id="question generation">
+      <data key="d0">Task</data>
+    </node>
+    <node id="GRU">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Gated Recurrent Unit">
+      <data key="d0">Method</data>
+    </node>
+    <node id="DAQUAR">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="DAtaset for QUestion Answering on Real - world images">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="VQA test set">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="Visual Madlibs">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="QA">
+      <data key="d0">Task</data>
+    </node>
+    <node id="question answering">
+      <data key="d0">Task</data>
+    </node>
+    <node id="Visual 7 W">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="ranking methods">
+      <data key="d0">Method</data>
+    </node>
+    <node id="BLEU - 1">
+      <data key="d0">Method</data>
+    </node>
+    <node id="BLEU - 2">
+      <data key="d0">Method</data>
+    </node>
+    <node id="BLEU - 3">
+      <data key="d0">Method</data>
+    </node>
+    <node id="BLEU - 4">
+      <data key="d0">Method</data>
+    </node>
+    <node id="ME - TEOR">
+      <data key="d0">Method</data>
+    </node>
+    <node id="GloVe">
+      <data key="d0">Method</data>
+    </node>
+    <node id="text encoders">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Word 2 Vec">
+      <data key="d0">Method</data>
+    </node>
+    <node id="RNN encoder">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Skip - thoughts model">
+      <data key="d0">Method</data>
+    </node>
+    <node id="textual similarity measures">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Yes/No Basic Question dataset">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="MS COCO">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="General and Yes/No BQ datasets">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="VQA dataset">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="General and Yes/No basic questions">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="General and Yes/No BQs">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="LASSO - based ranking">
+      <data key="d0">Method</data>
+    </node>
+    <node id="LASSObased ranking methods">
+      <data key="d0">Method</data>
+    </node>
+    <node id="sen - tence evaluation metrics">
+      <data key="d0">Method</data>
+    </node>
+    <node id="pretrained VQA models">
+      <data key="d0">Method</data>
+    </node>
+    <node id="VQA model">
+      <data key="d0">Method</data>
+    </node>
+    <node id="similarity met - rics">
+      <data key="d0">Method</data>
+    </node>
+    <node id="ROU GE">
+      <data key="d0">Method</data>
+    </node>
+    <node id="M ET EOR">
+      <data key="d0">Method</data>
+    </node>
+    <node id="MU">
+      <data key="d0">Method</data>
+    </node>
+    <node id="MUA">
+      <data key="d0">Method</data>
+    </node>
+    <node id="HieCoAtt">
+      <data key="d0">Method</data>
+    </node>
+    <node id="co - attention mechanism">
+      <data key="d0">Method</data>
+    </node>
+    <node id="VQA models">
+      <data key="d0">Method</data>
+    </node>
+    <node id="LASSO basic question ranking method">
+      <data key="d0">Method</data>
+    </node>
+    <node id="question ranking">
+      <data key="d0">Task</data>
+    </node>
+    <node id="semantic meaning ranking">
+      <data key="d0">Task</data>
+    </node>
+    <node id="BLEU 1 ... 4">
+      <data key="d0">Method</data>
+    </node>
+    <node id="text similarity metrics">
+      <data key="d0">Method</data>
+    </node>
+    <node id="VGG 1 9">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Resnet 2 0 0">
+      <data key="d0">Method</data>
+    </node>
+    <node id="MUTAN with Attention">
+      <data key="d0">Method</data>
+    </node>
+    <node id="LSTM Q+I">
+      <data key="d0">Method</data>
+    </node>
+    <node id="LASSO BQ ranking">
+      <data key="d0">Method</data>
+    </node>
+    <node id="General and Yes/No Basic Question">
+      <data key="d0">Dataset</data>
+    </node>
+    <edge source="VQA" target="Visual Question Answering" id="VQA_Visual Question Answering_208548469_1_0">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="VQA" target="Visual Question Answering" id="VQA_Visual Question Answering_208548469_1_2">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="VQA" target="YNBQD" id="VQA_YNBQD_208548469_3_36">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="VQA" target="VQA dataset" id="VQA_VQA dataset_208548469_3_37">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Visual Question Answering" target="computer vision" id="Visual Question Answering_computer vision_208548469_1_3">
+      <data key="d1">SubTask-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="LASSO optimization problem" target="ranking" id="LASSO optimization problem_ranking_208548469_1_1">
+      <data key="d1">SubTask-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="basic question dataset" target="Noise Generator" id="basic question dataset_Noise Generator_208548469_1_4">
+      <data key="d1">Used-For</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="main question" target="Noise Generator" id="main question_Noise Generator_208548469_1_5">
+      <data key="d1">Used-For</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="MQ" target="main question" id="MQ_main question_208548469_1_6">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="BQD" target="basic question dataset" id="BQD_basic question dataset_208548469_1_7">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="BQD" target="basic question dataset" id="BQD_basic question dataset_208548469_2_9">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="GBQD" target="General Basic Question Dataset" id="GBQD_General Basic Question Dataset_208548469_1_8">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="GBQD" target="General Basic Question Dataset" id="GBQD_General Basic Question Dataset_208548469_1_11">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="GBQD" target="General Basic Question Dataset" id="GBQD_General Basic Question Dataset_208548469_2_26">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="YNBQD" target="Yes/No Basic Question Dataset" id="YNBQD_Yes/No Basic Question Dataset_208548469_1_9">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="YNBQD" target="Yes/No Basic Question Dataset" id="YNBQD_Yes/No Basic Question Dataset_208548469_1_12">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="LASSO ranking method" target="BQD ranking" id="LASSO ranking method_BQD ranking_208548469_1_10">
+      <data key="d1">Used-For</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="LASSO ranking method" target="ranking methods" id="LASSO ranking method_ranking methods_208548469_2_0">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="LASSO ranking method" target="ranking" id="LASSO ranking method_ranking_208548469_2_45">
+      <data key="d1">Used-For</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="LASSO ranking method" target="semantic meaning ranking" id="LASSO ranking method_semantic meaning ranking_208548469_3_1">
+      <data key="d1">Used-For</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="LASSO ranking method" target="BQ ranking" id="LASSO ranking method_BQ ranking_208548469_3_2">
+      <data key="d1">Used-For</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="LASSO ranking method" target="BQs" id="LASSO ranking method_BQs_208548469_3_3">
+      <data key="d1">Used-For</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="LASSO ranking method" target="YNBQD" id="LASSO ranking method_YNBQD_208548469_3_8">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="LASSO ranking method" target="GBQD" id="LASSO ranking method_GBQD_208548469_3_9">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="NLP" target="natural language progressing" id="NLP_natural language progressing_208548469_1_13">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="BiLingual Evaluation Understudy" target="BLEU" id="BiLingual Evaluation Understudy_BLEU_208548469_1_14">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="BLEU" target="machine translation" id="BLEU_machine translation_208548469_1_15">
+      <data key="d1">Used-For</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="BLEU" target="image captioning" id="BLEU_image captioning_208548469_1_23">
+      <data key="d1">Used-For</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="BLEU" target="textual similarity measures" id="BLEU_textual similarity measures_208548469_2_5">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="BLEU" target="similarity met - rics" id="BLEU_similarity met - rics_208548469_2_33">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="METEOR" target="stemming and synonym matching" id="METEOR_stemming and synonym matching_208548469_1_16">
+      <data key="d1">Used-For</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="METEOR" target="BLEU" id="METEOR_BLEU_208548469_1_17">
+      <data key="d1">Compare-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="METEOR" target="textual similarity measures" id="METEOR_textual similarity measures_208548469_2_7">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="METEOR" target="sen - tence evaluation metrics" id="METEOR_sen - tence evaluation metrics_208548469_2_25">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="ROUGE" target="Recall Oriented Understudy of Gisting Evaluation" id="ROUGE_Recall Oriented Understudy of Gisting Evaluation_208548469_1_18">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="ROUGE" target="ranking methods" id="ROUGE_ranking methods_208548469_1_46">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="ROUGE" target="textual similarity measures" id="ROUGE_textual similarity measures_208548469_2_8">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="ROUGE" target="sen - tence evaluation metrics" id="ROUGE_sen - tence evaluation metrics_208548469_2_23">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="CIDEr" target="image captioning" id="CIDEr_image captioning_208548469_1_19">
+      <data key="d1">Used-For</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="CIDEr" target="ranking methods" id="CIDEr_ranking methods_208548469_1_47">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="CIDEr" target="textual similarity measures" id="CIDEr_textual similarity measures_208548469_2_6">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="CIDEr" target="sen - tence evaluation metrics" id="CIDEr_sen - tence evaluation metrics_208548469_2_24">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="CIDEr" target="similarity met - rics" id="CIDEr_similarity met - rics_208548469_2_35">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="CIDEr" target="text similarity metrics" id="CIDEr_text similarity metrics_208548469_3_6">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="BQ ranking" target="BQs" id="BQ ranking_BQs_208548469_1_20">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="LASSO ranking" target="BQs" id="LASSO ranking_BQs_208548469_1_21">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="LASSO ranking" target="BQ ranking" id="LASSO ranking_BQ ranking_208548469_1_22">
+      <data key="d1">Compare-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="deep learning" target="fine - grained classification" id="deep learning_fine - grained classification_208548469_1_24">
+      <data key="d1">Used-For</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="deep learning" target="multimodal language modeling" id="deep learning_multimodal language modeling_208548469_1_25">
+      <data key="d1">Used-For</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="MLB" target="Multimodal Low - rank Bi - linear" id="MLB_Multimodal Low - rank Bi - linear_208548469_1_26">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="RNN" target="Recurrent Neural Networks" id="RNN_Recurrent Neural Networks_208548469_1_27">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="RNN" target="VQA" id="RNN_VQA_208548469_1_31">
+      <data key="d1">Used-For</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Recurrent Neural Networks" target="question generation" id="Recurrent Neural Networks_question generation_208548469_1_29">
+      <data key="d1">Used-For</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="CNN" target="Convolutional Neural Networks" id="CNN_Convolutional Neural Networks_208548469_1_28">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Convolutional Neural Networks" target="question generation" id="Convolutional Neural Networks_question generation_208548469_1_30">
+      <data key="d1">Used-For</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="GRU" target="Gated Recurrent Unit" id="GRU_Gated Recurrent Unit_208548469_1_32">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="GRU" target="RNN encoder" id="GRU_RNN encoder_208548469_2_4">
+      <data key="d1">Part-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Gated Recurrent Unit" target="RNN" id="Gated Recurrent Unit_RNN_208548469_1_33">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="DAQUAR" target="DAtaset for QUestion Answering on Real - world images" id="DAQUAR_DAtaset for QUestion Answering on Real - world images_208548469_1_34">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="DAQUAR" target="VQA" id="DAQUAR_VQA_208548469_1_35">
+      <data key="d1">Benchmark-For</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="VQA test set" target="VQA" id="VQA test set_VQA_208548469_1_36">
+      <data key="d1">Benchmark-For</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Visual Madlibs" target="VQA" id="Visual Madlibs_VQA_208548469_1_37">
+      <data key="d1">Benchmark-For</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Visual Madlibs" target="question answering" id="Visual Madlibs_question answering_208548469_1_39">
+      <data key="d1">Benchmark-For</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="QA" target="question answering" id="QA_question answering_208548469_1_38">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Visual 7 W" target="Visual Madlibs" id="Visual 7 W_Visual Madlibs_208548469_1_40">
+      <data key="d1">Compare-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="ranking methods" target="Noise Generator" id="ranking methods_Noise Generator_208548469_1_41">
+      <data key="d1">Part-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="BLEU - 1" target="ranking methods" id="BLEU - 1_ranking methods_208548469_1_42">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="BLEU - 1" target="sen - tence evaluation metrics" id="BLEU - 1_sen - tence evaluation metrics_208548469_2_19">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="BLEU - 2" target="ranking methods" id="BLEU - 2_ranking methods_208548469_1_43">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="BLEU - 2" target="sen - tence evaluation metrics" id="BLEU - 2_sen - tence evaluation metrics_208548469_2_20">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="BLEU - 3" target="ranking methods" id="BLEU - 3_ranking methods_208548469_1_44">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="BLEU - 3" target="sen - tence evaluation metrics" id="BLEU - 3_sen - tence evaluation metrics_208548469_2_21">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="BLEU - 4" target="ranking methods" id="BLEU - 4_ranking methods_208548469_1_45">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="BLEU - 4" target="sen - tence evaluation metrics" id="BLEU - 4_sen - tence evaluation metrics_208548469_2_22">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="ME - TEOR" target="ranking methods" id="ME - TEOR_ranking methods_208548469_1_48">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="GloVe" target="text encoders" id="GloVe_text encoders_208548469_2_1">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Word 2 Vec" target="text encoders" id="Word 2 Vec_text encoders_208548469_2_2">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="RNN encoder" target="Skip - thoughts model" id="RNN encoder_Skip - thoughts model_208548469_2_3">
+      <data key="d1">Used-For</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Yes/No Basic Question dataset" target="question generation" id="Yes/No Basic Question dataset_question generation_208548469_2_10">
+      <data key="d1">Benchmark-For</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="MS COCO" target="General and Yes/No BQ datasets" id="MS COCO_General and Yes/No BQ datasets_208548469_2_11">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="MS COCO" target="VQA dataset" id="MS COCO_VQA dataset_208548469_2_15">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="VQA dataset" target="General and Yes/No BQ datasets" id="VQA dataset_General and Yes/No BQ datasets_208548469_2_12">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="VQA dataset" target="General and Yes/No basic questions" id="VQA dataset_General and Yes/No basic questions_208548469_2_13">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="VQA dataset" target="VQA" id="VQA dataset_VQA_208548469_2_14">
+      <data key="d1">Benchmark-For</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="General and Yes/No BQs" target="GBQD" id="General and Yes/No BQs_GBQD_208548469_2_16">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="General and Yes/No BQs" target="YNBQD" id="General and Yes/No BQs_YNBQD_208548469_2_17">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="LASSO - based ranking" target="LASSObased ranking methods" id="LASSO - based ranking_LASSObased ranking methods_208548469_2_18">
+      <data key="d1">Compare-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="pretrained VQA models" target="GBQD" id="pretrained VQA models_GBQD_208548469_2_27">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="pretrained VQA models" target="GBQD" id="pretrained VQA models_GBQD_208548469_3_24">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="pretrained VQA models" target="GBQD" id="pretrained VQA models_GBQD_208548469_3_30">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="pretrained VQA models" target="VQA dataset" id="pretrained VQA models_VQA dataset_208548469_2_28">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="pretrained VQA models" target="VQA dataset" id="pretrained VQA models_VQA dataset_208548469_3_25">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="pretrained VQA models" target="VQA dataset" id="pretrained VQA models_VQA dataset_208548469_3_31">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="pretrained VQA models" target="VQA dataset" id="pretrained VQA models_VQA dataset_208548469_3_43">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="pretrained VQA models" target="YNBQD" id="pretrained VQA models_YNBQD_208548469_3_42">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="VQA model" target="GBQD" id="VQA model_GBQD_208548469_2_29">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="VQA model" target="GBQD" id="VQA model_GBQD_208548469_2_31">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="VQA model" target="GBQD" id="VQA model_GBQD_208548469_3_26">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="VQA model" target="GBQD" id="VQA model_GBQD_208548469_3_28">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="VQA model" target="GBQD" id="VQA model_GBQD_208548469_3_32">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="VQA model" target="GBQD" id="VQA model_GBQD_208548469_3_34">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="VQA model" target="VQA dataset" id="VQA model_VQA dataset_208548469_2_30">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="VQA model" target="VQA dataset" id="VQA model_VQA dataset_208548469_2_32">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="VQA model" target="VQA dataset" id="VQA model_VQA dataset_208548469_2_47">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="VQA model" target="VQA dataset" id="VQA model_VQA dataset_208548469_3_0">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="VQA model" target="VQA dataset" id="VQA model_VQA dataset_208548469_3_27">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="VQA model" target="VQA dataset" id="VQA model_VQA dataset_208548469_3_29">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="VQA model" target="VQA dataset" id="VQA model_VQA dataset_208548469_3_33">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="VQA model" target="VQA dataset" id="VQA model_VQA dataset_208548469_3_35">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="VQA model" target="VQA dataset" id="VQA model_VQA dataset_208548469_3_39">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="VQA model" target="VQA dataset" id="VQA model_VQA dataset_208548469_3_41">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="VQA model" target="VQA dataset" id="VQA model_VQA dataset_208548469_3_45">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="VQA model" target="VQA dataset" id="VQA model_VQA dataset_208548469_3_47">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="VQA model" target="BQD" id="VQA model_BQD_208548469_2_46">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="VQA model" target="BQD" id="VQA model_BQD_208548469_2_48">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="VQA model" target="YNBQD" id="VQA model_YNBQD_208548469_3_38">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="VQA model" target="YNBQD" id="VQA model_YNBQD_208548469_3_40">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="VQA model" target="YNBQD" id="VQA model_YNBQD_208548469_3_44">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="VQA model" target="YNBQD" id="VQA model_YNBQD_208548469_3_46">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="ROU GE" target="similarity met - rics" id="ROU GE_similarity met - rics_208548469_2_34">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="ROU GE" target="text similarity metrics" id="ROU GE_text similarity metrics_208548469_3_5">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="M ET EOR" target="similarity met - rics" id="M ET EOR_similarity met - rics_208548469_2_36">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="M ET EOR" target="text similarity metrics" id="M ET EOR_text similarity metrics_208548469_3_7">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="MU" target="MUA" id="MU_MUA_208548469_2_37">
+      <data key="d1">Compare-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="MU" target="MUA" id="MU_MUA_208548469_2_38">
+      <data key="d1">Compare-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="MUA" target="MU" id="MUA_MU_208548469_2_39">
+      <data key="d1">Compare-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="HieCoAtt" target="VQA model" id="HieCoAtt_VQA model_208548469_2_40">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="HieCoAtt" target="VQA model" id="HieCoAtt_VQA model_208548469_2_43">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="HieCoAtt" target="VQA model" id="HieCoAtt_VQA model_208548469_3_14">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="HieCoAtt" target="VQA model" id="HieCoAtt_VQA model_208548469_3_17">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="HieCoAtt" target="VQA models" id="HieCoAtt_VQA models_208548469_2_42">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="HieCoAtt" target="GBQD" id="HieCoAtt_GBQD_208548469_3_12">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="HieCoAtt" target="YNBQD" id="HieCoAtt_YNBQD_208548469_3_15">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="co - attention mechanism" target="HieCoAtt" id="co - attention mechanism_HieCoAtt_208548469_2_41">
+      <data key="d1">Part-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="VQA models" target="General Basic Question Dataset" id="VQA models_General Basic Question Dataset_208548469_3_20">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="VQA models" target="Yes/No Basic Question Dataset" id="VQA models_Yes/No Basic Question Dataset_208548469_3_21">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="LASSO basic question ranking method" target="question ranking" id="LASSO basic question ranking method_question ranking_208548469_2_44">
+      <data key="d1">Used-For</data>
+      <data key="d2">208548469</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="BLEU 1 ... 4" target="text similarity metrics" id="BLEU 1 ... 4_text similarity metrics_208548469_3_4">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="VGG 1 9" target="HieCoAtt" id="VGG 1 9_HieCoAtt_208548469_3_10">
+      <data key="d1">Part-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="VGG 1 9" target="HieCoAtt" id="VGG 1 9_HieCoAtt_208548469_3_13">
+      <data key="d1">Part-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Resnet 2 0 0" target="HieCoAtt" id="Resnet 2 0 0_HieCoAtt_208548469_3_11">
+      <data key="d1">Part-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Resnet 2 0 0" target="HieCoAtt" id="Resnet 2 0 0_HieCoAtt_208548469_3_16">
+      <data key="d1">Part-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="MUTAN with Attention" target="LSTM Q+I" id="MUTAN with Attention_LSTM Q+I_208548469_3_18">
+      <data key="d1">Compare-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="MUTAN with Attention" target="VQA model" id="MUTAN with Attention_VQA model_208548469_3_19">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="LASSO BQ ranking" target="General and Yes/No Basic Question" id="LASSO BQ ranking_General and Yes/No Basic Question_208548469_3_22">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="LASSO BQ ranking" target="ranking" id="LASSO BQ ranking_ranking_208548469_3_23">
+      <data key="d1">Used-For</data>
+      <data key="d2">208548469</data>
+      <data key="d3">3</data>
+    </edge>
+  </graph>
+</graphml>

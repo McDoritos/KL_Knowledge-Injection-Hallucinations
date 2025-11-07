@@ -1,0 +1,71 @@
+Its design is critical for dense prediction tasks such as object detection and semantic/instance segmentation .
+In this work , we propose Content - Aware ReAssembly of FEatures ( CARAFE ) , a universal , lightweight and highly effective operator to fulfill this goal .
+Instead of using a fixed kernel for all samples ( e.g. deconvolution ) , CARAFE enables instance - specific content - aware handling , which generates adaptive kernels on - the - fly . ( 3 ) Lightweight and fast to compute .
+We conduct comprehensive evaluations on standard benchmarks in object detection , instance/semantic segmentation and inpainting .
+On the one hand , for the decoders in dense prediction tasks ( e.g. super resolution [ 6 , 1 7 ] , inpainting [ 1 1 , 2 9 ] and semantic segmentation [ 3 9 , 4 ] ) , the high - level/low - res feature map is upsampled to match the high - resolution supervision .
+On the other hand , feature upsampling is also involved in fusing a highlevel/low - res feature map with a low - level/high - res feature map , which is widely adopted in many state - of - the - art architectures , e.g. , Feature Pyramid Network [ 1 8 ] , U - Net [ 3 1 ] Reassembly Center Reassembled Region Upsample and Stacked Hourglass [ 2 6 ] .
+To this end , we propose a lightweight yet highly effective operator , called ContentAware ReAssembly of Features ( CARAFE ) .
+After upsampled by CARAFE , a feature map can represent the shape of an object more accurately , so that the model can predict better instance segmentation results .
+To demonstrate the universal effectiveness of CARAFE , we conduct comprehensive evaluations across a wide range of dense prediction tasks , i.e. , object detection , instance segmentation , semantic segmentation , image inpainting , with mainstream architectures .
+CARAFE can boost the performance of Faster RCNN [ 3 0 ] [ 4 3 , 4 4 ] val in semantic segmentation , and improves Global&Local [ 1 1 ] by 1. 1 dB of PSNR on Places [ 4 2 ] val in image inpainting .
+When upsampling an H × W feature map with 2 5 6 channels by a factor of two , the introduced computational overhead by CARAFE is only H * W * 1 9 9 k FLOPs , vs. , H * W * 1 1 8 0 k FLOPs of deconvolution .
+Recently , [ 2 3 ] proposed guided upsampling ( GUM ) , which performs interpolation by sampling pixels with learnable offsets .
+Within the realms of super - resolution and denoising , some other works [ 2 4 , 1 4 , 9 ] also explore using learnable kernels spatially in low - level vision .
+Object detection is the task of localizing objects with bounding - boxes , instance segmentation further requires the prediction of instance - wise masks .
+Faster - RCNN [ 3 0 ] introduces Region Proposal Network ( RPN ) for end - to - end training , which is further improved by the guided anchoring scheme [ 3 4 ] . [ 1 8 , 2 1 , 1 5 , 4 1 , 2 8 ] exploits multi - scale feature pyramids to deal with objects at different scales .
+By adding extra mask prediction branches , Mask - RCNN [ 8 ] and its variants [ 1 , 1 0 ] yield promising pixel - level results .
+PSPNet [ 3 9 ] introduces spatial pooling at multiple grid scales . and UperNet [ 3 5 ] designs a more generalized framework based on PSPNet .
+Feature upsampling is a key operator in many modern convolutional network architectures developed for tasks including object detection , instance segmentation , and scene parsing .
+In this work , we propose the content - aware reassembly of features ( CARAFE ) to upsample a feature map .
+Thanks to the content information , CARAFE can use an adaptive and optimized reassembly kernel in different locations and achieve better performance than mainstream upsampling operators , e.g. interpolations or deconvolution .
+Here we discuss the relations between CARAFE and dynamic filter [ 1 3 ] , spatial attention [ 3 ] , spatial transformer [ 1 2 ] and deformable convolution [ 5 ] , which share similar design philosophy but with different focuses .
+Both dynamic filter and CARAFE are content - aware operators , but a fundamental difference between them lies at their kernel generation process .
+In summary , spatial attention is a rescaling operator with point - wise guidance while CARAFE is a reassembly operator with region - wise local guidance .
+Spatial attention can be seen as a special case of CARAFE where the reassembly kernel size is 1 , regardless of the kernel normalizer .
+Spatial Transformer Networks ( STN ) .
+Deformable Convolutional Networks ( DCN ) .
+Similar to dynamic filter , it is also a heavy parametric operator with 2 4 times more computational cost than CARAFE .
+With negligible additional parameters , CARAFE benefits state - of - the - art methods in both highlevel and low - level tasks , such as object detection , instance segmentation , semantic segmentation and image inpainting .
+Feature Pyramid Network ( FPN ) is an important and effective architecture in the field of object detection and instance segmentation .
+It significantly improves the performance of popular frameworks like Faster R - CNN and Mask R - CNN .
+FPN constructs feature pyramids of strong semantics with the top - down pathway and lateral connections .
+In addition to the FPN structure , Mask R - CNN adopts a deconvolution layer at the end of mask head .
+We can also use CARAFE to replace the deconvolution layer , resulting in even less computational cost .
+UperNet is a strong baseline for semantic segmentation .
+It uses upsampling in the following three components , i.e. , PPM , FPN , FUSE .
+Pyramid Pooling Module ( PPM ) .
+PPM is the key component in PSPNet that hierarchically down - samples an input feature map into multiple scales { 1 × 1 , 2 × 2 , 3 × 3 , 6 × 6 } , and then upsamples them back to the original sizes with bilinear interpolation .
+Feature Pyramid Network ( FPN ) .
+Similar to detection models , UperNet also adopts FPN to enrich the feature semantics .
+Multi - level Feature Fusion ( FUSE ) .
+UperNet proposes a multi - level feature fusion module after the FPN .
+The U - net architecture is popular among recent proposed image inpainting methods , such as Global&Local [ 1 1 ] and Partial Conv [ 2 0 ] .
+As for Partial Conv , we can conveniently keep the mask propagation in CARAFE by updating the mask with our content - aware reassembly kernels .   Datasets & Evaluation Metrics .
+Object Detection and Instance Segmentation .
+We adopt the ADE 2 0 k benchmark to evaluate our method in the semantic segmentation task .
+Places dataset is adopted for image inpainting .
+Object Detection and Instance Segmentation .
+We evaluate CARAFE on Faster RCNN and Mask RCNN with the ResNet - 5 0 w/ FPN backbone , and follow the 1x training schedule settings as Detectron [ 7 ] and MMDetection [ 2 ] .
+Image Inpainting We adopt Global&Local [ 1 1 ] and Paritial Conv [ 2 0 ] as baseline methods to evaluate CARAFE .
+Object Detection & Instance Segmentation .
+We first evaluate our method by substituting the nearest neighbor interpolation in FPN with CARAFE for both Faster RCNN and Mask RCNN , and the deconvolution layer in the mask head for Mask RCNN .
+As shown in Table 1 , CARAFE improves Faster RCNN by 1. 2 % on bbox AP , and Mask RCNN by 1. 3 % on mask AP .
+We visualize the feature maps in the top - down pathway of FPN and compare CARAFE with the baseline , i.e. , nearest neighbor interpolation .
+In Figure 4 , we show some examples of instance segmentation results comparing the baseline and CARAFE .
+To investigate the effectiveness of different upsampling operators , we perform extensive experiments on Faster RCNN by using different operators to perform upsampling in FPN .
+For ' N.C. ' and ' B.C. ' , which respectively indicate ' Nearest + Conv ' and ' Bilinear + Conv ' , we add an extra 3 × 3 convolution layer after the corresponding upsampling . ' Deconv ' , ' Pixel Shuffle ' ( indicated as ' P.S. ' ) , ' GUM ' are three representative learning based upsampling methods .
+The results of ' Nearest + Conv ' and ' Bilinear + Conv ' show that extra parameters do not lead to a significant gain . ' Deconv ' , ' Pixel Shuffle ' , ' GUM ' and ' Spatial Attention ' obtain inferior performance to CARAFE , indicating that the design of effective upsampling operators is critical .
+In typical Mask R - CNN , a deconvolution layer is adopted to upsample the RoI features by 2x .
+For a fair comparison , we do not make any changes to FPN , and only replace the deconvolution layer with various operators .
+CARAFE achieves the best performance in instance segmentation among these methods .
+In Table 4 , we report the object detection and instance segmentation results of adopting CARAFE in FPN and mask head on Mask RCNN respectively .
+We replace the upsamplers in UperNet with CARAFE and evaluate the results on ADE 2 0 k benchmark .
+Note that UperNet with CARAFE also achieves better performance than recent strong baselines such as PSPNet [ 3 9 ] and PSANet [ 4 0 ] .
+We show that CARAFE is also effective in low - level tasks such as image inpainting .
+By replacing the upsampling operators with CARAFE in two strong baselines Global&Local [ 1 1 ] and Partial Conv [ 2 0 ] , we observe significant improvements for both methods .
+Other than the softmax function , we also test other alternatives in the kernel normalizer , such as sigmoid or sigmoid with normalization .
+As shown in Table 1 0 , ' Softmax ' and ' Sigmoid Normalized ' have the same performance and better than ' Sigmoid ' , which shows that it is crucial to normalize the reassembly kernel to be summed to 1 .
+With a trained Mask RCNN model adopting CARAFE as the upsampling operator , we visualize the reassembling process in Figure 5 .
+We have presented Content - Aware ReAssembly of FEatures ( CARAFE ) , a universal , lightweight and highly effective upsampling operator .
+It consistently boosts the performances on standard benchmarks in object detection , instance/semantic segmentation and inpainting by 1. 2 % AP , 1. 3 % AP , 1. 8 % mIoU , 1. 1 dB , respectively .
+Future directions include exploring the applicability of CARAFE in low - level vision tasks such as image restoration and super - resolution .

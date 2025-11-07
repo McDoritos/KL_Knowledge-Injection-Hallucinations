@@ -1,0 +1,939 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d3" for="edge" attr.name="chunk_id" attr.type="long" />
+  <key id="d2" for="edge" attr.name="doc_id" attr.type="string" />
+  <key id="d1" for="edge" attr.name="relation" attr.type="string" />
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="image - sentence retrieval">
+      <data key="d0">Task</data>
+    </node>
+    <node id="VL">
+      <data key="d0">Task</data>
+    </node>
+    <node id="image captioning">
+      <data key="d0">Task</data>
+    </node>
+    <node id="visual question answering">
+      <data key="d0">Task</data>
+    </node>
+    <node id="phrase grounding">
+      <data key="d0">Task</data>
+    </node>
+    <node id="text - to - clip retrieval">
+      <data key="d0">Task</data>
+    </node>
+    <node id="LSTM">
+      <data key="d0">Method</data>
+    </node>
+    <node id="retrieval - style tasks">
+      <data key="d0">Task</data>
+    </node>
+    <node id="BERT">
+      <data key="d0">Method</data>
+    </node>
+    <node id="vision - language">
+      <data key="d0">Task</data>
+    </node>
+    <node id="GrOVLE">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Graph Oriented Vision - Language Embedding">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Word 2 Vec">
+      <data key="d0">Method</data>
+    </node>
+    <node id="visual - language graph">
+      <data key="d0">Method</data>
+    </node>
+    <node id="WordNet">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="Visual Genome">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="vision - language embedding">
+      <data key="d0">Method</data>
+    </node>
+    <node id="image and video captioning">
+      <data key="d0">Task</data>
+    </node>
+    <node id="multimodal retrieval">
+      <data key="d0">Task</data>
+    </node>
+    <node id="pretrained dense vector representations">
+      <data key="d0">Method</data>
+    </node>
+    <node id="GloVe">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Fisher vectors">
+      <data key="d0">Method</data>
+    </node>
+    <node id="FastText">
+      <data key="d0">Method</data>
+    </node>
+    <node id="sentiment analysis">
+      <data key="d0">Task</data>
+    </node>
+    <node id="ELMo">
+      <data key="d0">Method</data>
+    </node>
+    <node id="question answering">
+      <data key="d0">Task</data>
+    </node>
+    <node id="Fast - Text">
+      <data key="d0">Method</data>
+    </node>
+    <node id="InferSent">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Visual Word 2 Vec">
+      <data key="d0">Method</data>
+    </node>
+    <node id="HGLMM">
+      <data key="d0">Method</data>
+    </node>
+    <node id="textto - clip retrieval">
+      <data key="d0">Task</data>
+    </node>
+    <node id="Average Embedding">
+      <data key="d0">Method</data>
+    </node>
+    <node id="PackNet">
+      <data key="d0">Method</data>
+    </node>
+    <node id="multi - task training">
+      <data key="d0">Method</data>
+    </node>
+    <node id="word - level attention">
+      <data key="d0">Method</data>
+    </node>
+    <node id="multi - layered perceptron">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Dual attention">
+      <data key="d0">Method</data>
+    </node>
+    <node id="VQA">
+      <data key="d0">Task</data>
+    </node>
+    <node id="feed - forward neural networks">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Self - Attention">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Softmax">
+      <data key="d0">Method</data>
+    </node>
+    <node id="fully connected layer">
+      <data key="d0">Method</data>
+    </node>
+    <node id="CBOW">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Continuous Bag of Words">
+      <data key="d0">Method</data>
+    </node>
+    <node id="bi - directional LSTM">
+      <data key="d0">Method</data>
+    </node>
+    <node id="max - pooling">
+      <data key="d0">Method</data>
+    </node>
+    <node id="sentence - level embedding">
+      <data key="d0">Method</data>
+    </node>
+    <node id="NLI">
+      <data key="d0">Task</data>
+    </node>
+    <node id="Natural Language Inference">
+      <data key="d0">Task</data>
+    </node>
+    <node id="BiLSTM">
+      <data key="d0">Method</data>
+    </node>
+    <node id="MLM">
+      <data key="d0">Task</data>
+    </node>
+    <node id="Masked Language Modeling">
+      <data key="d0">Task</data>
+    </node>
+    <node id="DiDeMo">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="ReferIt">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="Google News">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="text - to - clip">
+      <data key="d0">Task</data>
+    </node>
+    <node id="Retrofitting">
+      <data key="d0">Method</data>
+    </node>
+    <node id="HGLMM Fisher Vectors">
+      <data key="d0">Method</data>
+    </node>
+    <node id="LSTM - based approach">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Flickr 3 0 K Entities">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="Flickr 3 0 K">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="MSCOCO">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="In - ferSent">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Hybrid Gaussian - Laplacian Mixture Model">
+      <data key="d0">Method</data>
+    </node>
+    <node id="PCA">
+      <data key="d0">Method</data>
+    </node>
+    <node id="captioning">
+      <data key="d0">Task</data>
+    </node>
+    <node id="generation - based tasks">
+      <data key="d0">Task</data>
+    </node>
+    <node id="generation tasks">
+      <data key="d0">Task</data>
+    </node>
+    <node id="LSTM language model">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Self - Attention language model">
+      <data key="d0">Method</data>
+    </node>
+    <edge source="image - sentence retrieval" target="VL" id="image - sentence retrieval_VL_201070522_1_0">
+      <data key="d1">SubTask-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="image captioning" target="VL" id="image captioning_VL_201070522_1_1">
+      <data key="d1">SubTask-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="image captioning" target="generation tasks" id="image captioning_generation tasks_201070522_3_26">
+      <data key="d1">SubTask-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="visual question answering" target="VL" id="visual question answering_VL_201070522_1_2">
+      <data key="d1">SubTask-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="visual question answering" target="vision - language" id="visual question answering_vision - language_201070522_1_16">
+      <data key="d1">SubTask-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="phrase grounding" target="VL" id="phrase grounding_VL_201070522_1_3">
+      <data key="d1">SubTask-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="phrase grounding" target="vision - language" id="phrase grounding_vision - language_201070522_1_15">
+      <data key="d1">SubTask-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="text - to - clip retrieval" target="VL" id="text - to - clip retrieval_VL_201070522_1_4">
+      <data key="d1">SubTask-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="LSTM" target="retrieval - style tasks" id="LSTM_retrieval - style tasks_201070522_1_5">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="LSTM" target="retrieval - style tasks" id="LSTM_retrieval - style tasks_201070522_3_43">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="LSTM" target="image captioning" id="LSTM_image captioning_201070522_2_20">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="BERT" target="vision - language" id="BERT_vision - language_201070522_1_6">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="BERT" target="vision - language" id="BERT_vision - language_201070522_3_4">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="BERT" target="sentiment analysis" id="BERT_sentiment analysis_201070522_1_22">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="BERT" target="question answering" id="BERT_question answering_201070522_1_25">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="BERT" target="image - sentence retrieval" id="BERT_image - sentence retrieval_201070522_1_31">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="BERT" target="image - sentence retrieval" id="BERT_image - sentence retrieval_201070522_3_5">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="BERT" target="visual question answering" id="BERT_visual question answering_201070522_1_41">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="BERT" target="phrase grounding" id="BERT_phrase grounding_201070522_1_47">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="BERT" target="image captioning" id="BERT_image captioning_201070522_2_6">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="BERT" target="textto - clip retrieval" id="BERT_textto - clip retrieval_201070522_2_13">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="BERT" target="InferSent" id="BERT_InferSent_201070522_3_2">
+      <data key="d1">Compare-With</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="BERT" target="Flickr 3 0 K" id="BERT_Flickr 3 0 K_201070522_3_9">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="BERT" target="MSCOCO" id="BERT_MSCOCO_201070522_3_13">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="GrOVLE" target="Graph Oriented Vision - Language Embedding" id="GrOVLE_Graph Oriented Vision - Language Embedding_201070522_1_7">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="GrOVLE" target="Graph Oriented Vision - Language Embedding" id="GrOVLE_Graph Oriented Vision - Language Embedding_201070522_2_15">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="GrOVLE" target="image - sentence retrieval" id="GrOVLE_image - sentence retrieval_201070522_1_34">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="GrOVLE" target="vision - language" id="GrOVLE_vision - language_201070522_2_16">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="GrOVLE" target="PackNet" id="GrOVLE_PackNet_201070522_2_17">
+      <data key="d1">Compare-With</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="GrOVLE" target="Word 2 Vec" id="GrOVLE_Word 2 Vec_201070522_2_44">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="GrOVLE" target="Word 2 Vec" id="GrOVLE_Word 2 Vec_201070522_3_21">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="GrOVLE" target="WordNet" id="GrOVLE_WordNet_201070522_3_22">
+      <data key="d1">Trained-With</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="GrOVLE" target="WordNet" id="GrOVLE_WordNet_201070522_3_46">
+      <data key="d1">Trained-With</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="GrOVLE" target="Visual Genome" id="GrOVLE_Visual Genome_201070522_3_23">
+      <data key="d1">Trained-With</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="GrOVLE" target="Visual Genome" id="GrOVLE_Visual Genome_201070522_3_47">
+      <data key="d1">Trained-With</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Graph Oriented Vision - Language Embedding" target="vision - language embedding" id="Graph Oriented Vision - Language Embedding_vision - language embedding_201070522_1_12">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Word 2 Vec" target="Graph Oriented Vision - Language Embedding" id="Word 2 Vec_Graph Oriented Vision - Language Embedding_201070522_1_8">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Word 2 Vec" target="WordNet" id="Word 2 Vec_WordNet_201070522_1_10">
+      <data key="d1">Trained-With</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Word 2 Vec" target="WordNet" id="Word 2 Vec_WordNet_201070522_1_26">
+      <data key="d1">Trained-With</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Word 2 Vec" target="pretrained dense vector representations" id="Word 2 Vec_pretrained dense vector representations_201070522_1_17">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Word 2 Vec" target="image - sentence retrieval" id="Word 2 Vec_image - sentence retrieval_201070522_1_27">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Word 2 Vec" target="image - sentence retrieval" id="Word 2 Vec_image - sentence retrieval_201070522_1_28">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Word 2 Vec" target="image - sentence retrieval" id="Word 2 Vec_image - sentence retrieval_201070522_3_7">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Word 2 Vec" target="visual question answering" id="Word 2 Vec_visual question answering_201070522_1_36">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Word 2 Vec" target="visual question answering" id="Word 2 Vec_visual question answering_201070522_1_37">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Word 2 Vec" target="phrase grounding" id="Word 2 Vec_phrase grounding_201070522_1_43">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Word 2 Vec" target="phrase grounding" id="Word 2 Vec_phrase grounding_201070522_1_44">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Word 2 Vec" target="image captioning" id="Word 2 Vec_image captioning_201070522_2_0">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Word 2 Vec" target="image captioning" id="Word 2 Vec_image captioning_201070522_2_1">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Word 2 Vec" target="image captioning" id="Word 2 Vec_image captioning_201070522_2_40">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Word 2 Vec" target="textto - clip retrieval" id="Word 2 Vec_textto - clip retrieval_201070522_2_7">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Word 2 Vec" target="textto - clip retrieval" id="Word 2 Vec_textto - clip retrieval_201070522_2_8">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Word 2 Vec" target="Google News" id="Word 2 Vec_Google News_201070522_2_36">
+      <data key="d1">Trained-With</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Word 2 Vec" target="FastText" id="Word 2 Vec_FastText_201070522_2_37">
+      <data key="d1">Compare-With</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Word 2 Vec" target="text - to - clip" id="Word 2 Vec_text - to - clip_201070522_2_38">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Word 2 Vec" target="Flickr 3 0 K" id="Word 2 Vec_Flickr 3 0 K_201070522_3_11">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Word 2 Vec" target="MSCOCO" id="Word 2 Vec_MSCOCO_201070522_3_14">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="visual - language graph" target="Graph Oriented Vision - Language Embedding" id="visual - language graph_Graph Oriented Vision - Language Embedding_201070522_1_9">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="visual - language graph" target="Visual Genome" id="visual - language graph_Visual Genome_201070522_1_11">
+      <data key="d1">Trained-With</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="image and video captioning" target="vision - language" id="image and video captioning_vision - language_201070522_1_13">
+      <data key="d1">SubTask-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="multimodal retrieval" target="vision - language" id="multimodal retrieval_vision - language_201070522_1_14">
+      <data key="d1">SubTask-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="GloVe" target="pretrained dense vector representations" id="GloVe_pretrained dense vector representations_201070522_1_18">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Fisher vectors" target="pretrained dense vector representations" id="Fisher vectors_pretrained dense vector representations_201070522_1_19">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Fisher vectors" target="Word 2 Vec" id="Fisher vectors_Word 2 Vec_201070522_3_19">
+      <data key="d1">Part-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="FastText" target="sentiment analysis" id="FastText_sentiment analysis_201070522_1_20">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="FastText" target="question answering" id="FastText_question answering_201070522_1_23">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="FastText" target="Word 2 Vec" id="FastText_Word 2 Vec_201070522_2_27">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="FastText" target="text - to - clip" id="FastText_text - to - clip_201070522_2_39">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="FastText" target="image captioning" id="FastText_image captioning_201070522_2_41">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="ELMo" target="sentiment analysis" id="ELMo_sentiment analysis_201070522_1_21">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="ELMo" target="question answering" id="ELMo_question answering_201070522_1_24">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Fast - Text" target="image - sentence retrieval" id="Fast - Text_image - sentence retrieval_201070522_1_29">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Fast - Text" target="visual question answering" id="Fast - Text_visual question answering_201070522_1_38">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Fast - Text" target="phrase grounding" id="Fast - Text_phrase grounding_201070522_1_45">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Fast - Text" target="image captioning" id="Fast - Text_image captioning_201070522_2_2">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Fast - Text" target="textto - clip retrieval" id="Fast - Text_textto - clip retrieval_201070522_2_9">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="InferSent" target="image - sentence retrieval" id="InferSent_image - sentence retrieval_201070522_1_30">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="InferSent" target="image - sentence retrieval" id="InferSent_image - sentence retrieval_201070522_3_6">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="InferSent" target="visual question answering" id="InferSent_visual question answering_201070522_1_40">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="InferSent" target="phrase grounding" id="InferSent_phrase grounding_201070522_1_46">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="InferSent" target="image captioning" id="InferSent_image captioning_201070522_2_5">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="InferSent" target="textto - clip retrieval" id="InferSent_textto - clip retrieval_201070522_2_12">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="InferSent" target="sentence - level embedding" id="InferSent_sentence - level embedding_201070522_2_30">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="InferSent" target="BERT" id="InferSent_BERT_201070522_3_0">
+      <data key="d1">Compare-With</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="InferSent" target="vision - language" id="InferSent_vision - language_201070522_3_3">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="InferSent" target="Flickr 3 0 K" id="InferSent_Flickr 3 0 K_201070522_3_10">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="InferSent" target="MSCOCO" id="InferSent_MSCOCO_201070522_3_12">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Visual Word 2 Vec" target="image - sentence retrieval" id="Visual Word 2 Vec_image - sentence retrieval_201070522_1_32">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Visual Word 2 Vec" target="visual question answering" id="Visual Word 2 Vec_visual question answering_201070522_1_35">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Visual Word 2 Vec" target="image captioning" id="Visual Word 2 Vec_image captioning_201070522_2_3">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Visual Word 2 Vec" target="image captioning" id="Visual Word 2 Vec_image captioning_201070522_3_29">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Visual Word 2 Vec" target="textto - clip retrieval" id="Visual Word 2 Vec_textto - clip retrieval_201070522_2_10">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Visual Word 2 Vec" target="generation tasks" id="Visual Word 2 Vec_generation tasks_201070522_3_28">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Visual Word 2 Vec" target="VQA" id="Visual Word 2 Vec_VQA_201070522_3_30">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="HGLMM" target="image - sentence retrieval" id="HGLMM_image - sentence retrieval_201070522_1_33">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="HGLMM" target="visual question answering" id="HGLMM_visual question answering_201070522_1_39">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="HGLMM" target="phrase grounding" id="HGLMM_phrase grounding_201070522_1_42">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="HGLMM" target="image captioning" id="HGLMM_image captioning_201070522_2_4">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="HGLMM" target="textto - clip retrieval" id="HGLMM_textto - clip retrieval_201070522_2_11">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="HGLMM" target="Hybrid Gaussian - Laplacian Mixture Model" id="HGLMM_Hybrid Gaussian - Laplacian Mixture Model_201070522_3_18">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Average Embedding" target="LSTM" id="Average Embedding_LSTM_201070522_2_14">
+      <data key="d1">Part-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Average Embedding" target="LSTM" id="Average Embedding_LSTM_201070522_3_44">
+      <data key="d1">Compare-With</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Average Embedding" target="LSTM - based approach" id="Average Embedding_LSTM - based approach_201070522_2_45">
+      <data key="d1">Compare-With</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Average Embedding" target="retrieval - style tasks" id="Average Embedding_retrieval - style tasks_201070522_3_41">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="multi - task training" target="vision - language" id="multi - task training_vision - language_201070522_2_18">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="word - level attention" target="image captioning" id="word - level attention_image captioning_201070522_2_19">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="multi - layered perceptron" target="image captioning" id="multi - layered perceptron_image captioning_201070522_2_21">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Dual attention" target="VQA" id="Dual attention_VQA_201070522_2_22">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="VQA" target="generation - based tasks" id="VQA_generation - based tasks_201070522_3_25">
+      <data key="d1">SubTask-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="VQA" target="generation tasks" id="VQA_generation tasks_201070522_3_27">
+      <data key="d1">SubTask-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="feed - forward neural networks" target="VQA" id="feed - forward neural networks_VQA_201070522_2_23">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Self - Attention" target="Average Embedding" id="Self - Attention_Average Embedding_201070522_2_24">
+      <data key="d1">Compare-With</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Self - Attention" target="LSTM - based approach" id="Self - Attention_LSTM - based approach_201070522_2_46">
+      <data key="d1">Compare-With</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Self - Attention" target="GrOVLE" id="Self - Attention_GrOVLE_201070522_3_32">
+      <data key="d1">Part-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Self - Attention" target="image - sentence retrieval" id="Self - Attention_image - sentence retrieval_201070522_3_33">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Self - Attention" target="phrase grounding" id="Self - Attention_phrase grounding_201070522_3_34">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Softmax" target="fully connected layer" id="Softmax_fully connected layer_201070522_2_25">
+      <data key="d1">Part-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="CBOW" target="Continuous Bag of Words" id="CBOW_Continuous Bag of Words_201070522_2_26">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="bi - directional LSTM" target="InferSent" id="bi - directional LSTM_InferSent_201070522_2_28">
+      <data key="d1">Part-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="max - pooling" target="bi - directional LSTM" id="max - pooling_bi - directional LSTM_201070522_2_29">
+      <data key="d1">Part-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="NLI" target="Natural Language Inference" id="NLI_Natural Language Inference_201070522_2_31">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="BiLSTM" target="NLI" id="BiLSTM_NLI_201070522_2_32">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="MLM" target="Masked Language Modeling" id="MLM_Masked Language Modeling_201070522_2_33">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="DiDeMo" target="phrase grounding" id="DiDeMo_phrase grounding_201070522_2_34">
+      <data key="d1">Benchmark-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="ReferIt" target="phrase grounding" id="ReferIt_phrase grounding_201070522_2_35">
+      <data key="d1">Benchmark-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="ReferIt" target="phrase grounding" id="ReferIt_phrase grounding_201070522_2_47">
+      <data key="d1">Benchmark-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="ReferIt" target="phrase grounding" id="ReferIt_phrase grounding_201070522_3_40">
+      <data key="d1">Benchmark-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Retrofitting" target="Word 2 Vec" id="Retrofitting_Word 2 Vec_201070522_2_42">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="HGLMM Fisher Vectors" target="Word 2 Vec" id="HGLMM Fisher Vectors_Word 2 Vec_201070522_2_43">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Flickr 3 0 K Entities" target="phrase grounding" id="Flickr 3 0 K Entities_phrase grounding_201070522_3_1">
+      <data key="d1">Benchmark-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Flickr 3 0 K Entities" target="phrase grounding" id="Flickr 3 0 K Entities_phrase grounding_201070522_3_16">
+      <data key="d1">Benchmark-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Flickr 3 0 K" target="image - sentence retrieval" id="Flickr 3 0 K_image - sentence retrieval_201070522_3_8">
+      <data key="d1">Benchmark-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Flickr 3 0 K" target="image - sentence retrieval" id="Flickr 3 0 K_image - sentence retrieval_201070522_3_31">
+      <data key="d1">Benchmark-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Flickr 3 0 K" target="image - sentence retrieval" id="Flickr 3 0 K_image - sentence retrieval_201070522_3_38">
+      <data key="d1">Benchmark-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="MSCOCO" target="image - sentence retrieval" id="MSCOCO_image - sentence retrieval_201070522_3_39">
+      <data key="d1">Benchmark-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="In - ferSent" target="phrase grounding" id="In - ferSent_phrase grounding_201070522_3_15">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="In - ferSent" target="Flickr 3 0 K Entities" id="In - ferSent_Flickr 3 0 K Entities_201070522_3_17">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="PCA" target="VL" id="PCA_VL_201070522_3_20">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="captioning" target="generation - based tasks" id="captioning_generation - based tasks_201070522_3_24">
+      <data key="d1">SubTask-Of</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="LSTM language model" target="text - to - clip" id="LSTM language model_text - to - clip_201070522_3_35">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="LSTM language model" target="image captioning" id="LSTM language model_image captioning_201070522_3_36">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="LSTM language model" target="VQA" id="LSTM language model_VQA_201070522_3_37">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Self - Attention language model" target="retrieval - style tasks" id="Self - Attention language model_retrieval - style tasks_201070522_3_42">
+      <data key="d1">Used-For</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Self - Attention language model" target="LSTM" id="Self - Attention language model_LSTM_201070522_3_45">
+      <data key="d1">Compare-With</data>
+      <data key="d2">201070522</data>
+      <data key="d3">3</data>
+    </edge>
+  </graph>
+</graphml>

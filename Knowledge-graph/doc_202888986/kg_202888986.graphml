@@ -1,0 +1,586 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d3" for="edge" attr.name="chunk_id" attr.type="long" />
+  <key id="d2" for="edge" attr.name="doc_id" attr.type="string" />
+  <key id="d1" for="edge" attr.name="relation" attr.type="string" />
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="BERT - large">
+      <data key="d0">Method</data>
+    </node>
+    <node id="GLUE">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="RACE">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="\squad">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="reading comprehension">
+      <data key="d0">Task</data>
+    </node>
+    <node id="BERT - xlarge">
+      <data key="d0">Method</data>
+    </node>
+    <node id="ALBERT">
+      <data key="d0">Method</data>
+    </node>
+    <node id="BERT">
+      <data key="d0">Method</data>
+    </node>
+    <node id="self - supervised loss">
+      <data key="d0">Method</data>
+    </node>
+    <node id="sentence - order prediction">
+      <data key="d0">Task</data>
+    </node>
+    <node id="SOP">
+      <data key="d0">Task</data>
+    </node>
+    <node id="NSP">
+      <data key="d0">Task</data>
+    </node>
+    <node id="next sentence prediction">
+      <data key="d0">Task</data>
+    </node>
+    <node id="natural language understanding">
+      <data key="d0">Task</data>
+    </node>
+    <node id="SQuAD">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="UT">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Universal Transformer">
+      <data key="d0">Method</data>
+    </node>
+    <node id="language modeling">
+      <data key="d0">Task</data>
+    </node>
+    <node id="transformer">
+      <data key="d0">Method</data>
+    </node>
+    <node id="subject - verb agreement">
+      <data key="d0">Task</data>
+    </node>
+    <node id="DQE">
+      <data key="d0">Method</data>
+    </node>
+    <node id="Deep Equilibrium Model">
+      <data key="d0">Method</data>
+    </node>
+    <node id="sentence embeddings">
+      <data key="d0">Task</data>
+    </node>
+    <node id="sentence ordering">
+      <data key="d0">Task</data>
+    </node>
+    <node id="transformer encoder">
+      <data key="d0">Method</data>
+    </node>
+    <node id="GELU nonlinearities">
+      <data key="d0">Method</data>
+    </node>
+    <node id="XLNet">
+      <data key="d0">Method</data>
+    </node>
+    <node id="RoBERTa">
+      <data key="d0">Method</data>
+    </node>
+    <node id="FFN">
+      <data key="d0">Method</data>
+    </node>
+    <node id="feed - forward network">
+      <data key="d0">Method</data>
+    </node>
+    <node id="MLM">
+      <data key="d0">Task</data>
+    </node>
+    <node id="masked language modeling">
+      <data key="d0">Task</data>
+    </node>
+    <node id="next - sentence prediction">
+      <data key="d0">Task</data>
+    </node>
+    <node id="natural language inference">
+      <data key="d0">Task</data>
+    </node>
+    <node id="ALBERT - large">
+      <data key="d0">Method</data>
+    </node>
+    <node id="ALBERT - xlarge">
+      <data key="d0">Method</data>
+    </node>
+    <node id="ALBERT - xxlarge">
+      <data key="d0">Method</data>
+    </node>
+    <node id="SentencePiece">
+      <data key="d0">Method</data>
+    </node>
+    <node id="General Language Understanding Evaluation">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="SQuAD ;">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="Stanford Question Answering Dataset">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="ReAding Comprehension from Examinations">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="SQuAD v 1 . 1">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="SQuAD v 2 . 0">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="MNLI">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="SST - 2">
+      <data key="d0">Dataset</data>
+    </node>
+    <node id="BERT - base">
+      <data key="d0">Method</data>
+    </node>
+    <node id="dropout">
+      <data key="d0">Method</data>
+    </node>
+    <node id="DCMI+">
+      <data key="d0">Method</data>
+    </node>
+    <edge source="BERT - large" target="GLUE" id="BERT - large_GLUE_202888986_1_0">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="BERT - large" target="RACE" id="BERT - large_RACE_202888986_1_1">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="BERT - large" target="RACE" id="BERT - large_RACE_202888986_1_5">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="BERT - large" target="RACE" id="BERT - large_RACE_202888986_3_10">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="BERT - large" target="\squad" id="BERT - large_\squad_202888986_1_2">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="BERT - large" target="BERT - xlarge" id="BERT - large_BERT - xlarge_202888986_1_4">
+      <data key="d1">Compare-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="BERT - large" target="SQuAD v 1 . 1" id="BERT - large_SQuAD v 1 . 1_202888986_3_2">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="BERT - large" target="SQuAD v 2 . 0" id="BERT - large_SQuAD v 2 . 0_202888986_3_4">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="BERT - large" target="MNLI" id="BERT - large_MNLI_202888986_3_6">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="BERT - large" target="SST - 2" id="BERT - large_SST - 2_202888986_3_8">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="BERT - large" target="ALBERT - xxlarge" id="BERT - large_ALBERT - xxlarge_202888986_3_19">
+      <data key="d1">Compare-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="GLUE" target="natural language understanding" id="GLUE_natural language understanding_202888986_1_15">
+      <data key="d1">Benchmark-For</data>
+      <data key="d2">202888986</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="GLUE" target="General Language Understanding Evaluation" id="GLUE_General Language Understanding Evaluation_202888986_2_25">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">202888986</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="RACE" target="reading comprehension" id="RACE_reading comprehension_202888986_1_3">
+      <data key="d1">Benchmark-For</data>
+      <data key="d2">202888986</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="RACE" target="natural language understanding" id="RACE_natural language understanding_202888986_1_17">
+      <data key="d1">Benchmark-For</data>
+      <data key="d2">202888986</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="RACE" target="ReAding Comprehension from Examinations" id="RACE_ReAding Comprehension from Examinations_202888986_2_27">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">202888986</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="BERT - xlarge" target="BERT - base" id="BERT - xlarge_BERT - base_202888986_3_11">
+      <data key="d1">Compare-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="ALBERT" target="BERT" id="ALBERT_BERT_202888986_1_6">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">202888986</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="ALBERT" target="BERT" id="ALBERT_BERT_202888986_1_27">
+      <data key="d1">Compare-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="ALBERT" target="BERT" id="ALBERT_BERT_202888986_2_0">
+      <data key="d1">Compare-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="ALBERT" target="BERT" id="ALBERT_BERT_202888986_2_3">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">202888986</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="ALBERT" target="BERT" id="ALBERT_BERT_202888986_2_7">
+      <data key="d1">Compare-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="ALBERT" target="BERT" id="ALBERT_BERT_202888986_2_20">
+      <data key="d1">Compare-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="ALBERT" target="BERT" id="ALBERT_BERT_202888986_3_12">
+      <data key="d1">Compare-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="ALBERT" target="BERT" id="ALBERT_BERT_202888986_3_15">
+      <data key="d1">Compare-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="ALBERT" target="BERT - large" id="ALBERT_BERT - large_202888986_1_14">
+      <data key="d1">Compare-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="ALBERT" target="DQE" id="ALBERT_DQE_202888986_2_8">
+      <data key="d1">Compare-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="ALBERT" target="sentence - order prediction" id="ALBERT_sentence - order prediction_202888986_2_16">
+      <data key="d1">Trained-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="ALBERT" target="SOP" id="ALBERT_SOP_202888986_3_17">
+      <data key="d1">Trained-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="ALBERT" target="GLUE" id="ALBERT_GLUE_202888986_3_23">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="ALBERT" target="SQuAD" id="ALBERT_SQuAD_202888986_3_24">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="ALBERT" target="RACE" id="ALBERT_RACE_202888986_3_25">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="BERT" target="next sentence prediction" id="BERT_next sentence prediction_202888986_1_13">
+      <data key="d1">Trained-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="BERT" target="masked language modeling" id="BERT_masked language modeling_202888986_2_10">
+      <data key="d1">Trained-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="BERT" target="next - sentence prediction" id="BERT_next - sentence prediction_202888986_2_12">
+      <data key="d1">Trained-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="BERT" target="SOP" id="BERT_SOP_202888986_2_17">
+      <data key="d1">Trained-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="BERT" target="ALBERT" id="BERT_ALBERT_202888986_2_19">
+      <data key="d1">Compare-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="BERT" target="ALBERT" id="BERT_ALBERT_202888986_3_13">
+      <data key="d1">Compare-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="BERT" target="NSP" id="BERT_NSP_202888986_3_16">
+      <data key="d1">Trained-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="self - supervised loss" target="ALBERT" id="self - supervised loss_ALBERT_202888986_1_7">
+      <data key="d1">Part-Of</data>
+      <data key="d2">202888986</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="self - supervised loss" target="sentence - order prediction" id="self - supervised loss_sentence - order prediction_202888986_1_10">
+      <data key="d1">Used-For</data>
+      <data key="d2">202888986</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="sentence - order prediction" target="ALBERT" id="sentence - order prediction_ALBERT_202888986_1_8">
+      <data key="d1">Trained-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="SOP" target="sentence - order prediction" id="SOP_sentence - order prediction_202888986_1_9">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">202888986</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="SOP" target="sentence - order prediction" id="SOP_sentence - order prediction_202888986_2_15">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">202888986</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="SOP" target="next sentence prediction" id="SOP_next sentence prediction_202888986_1_12">
+      <data key="d1">Compare-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="SOP" target="NSP" id="SOP_NSP_202888986_2_18">
+      <data key="d1">Used-For</data>
+      <data key="d2">202888986</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="NSP" target="next sentence prediction" id="NSP_next sentence prediction_202888986_1_11">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">202888986</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="NSP" target="next - sentence prediction" id="NSP_next - sentence prediction_202888986_2_11">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">202888986</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="NSP" target="natural language inference" id="NSP_natural language inference_202888986_2_13">
+      <data key="d1">Used-For</data>
+      <data key="d2">202888986</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="NSP" target="MLM" id="NSP_MLM_202888986_2_14">
+      <data key="d1">Compare-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="NSP" target="SOP" id="NSP_SOP_202888986_3_18">
+      <data key="d1">Compare-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="SQuAD" target="natural language understanding" id="SQuAD_natural language understanding_202888986_1_16">
+      <data key="d1">Benchmark-For</data>
+      <data key="d2">202888986</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="UT" target="Universal Transformer" id="UT_Universal Transformer_202888986_1_18">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">202888986</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Universal Transformer" target="language modeling" id="Universal Transformer_language modeling_202888986_1_19">
+      <data key="d1">Used-For</data>
+      <data key="d2">202888986</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Universal Transformer" target="subject - verb agreement" id="Universal Transformer_subject - verb agreement_202888986_1_21">
+      <data key="d1">Used-For</data>
+      <data key="d2">202888986</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Universal Transformer" target="transformer" id="Universal Transformer_transformer_202888986_1_23">
+      <data key="d1">Compare-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="transformer" target="language modeling" id="transformer_language modeling_202888986_1_20">
+      <data key="d1">Used-For</data>
+      <data key="d2">202888986</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="transformer" target="subject - verb agreement" id="transformer_subject - verb agreement_202888986_1_22">
+      <data key="d1">Used-For</data>
+      <data key="d2">202888986</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="DQE" target="Deep Equilibrium Model" id="DQE_Deep Equilibrium Model_202888986_1_24">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">202888986</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Deep Equilibrium Model" target="transformer" id="Deep Equilibrium Model_transformer_202888986_1_25">
+      <data key="d1">Part-Of</data>
+      <data key="d2">202888986</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="sentence embeddings" target="sentence ordering" id="sentence embeddings_sentence ordering_202888986_1_26">
+      <data key="d1">SubTask-Of</data>
+      <data key="d2">202888986</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="transformer encoder" target="ALBERT" id="transformer encoder_ALBERT_202888986_1_28">
+      <data key="d1">Part-Of</data>
+      <data key="d2">202888986</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="transformer encoder" target="BERT" id="transformer encoder_BERT_202888986_2_1">
+      <data key="d1">Part-Of</data>
+      <data key="d2">202888986</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="GELU nonlinearities" target="transformer encoder" id="GELU nonlinearities_transformer encoder_202888986_2_2">
+      <data key="d1">Part-Of</data>
+      <data key="d2">202888986</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="XLNet" target="BERT" id="XLNet_BERT_202888986_2_4">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">202888986</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="RoBERTa" target="BERT" id="RoBERTa_BERT_202888986_2_5">
+      <data key="d1">SubClass-Of</data>
+      <data key="d2">202888986</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="FFN" target="feed - forward network" id="FFN_feed - forward network_202888986_2_6">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">202888986</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="MLM" target="masked language modeling" id="MLM_masked language modeling_202888986_2_9">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">202888986</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="ALBERT - large" target="BERT - large" id="ALBERT - large_BERT - large_202888986_2_21">
+      <data key="d1">Compare-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="ALBERT - xlarge" target="ALBERT - xxlarge" id="ALBERT - xlarge_ALBERT - xxlarge_202888986_2_22">
+      <data key="d1">Compare-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="ALBERT - xlarge" target="BERT - xlarge" id="ALBERT - xlarge_BERT - xlarge_202888986_3_14">
+      <data key="d1">Compare-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="ALBERT - xxlarge" target="BERT - large" id="ALBERT - xxlarge_BERT - large_202888986_2_28">
+      <data key="d1">Compare-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="ALBERT - xxlarge" target="BERT - large" id="ALBERT - xxlarge_BERT - large_202888986_3_0">
+      <data key="d1">Compare-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="ALBERT - xxlarge" target="BERT - large" id="ALBERT - xxlarge_BERT - large_202888986_3_27">
+      <data key="d1">Compare-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="ALBERT - xxlarge" target="SQuAD v 1 . 1" id="ALBERT - xxlarge_SQuAD v 1 . 1_202888986_3_1">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="ALBERT - xxlarge" target="SQuAD v 2 . 0" id="ALBERT - xxlarge_SQuAD v 2 . 0_202888986_3_3">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="ALBERT - xxlarge" target="MNLI" id="ALBERT - xxlarge_MNLI_202888986_3_5">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="ALBERT - xxlarge" target="SST - 2" id="ALBERT - xxlarge_SST - 2_202888986_3_7">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="ALBERT - xxlarge" target="RACE" id="ALBERT - xxlarge_RACE_202888986_3_9">
+      <data key="d1">Evaluated-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="ALBERT - xxlarge" target="MLM" id="ALBERT - xxlarge_MLM_202888986_3_21">
+      <data key="d1">Trained-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="ALBERT - xxlarge" target="SOP" id="ALBERT - xxlarge_SOP_202888986_3_22">
+      <data key="d1">Trained-With</data>
+      <data key="d2">202888986</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="SentencePiece" target="BERT" id="SentencePiece_BERT_202888986_2_23">
+      <data key="d1">Part-Of</data>
+      <data key="d2">202888986</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="SentencePiece" target="XLNet" id="SentencePiece_XLNet_202888986_2_24">
+      <data key="d1">Part-Of</data>
+      <data key="d2">202888986</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="SQuAD ;" target="Stanford Question Answering Dataset" id="SQuAD ;_Stanford Question Answering Dataset_202888986_2_26">
+      <data key="d1">Synonym-Of</data>
+      <data key="d2">202888986</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="dropout" target="MLM" id="dropout_MLM_202888986_3_20">
+      <data key="d1">Used-For</data>
+      <data key="d2">202888986</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="DCMI+" target="reading comprehension" id="DCMI+_reading comprehension_202888986_3_26">
+      <data key="d1">Used-For</data>
+      <data key="d2">202888986</data>
+      <data key="d3">3</data>
+    </edge>
+  </graph>
+</graphml>

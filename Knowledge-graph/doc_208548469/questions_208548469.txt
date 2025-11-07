@@ -1,0 +1,79 @@
+What task is addressed by the Visual Question Answering (VQA) framework?
+
+Which method is proposed to rank basic questions in the dataset?
+
+What datasets are introduced in this paper for VQA robustness evaluation?
+
+Which method is formulated as a LASSO optimization problem?
+
+What relationship exists between the LASSO ranking method and text similarity ranking?
+
+Which datasets are used to compare different question ranking metrics?
+
+What relationship exists between GBQD and YNBQD and the main VQA dataset?
+
+What methods are compared with the proposed LASSO ranking approach?
+
+Which dataset serves as the foundation for constructing the VQA dataset?
+
+Which metrics are used to evaluate sentence similarity in the ranking process?
+
+What relationship exists between BLEU, METEOR, ROUGE, and CIDEr in the context of ranking performance evaluation?
+
+Which method measures the robustness of VQA models?
+
+What datasets are used to compute the robustness measure (R score)?
+
+What relationship exists between R score and the performance accuracy of VQA models?
+
+Which method is found to be most robust among the tested VQA models?
+
+Which dataset is used to evaluate HieCoAtt model performance?
+
+What relationship exists between attention-based models and robustness or accuracy?
+
+Which models are compared in terms of robustness (e.g., HieCoAtt, MUTAN, LQI, MUA)?
+
+Which method is used to preprocess question sentences before applying LASSO ranking?
+
+What relationship exists between question preprocessing and LASSO ranking accuracy?
+
+Which datasets are generated using the testing images of MS COCO?
+
+What relationship exists between MS COCO and VQA dataset construction?
+
+Which task involves multimodal input of image and text?
+
+What methods are compared for bilinear interaction between image and text embeddings?
+
+Which method uses tensor-based low-rank bilinear pooling?
+
+Which datasets are used for early VQA benchmarking (e.g., DAQUAR, Visual 7W, Visual Madlibs)?
+
+What relationship exists between Visual 7W and Visual Genome datasets?
+
+Which dataset focuses on six types of “W” questions (what, where, when, who, why, how)?
+
+Which methods are used as sentence evaluation metrics for comparing ranking quality?
+
+What relationship exists between LASSO ranking performance and semantic similarity?
+
+Which methods are used as text encoders for sentence embeddings?
+
+What relationship exists between Skip-thoughts or Word2Vec and question embedding generation?
+
+What dataset is used as the main benchmark for VQA models?
+
+Which method shows higher accuracy among attention-based VQA models?
+
+What relationship exists between MUTAN with Attention and VQA model accuracy?
+
+What datasets are evaluated using standard and partial testing sets?
+
+What relationship exists between LASSO ranking and future semantic encoders?
+
+What method combines NLP, computer vision, and machine learning for the VQA task?
+
+Which datasets are used for robustness comparison across different similarity metrics?
+
+What relationship exists between LASSO-based question ranking and robustness analysis?
