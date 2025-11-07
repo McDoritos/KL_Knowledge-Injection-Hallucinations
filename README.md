@@ -37,6 +37,7 @@ During the experiment, the LLM must be **prompted with clear and specific instru
 
 Because the *SciERC dataset* is quite extensive, only a **subset** of the available documents from the different JSON files should be used.  
 This makes the experiment computationally feasible while maintaining representative coverage of entity and relation types.
+
 ---
 ## Gold Standard Construction
 
