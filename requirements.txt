@@ -1,0 +1,8 @@
+networkx
+matplotlib
+pandas
+langchain
+langchain[google-genai]
+langchain-google-genai
+langchain_community
+bs4
