@@ -2,6 +2,7 @@
 ./dataset/
 
 ./PRAG/data/dpr/
+./PRAG/data/dpr/psgs_w100.tsv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
