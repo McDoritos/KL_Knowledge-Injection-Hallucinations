@@ -1,0 +1,87 @@
+[
+  {
+    "question": "How is the monolingual model transferred to a new language in the described approach?",
+    "answer": "By learning a new embedding matrix using masked language modeling while freezing all other transformer layers."
+  },
+  {
+    "question": "How does the proposed approach compare to multilingual BERT on cross-lingual benchmarks?",
+    "answer": "It is competitive with multilingual BERT on standard cross-lingual classification benchmarks and on XQuAD."
+  },
+  {
+    "question": "What does the XQuAD dataset contain?",
+    "answer": "XQuAD contains 240 paragraphs and 1190 question-answer pairs from SQuAD v1.1 translated into ten languages by professional translators."
+  },
+  {
+    "question": "How do multilingual pretraining methods like mBERT achieve cross-lingual transfer?",
+    "answer": "They jointly train a transformer model with masked language modeling in multiple languages and then fine-tune it on a downstream task in a single language."
+  },
+  {
+    "question": "What are the four steps for zero-shot cross-lingual transfer described in the method?",
+    "answer": [
+      "Pre-train a monolingual transformer in English using MLM.",
+      "Learn new token embeddings for a second language while freezing the transformer body.",
+      "Fine-tune the model on English while keeping embeddings frozen.",
+      "Zero-shot transfer by swapping token embeddings to the new language."
+    ]
+  },
+  {
+    "question": "Which benchmarks demonstrate that the proposed method is competitive with multilingual pretraining?",
+    "answer": ["XNLI", "MLDoc", "PAWS-X"]
+  },
+  {
+    "question": "What is the purpose of the adapter modules added during cross-lingual transfer?",
+    "answer": "They provide language-specific transformations while keeping the original transformer body frozen."
+  },
+  {
+    "question": "What are the four main types of models compared in the experiments?",
+    "answer": ["JOINTMULTI", "CLWE", "MONOTRANS", "JOINTPAIR"]
+  },
+  {
+    "question": "What does the CLWE approach involve?",
+    "answer": "Training skip-gram embeddings for each language and mapping them to a shared space using VecMap, then training an English BERT model on top of the frozen mapped embeddings."
+  },
+  {
+    "question": "Which dataset is used as the training corpus for MONOTRANS?",
+    "answer": "Wikipedia, extracted using the WikiExtractor tool."
+  },
+  {
+    "question": "How does MONOTRANS perform compared to JOINTMULTI and JOINTPAIR?",
+    "answer": "MONOTRANS is competitive despite having multilingual information only in the embedding layer."
+  },
+  {
+    "question": "What factor significantly impacts performance in JOINTMULTI according to experiments?",
+    "answer": "Vocabulary size."
+  },
+  {
+    "question": "Which JOINTPAIR models perform the best?",
+    "answer": "JOINTPAIR models with disjoint vocabularies for each language."
+  },
+  {
+    "question": "How well does CLWE perform compared to other models?",
+    "answer": "CLWE performs poorly, especially on more challenging tasks such as XNLI and XQuAD."
+  },
+  {
+    "question": "Why was XQuAD created?",
+    "answer": "To better assess cross-lingual generalization using a task less susceptible to annotation artifacts than classification tasks."
+  },
+  {
+    "question": "Which languages are included in XQuAD translations?",
+    "answer": ["Spanish", "German", "Greek", "Russian", "Turkish", "Arabic", "Vietnamese", "Thai", "Chinese", "Hindi"]
+  },
+  {
+    "question": "Why is question answering considered a strong probe for language understanding?",
+    "answer": "Because it requires identifying answer spans in longer contexts, demanding structural transfer across languages."
+  },
+  {
+    "question": "Which semantic probing tasks are used to evaluate representations?",
+    "answer": ["WiC (Word in Context)", "SCWS (Stanford Contextual Word Similarity)"]
+  },
+  {
+    "question": "What does the WiC task require the model to determine?",
+    "answer": "Whether occurrences of a word in two contexts share the same meaning or have different meanings."
+  },
+  {
+    "question": "What does the SCWS task evaluate?",
+    "answer": "Semantic similarity of word pairs that occur in context."
+  }
+]

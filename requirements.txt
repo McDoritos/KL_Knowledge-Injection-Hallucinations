@@ -6,3 +6,11 @@ langchain[google-genai]
 langchain-google-genai
 langchain_community
 bs4
+torch
+transformers
+elasticsearch
+peft
+pandas
+numpy
+faiss-cpu
+termcolor

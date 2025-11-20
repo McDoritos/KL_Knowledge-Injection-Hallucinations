@@ -1,0 +1,88 @@
+[
+  {
+    "question": "What new state-of-the-art results does the ALBERT model achieve?",
+    "answer": "ALBERT establishes new state-of-the-art results on the GLUE, RACE, and SQuAD benchmarks."
+  },
+  {
+    "question": "How much did ALBERT improve RACE accuracy compared to earlier models?",
+    "answer": "ALBERT pushed RACE accuracy to 89.4%, marking a 45.3% improvement from early machine performance results."
+  },
+  {
+    "question": "What design decision allows ALBERT to reduce the number of parameters compared to BERT?",
+    "answer": "Untying the WordPiece embedding size from the hidden layer size and using extensive parameter sharing."
+  },
+  {
+    "question": "How many fewer parameters does ALBERT-large have compared to BERT-large?",
+    "answer": "ALBERT-large has 18x fewer parameters than BERT-large."
+  },
+  {
+    "question": "What additional loss does ALBERT introduce to improve sentence-level understanding?",
+    "answer": "ALBERT introduces the sentence-order prediction (SOP) loss."
+  },
+  {
+    "question": "Why is the next sentence prediction (NSP) task considered ineffective?",
+    "answer": "Because NSP is too easy and tends to learn topic prediction rather than inter-sentence coherence."
+  },
+  {
+    "question": "What advantage does the SOP loss have over NSP?",
+    "answer": "SOP models inter-sentence coherence and significantly improves downstream performance, especially for multi-sentence tasks."
+  },
+  {
+    "question": "What is the embedding size E tied to in BERT but not in ALBERT?",
+    "answer": "In BERT, E is tied to the hidden size H (E ≡ H), while ALBERT unties them."
+  },
+  {
+    "question": "What is one reason increasing BERT’s hidden size becomes impractical?",
+    "answer": "Because E ≡ H, increasing H massively increases the size of the embedding matrix (V × E), resulting in billions of parameters."
+  },
+  {
+    "question": "What benefit does parameter sharing provide in ALBERT?",
+    "answer": "It dramatically reduces the overall number of model parameters without degrading performance."
+  },
+  {
+    "question": "Which benchmarks are used to evaluate ALBERT and BERT in the experiments?",
+    "answer": ["GLUE", "SQuAD", "RACE"]
+  },
+  {
+    "question": "What vocabulary size is used for pretraining ALBERT?",
+    "answer": "A vocabulary of 30,000 tokens using SentencePiece."
+  },
+  {
+    "question": "How does ALBERT-xlarge compare to BERT-xlarge in training speed?",
+    "answer": "ALBERT-xlarge can be trained 2.4x faster than BERT-xlarge."
+  },
+  {
+    "question": "Does NSP provide useful signals for the SOP task?",
+    "answer": "No, NSP performs at random-guess level on the SOP task."
+  },
+  {
+    "question": "How well does SOP perform on the NSP task?",
+    "answer": "SOP achieves around 78.9% accuracy on NSP, showing it learns more discriminative signals."
+  },
+  {
+    "question": "What improvements does ALBERT-xxlarge show over BERT-large in downstream tasks?",
+    "answer": [
+      "SQuAD v1.1: +1.7%",
+      "SQuAD v2.0: +4.2%",
+      "MNLI: +2.2%",
+      "SST-2: +3.0%",
+      "RACE: +8.5%"
+    ]
+  },
+  {
+    "question": "What happens to BERT-xlarge performance compared to BERT-base?",
+    "answer": "BERT-xlarge performs significantly worse than BERT-base on all metrics."
+  },
+  {
+    "question": "What effect does removing dropout have on ALBERT accuracy?",
+    "answer": "Removing dropout significantly improves masked language modeling (MLM) accuracy."
+  },
+  {
+    "question": "What final performance does the single-model ALBERT achieve on RACE?",
+    "answer": "The single-model ALBERT achieves 86.5% accuracy on RACE."
+  },
+  {
+    "question": "Why is ALBERT-xxlarge more computationally expensive than BERT-large?",
+    "answer": "Because ALBERT-xxlarge has a much larger structure despite having fewer parameters."
+  }
+]

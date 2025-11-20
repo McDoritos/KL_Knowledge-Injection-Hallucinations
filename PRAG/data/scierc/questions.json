@@ -1,0 +1,555 @@
+[
+  {
+    "question": "What is CARAFE?",
+    "answer": "CARAFE (Content-Aware ReAssembly of Features) is a universal, lightweight, and effective upsampling operator that generates instance-specific adaptive kernels on the fly."
+  },
+  {
+    "question": "Why is CARAFE proposed?",
+    "answer": "It is proposed to improve feature upsampling in dense prediction tasks such as object detection, instance segmentation, semantic segmentation, and image inpainting."
+  },
+  {
+    "question": "How does CARAFE differ from traditional upsampling methods like deconvolution?",
+    "answer": "Unlike fixed kernels used in deconvolution, CARAFE generates adaptive kernels specific to the content of each instance, offering better object shape representation and lower computational cost."
+  },
+  {
+    "question": "In which tasks is CARAFE evaluated?",
+    "answer": [
+      "Object detection",
+      "Instance segmentation",
+      "Semantic segmentation",
+      "Image inpainting"
+    ]
+  },
+  {
+    "question": "Which architectures benefit from CARAFE?",
+    "answer": [
+      "Faster R-CNN",
+      "Mask R-CNN",
+      "Feature Pyramid Network (FPN)",
+      "UperNet",
+      "Global&Local inpainting network",
+      "Partial Convolution (PConv)"
+    ]
+  },
+  {
+    "question": "What improvements does CARAFE bring to Faster R-CNN and Mask R-CNN?",
+    "answer": "CARAFE improves Faster R-CNN by 1.2% AP and Mask R-CNN by 1.3% mask AP."
+  },
+  {
+    "question": "How computationally efficient is CARAFE compared to deconvolution?",
+    "answer": "For a 256-channel H×W feature map upsampled by 2×, CARAFE costs H×W×199k FLOPs, while deconvolution costs H×W×1180k FLOPs."
+  },
+  {
+    "question": "How does CARAFE compare to dynamic filters?",
+    "answer": "Both are content-aware, but dynamic filters have heavier parameterization, whereas CARAFE is lightweight and uses a different kernel generation process."
+  },
+  {
+    "question": "How does spatial attention differ from CARAFE?",
+    "answer": "Spatial attention provides point-wise rescaling, while CARAFE performs region-wise feature reassembly with adaptive kernels."
+  },
+  {
+    "question": "Which benchmarks are used to evaluate CARAFE?",
+    "answer": [
+      "ADE20K for semantic segmentation",
+      "Places dataset for image inpainting",
+      "COCO-style benchmarks via Faster R-CNN and Mask R-CNN"
+    ]
+  },
+  {
+    "question": "How does CARAFE perform in UperNet?",
+    "answer": "Replacing UperNet’s upsampling operations with CARAFE yields better performance than baselines like PSPNet and PSANet."
+  },
+  {
+    "question": "What kernel normalizers were tested for CARAFE?",
+    "answer": "Softmax, sigmoid, and sigmoid with normalization. Softmax and sigmoid-normalized performed the best."
+  },
+  {
+    "question": "What future work is suggested for CARAFE?",
+    "answer": "Exploring its applicability to low-level vision tasks such as image restoration and super-resolution."
+  },
+  {
+    "question": "What do the authors investigate in their experiments?",
+    "answer": "They compare different word embeddings, language models, and embedding augmentation steps on five vision-language tasks."
+  },
+  {
+    "question": "Which five vision-language tasks are evaluated?",
+    "answer": [
+      "Image-sentence retrieval",
+      "Image captioning",
+      "Visual question answering",
+      "Phrase grounding",
+      "Text-to-clip retrieval"
+    ]
+  },
+  {
+    "question": "What surprising result do the authors find regarding language models?",
+    "answer": "An average embedding language model outperforms an LSTM on retrieval-style tasks."
+  },
+  {
+    "question": "How do modern models like BERT perform on vision-language tasks?",
+    "answer": "BERT performs relatively poorly on vision-language tasks compared to simpler embeddings."
+  },
+  {
+    "question": "What is GrOVLE?",
+    "answer": "GrOVLE (Graph Oriented Vision-Language Embedding) is a vision-language embedding adapted from Word2Vec using WordNet and a visual-language graph from Visual Genome."
+  },
+  {
+    "question": "Why was GrOVLE introduced?",
+    "answer": "To incorporate hierarchical language relations and visual context into word embeddings specifically for vision-language tasks."
+  },
+  {
+    "question": "Which word embeddings are compared in the experiments?",
+    "answer": [
+      "From-scratch embeddings",
+      "Word2Vec",
+      "WordNet-retrofitted Word2Vec",
+      "FastText",
+      "Visual Word2Vec",
+      "HGLMM (300-D and 6K-D)",
+      "InferSent",
+      "BERT",
+      "GrOVLE"
+    ]
+  },
+  {
+    "question": "Why can traditional text-only embeddings struggle in vision-language settings?",
+    "answer": "Because they capture linguistic similarity but may not reflect visual interchangeability, such as 'girl' being visually replaceable by 'child' but not 'boy'."
+  },
+  {
+    "question": "What training strategy is used to learn GrOVLE?",
+    "answer": "A multi-task training strategy inspired by PackNet, applied across all evaluated vision-language tasks."
+  },
+  {
+    "question": "What does variance measure in the comparisons?",
+    "answer": "Variance measures the difference between the best and worst performance of fine-tuned language model options for each task."
+  },
+  {
+    "question": "What types of attention mechanisms are mentioned?",
+    "answer": [
+      "Word-level attention using LSTMs",
+      "Word-level attention using MLPs",
+      "Dual attention for VQA",
+      "Self-attention models"
+    ]
+  },
+  {
+    "question": "What are the characteristics of an LSTM language model in this context?",
+    "answer": "Each word’s representation is passed through an LSTM cell, producing hidden states that encode sequential dependencies."
+  },
+  {
+    "question": "How does the Self-Attention model work?",
+    "answer": "It computes context scores for each word using a fully connected layer with Softmax, producing weighted embeddings."
+  },
+  {
+    "question": "How does Word2Vec’s CBOW model operate?",
+    "answer": "It predicts a word based on surrounding context, using shared projection layers and removing the nonlinear hidden layer."
+  },
+  {
+    "question": "What is FastText’s key difference from Word2Vec?",
+    "answer": "FastText uses character n-grams instead of whole words as the atomic embedding components."
+  },
+  {
+    "question": "What is InferSent trained on?",
+    "answer": "InferSent is trained on Natural Language Inference using a bi-directional LSTM with max-pooling."
+  },
+  {
+    "question": "How is BERT trained?",
+    "answer": "BERT is trained using Masked Language Modeling and Next Sentence Prediction."
+  },
+  {
+    "question": "Why can smaller-vocabulary embeddings outperform pretrained Word2Vec on some tasks?",
+    "answer": "Because training from scratch on small vocabularies can produce task-aligned embeddings that better fit datasets like ReferIt."
+  },
+  {
+    "question": "How does Word2Vec compare with FastText in the experiments?",
+    "answer": "Word2Vec performs within 1–2 points of FastText and even outperforms it on some tasks like text-to-clip and image captioning."
+  },
+  {
+    "question": "What is Visual Word2Vec?",
+    "answer": "A neural model that augments Word2Vec with visual semantic grounding."
+  },
+  {
+    "question": "What is HGLMM?",
+    "answer": "The Hybrid Gaussian-Laplacian Mixture Model representation, which builds Fisher vectors on top of Word2Vec embeddings."
+  },
+  {
+    "question": "How is dimensionality reduced in HGLMM-based representations?",
+    "answer": "Using PCA to reduce dimensions (e.g., from 18K-D to 6K-D or 300-D)."
+  },
+  {
+    "question": "What data sources are combined in GrOVLE?",
+    "answer": [
+      "WordNet",
+      "Visual Genome"
+    ]
+  },
+  {
+    "question": "Why does GrOVLE use a joint lexicon rather than sequential retrofitting?",
+    "answer": "To minimize catastrophic forgetting and improve performance."
+  },
+  {
+    "question": "How do adapted embeddings perform on generation tasks like captioning and VQA?",
+    "answer": "They show little performance variance, with less than one point difference across adapted embeddings."
+  },
+  {
+    "question": "Which tasks show the largest improvements when using adapted embeddings like GrOVLE?",
+    "answer": [
+      "Image-sentence retrieval (+7.9 on Flickr30K, +6.3 on MSCOCO)",
+      "Phrase grounding on ReferIt (+2.36%)"
+    ]
+  },
+  {
+    "question": "Which language models perform best on retrieval tasks?",
+    "answer": "Average Embedding and Self-Attention models outperform LSTMs on retrieval-style tasks."
+  },
+  {
+    "question": "Which language model configurations are used for each task?",
+    "answer": [
+      "retrieval tasks: Self-Attention",
+      "phrase grounding: Self-Attention",
+      "text-to-clip retrieval: LSTM",
+      "image captioning: LSTM",
+      "VQA: LSTM"
+    ]
+  },
+  {
+    "question": "What is the main contribution of the paper?",
+    "answer": "The introduction of GrOVLE and a comprehensive analysis of how word embeddings and language models transfer across vision-language tasks."
+  },
+  {
+    "question": "What new state-of-the-art results does the ALBERT model achieve?",
+    "answer": "ALBERT establishes new state-of-the-art results on the GLUE, RACE, and SQuAD benchmarks."
+  },
+  {
+    "question": "How much did ALBERT improve RACE accuracy compared to earlier models?",
+    "answer": "ALBERT pushed RACE accuracy to 89.4%, marking a 45.3% improvement from early machine performance results."
+  },
+  {
+    "question": "What design decision allows ALBERT to reduce the number of parameters compared to BERT?",
+    "answer": "Untying the WordPiece embedding size from the hidden layer size and using extensive parameter sharing."
+  },
+  {
+    "question": "How many fewer parameters does ALBERT-large have compared to BERT-large?",
+    "answer": "ALBERT-large has 18x fewer parameters than BERT-large."
+  },
+  {
+    "question": "What additional loss does ALBERT introduce to improve sentence-level understanding?",
+    "answer": "ALBERT introduces the sentence-order prediction (SOP) loss."
+  },
+  {
+    "question": "Why is the next sentence prediction (NSP) task considered ineffective?",
+    "answer": "Because NSP is too easy and tends to learn topic prediction rather than inter-sentence coherence."
+  },
+  {
+    "question": "What advantage does the SOP loss have over NSP?",
+    "answer": "SOP models inter-sentence coherence and significantly improves downstream performance, especially for multi-sentence tasks."
+  },
+  {
+    "question": "What is the embedding size E tied to in BERT but not in ALBERT?",
+    "answer": "In BERT, E is tied to the hidden size H (E ≡ H), while ALBERT unties them."
+  },
+  {
+    "question": "What is one reason increasing BERT’s hidden size becomes impractical?",
+    "answer": "Because E ≡ H, increasing H massively increases the size of the embedding matrix (V × E), resulting in billions of parameters."
+  },
+  {
+    "question": "What benefit does parameter sharing provide in ALBERT?",
+    "answer": "It dramatically reduces the overall number of model parameters without degrading performance."
+  },
+  {
+    "question": "Which benchmarks are used to evaluate ALBERT and BERT in the experiments?",
+    "answer": [
+      "GLUE",
+      "SQuAD",
+      "RACE"
+    ]
+  },
+  {
+    "question": "What vocabulary size is used for pretraining ALBERT?",
+    "answer": "A vocabulary of 30,000 tokens using SentencePiece."
+  },
+  {
+    "question": "How does ALBERT-xlarge compare to BERT-xlarge in training speed?",
+    "answer": "ALBERT-xlarge can be trained 2.4x faster than BERT-xlarge."
+  },
+  {
+    "question": "Does NSP provide useful signals for the SOP task?",
+    "answer": "No, NSP performs at random-guess level on the SOP task."
+  },
+  {
+    "question": "How well does SOP perform on the NSP task?",
+    "answer": "SOP achieves around 78.9% accuracy on NSP, showing it learns more discriminative signals."
+  },
+  {
+    "question": "What improvements does ALBERT-xxlarge show over BERT-large in downstream tasks?",
+    "answer": [
+      "SQuAD v1.1: +1.7%",
+      "SQuAD v2.0: +4.2%",
+      "MNLI: +2.2%",
+      "SST-2: +3.0%",
+      "RACE: +8.5%"
+    ]
+  },
+  {
+    "question": "What happens to BERT-xlarge performance compared to BERT-base?",
+    "answer": "BERT-xlarge performs significantly worse than BERT-base on all metrics."
+  },
+  {
+    "question": "What effect does removing dropout have on ALBERT accuracy?",
+    "answer": "Removing dropout significantly improves masked language modeling (MLM) accuracy."
+  },
+  {
+    "question": "What final performance does the single-model ALBERT achieve on RACE?",
+    "answer": "The single-model ALBERT achieves 86.5% accuracy on RACE."
+  },
+  {
+    "question": "Why is ALBERT-xxlarge more computationally expensive than BERT-large?",
+    "answer": "Because ALBERT-xxlarge has a much larger structure despite having fewer parameters."
+  },
+  {
+    "question": "How is the monolingual model transferred to a new language in the described approach?",
+    "answer": "By learning a new embedding matrix using masked language modeling while freezing all other transformer layers."
+  },
+  {
+    "question": "How does the proposed approach compare to multilingual BERT on cross-lingual benchmarks?",
+    "answer": "It is competitive with multilingual BERT on standard cross-lingual classification benchmarks and on XQuAD."
+  },
+  {
+    "question": "What does the XQuAD dataset contain?",
+    "answer": "XQuAD contains 240 paragraphs and 1190 question-answer pairs from SQuAD v1.1 translated into ten languages by professional translators."
+  },
+  {
+    "question": "How do multilingual pretraining methods like mBERT achieve cross-lingual transfer?",
+    "answer": "They jointly train a transformer model with masked language modeling in multiple languages and then fine-tune it on a downstream task in a single language."
+  },
+  {
+    "question": "What are the four steps for zero-shot cross-lingual transfer described in the method?",
+    "answer": [
+      "Pre-train a monolingual transformer in English using MLM.",
+      "Learn new token embeddings for a second language while freezing the transformer body.",
+      "Fine-tune the model on English while keeping embeddings frozen.",
+      "Zero-shot transfer by swapping token embeddings to the new language."
+    ]
+  },
+  {
+    "question": "Which benchmarks demonstrate that the proposed method is competitive with multilingual pretraining?",
+    "answer": [
+      "XNLI",
+      "MLDoc",
+      "PAWS-X"
+    ]
+  },
+  {
+    "question": "What is the purpose of the adapter modules added during cross-lingual transfer?",
+    "answer": "They provide language-specific transformations while keeping the original transformer body frozen."
+  },
+  {
+    "question": "What are the four main types of models compared in the experiments?",
+    "answer": [
+      "JOINTMULTI",
+      "CLWE",
+      "MONOTRANS",
+      "JOINTPAIR"
+    ]
+  },
+  {
+    "question": "What does the CLWE approach involve?",
+    "answer": "Training skip-gram embeddings for each language and mapping them to a shared space using VecMap, then training an English BERT model on top of the frozen mapped embeddings."
+  },
+  {
+    "question": "Which dataset is used as the training corpus for MONOTRANS?",
+    "answer": "Wikipedia, extracted using the WikiExtractor tool."
+  },
+  {
+    "question": "How does MONOTRANS perform compared to JOINTMULTI and JOINTPAIR?",
+    "answer": "MONOTRANS is competitive despite having multilingual information only in the embedding layer."
+  },
+  {
+    "question": "What factor significantly impacts performance in JOINTMULTI according to experiments?",
+    "answer": "Vocabulary size."
+  },
+  {
+    "question": "Which JOINTPAIR models perform the best?",
+    "answer": "JOINTPAIR models with disjoint vocabularies for each language."
+  },
+  {
+    "question": "How well does CLWE perform compared to other models?",
+    "answer": "CLWE performs poorly, especially on more challenging tasks such as XNLI and XQuAD."
+  },
+  {
+    "question": "Why was XQuAD created?",
+    "answer": "To better assess cross-lingual generalization using a task less susceptible to annotation artifacts than classification tasks."
+  },
+  {
+    "question": "Which languages are included in XQuAD translations?",
+    "answer": [
+      "Spanish",
+      "German",
+      "Greek",
+      "Russian",
+      "Turkish",
+      "Arabic",
+      "Vietnamese",
+      "Thai",
+      "Chinese",
+      "Hindi"
+    ]
+  },
+  {
+    "question": "Why is question answering considered a strong probe for language understanding?",
+    "answer": "Because it requires identifying answer spans in longer contexts, demanding structural transfer across languages."
+  },
+  {
+    "question": "Which semantic probing tasks are used to evaluate representations?",
+    "answer": [
+      "WiC (Word in Context)",
+      "SCWS (Stanford Contextual Word Similarity)"
+    ]
+  },
+  {
+    "question": "What does the WiC task require the model to determine?",
+    "answer": "Whether occurrences of a word in two contexts share the same meaning or have different meanings."
+  },
+  {
+    "question": "What does the SCWS task evaluate?",
+    "answer": "Semantic similarity of word pairs that occur in context."
+  },
+  {
+    "question": "What role do deep neural networks play in Visual Question Answering (VQA)?",
+    "answer": "They play an essential role by enabling models to answer natural language questions about images."
+  },
+  {
+    "question": "What two inputs can be attacked in a VQA system?",
+    "answer": "The image and the main question."
+  },
+  {
+    "question": "How is the basic question ranking problem formulated in this paper?",
+    "answer": "As a LASSO optimization problem."
+  },
+  {
+    "question": "What is the goal of a Visual Question Answering (VQA) algorithm?",
+    "answer": "To produce a natural language answer given a natural language question and an image."
+  },
+  {
+    "question": "What does the Noise Generator take as input?",
+    "answer": [
+      "A plain text main question (MQ)",
+      "A plain text basic question dataset (BQD)"
+    ]
+  },
+  {
+    "question": "How does the Noise Generator begin the ranking process?",
+    "answer": "By ranking basic questions by similarity to the main question using a text similarity method."
+  },
+  {
+    "question": "What two basic question datasets are introduced in the paper?",
+    "answer": [
+      "General Basic Question Dataset (GBQD)",
+      "Yes/No Basic Question Dataset (YNBQD)"
+    ]
+  },
+  {
+    "question": "What are the main contributions of the paper?",
+    "answer": [
+      "Introduction of two large-scale basic question datasets for VQA robustness evaluation.",
+      "A novel robustness measure for VQA models tested on six state-of-the-art models.",
+      "A new LASSO-based text similarity ranking method outperforming seven popular similarity metrics."
+    ]
+  },
+  {
+    "question": "Which fields are involved in the presented work?",
+    "answer": [
+      "Natural Language Processing",
+      "Computer Vision",
+      "Machine Learning"
+    ]
+  },
+  {
+    "question": "What measure is used to compute the proposed R score?",
+    "answer": "It is based on the accuracy generated by ranked BQDs and by the clean VQA testing set."
+  },
+  {
+    "question": "What popular machine translation metric is based on precision?",
+    "answer": "BLEU."
+  },
+  {
+    "question": "What is a key difference between METEOR and BLEU?",
+    "answer": "METEOR evaluates correlation at the sentence/segment level, while BLEU evaluates at the corpus level."
+  },
+  {
+    "question": "Which metric is commonly used in text summarization and is recall-based?",
+    "answer": "ROUGE."
+  },
+  {
+    "question": "Which consensus-based metric is widely used in image captioning?",
+    "answer": "CIDEr."
+  },
+  {
+    "question": "What do CLWE-style embeddings like Word2Vec, GloVe, and Skip-thoughts do?",
+    "answer": "They encode sentences or words into vector representations."
+  },
+  {
+    "question": "What is the purpose of question sentence preprocessing when building BQDs?",
+    "answer": "To ensure that main questions are not contained in the basic question dataset, which would invalidate LASSO ranking."
+  },
+  {
+    "question": "Why are yes/no questions considered separately in YNBQD?",
+    "answer": "Because VQA models tend to achieve the highest accuracy on yes/no questions."
+  },
+  {
+    "question": "How many images and main questions are included in GBQD and YNBQD?",
+    "answer": "81,434 images and 244,302 main questions."
+  },
+  {
+    "question": "How many total basic question + similarity score tuplets exist in each dataset (GBQD or YNBQD)?",
+    "answer": "5,130,342 tuplets."
+  },
+  {
+    "question": "How is the robustness of a VQA model first measured?",
+    "answer": "By computing its accuracy on the clean VQA dataset (Acc_vqa)."
+  },
+  {
+    "question": "Which seven text similarity metrics are compared against the LASSO ranking method?",
+    "answer": [
+      "BLEU-1",
+      "BLEU-2",
+      "BLEU-3",
+      "BLEU-4",
+      "ROUGE",
+      "CIDEr",
+      "METEOR"
+    ]
+  },
+  {
+    "question": "Which VQA model is concluded to be the most robust?",
+    "answer": "HieCoAtt."
+  },
+  {
+    "question": "What mechanism contributes to the robustness of the HieCoAtt model?",
+    "answer": "Its co-attention mechanism that repeatedly aligns text and image information."
+  },
+  {
+    "question": "What happens if question preprocessing is skipped when using the LASSO ranking method?",
+    "answer": "The method may generate random or meaningless rankings."
+  },
+  {
+    "question": "What limitation does the LASSO ranking method have in terms of semantics?",
+    "answer": "It cannot rank semantic meaning very accurately, though it still performs effectively overall."
+  },
+  {
+    "question": "Which model achieved the highest accuracy among the tested VQA models?",
+    "answer": "MUTAN with Attention."
+  },
+  {
+    "question": "What new components does the paper propose for measuring VQA robustness?",
+    "answer": [
+      "General Basic Question Dataset (GBQD)",
+      "Yes/No Basic Question Dataset (YNBQD)",
+      "Robustness measure (R score)"
+    ]
+  },
+  {
+    "question": "What is the general conclusion regarding LASSO versus other similarity metrics?",
+    "answer": "The LASSO ranking method outperforms the seven popular sentence evaluation metrics on both GBQD and YNBQD."
+  }
+]

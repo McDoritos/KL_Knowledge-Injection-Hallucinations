@@ -1,0 +1,70 @@
+[
+    {
+        "question": "What is CARAFE?",
+        "answer": "CARAFE (Content-Aware ReAssembly of Features) is a universal, lightweight, and effective upsampling operator that generates instance-specific adaptive kernels on the fly."
+    },
+    {
+        "question": "Why is CARAFE proposed?",
+        "answer": "It is proposed to improve feature upsampling in dense prediction tasks such as object detection, instance segmentation, semantic segmentation, and image inpainting."
+    },
+    {
+        "question": "How does CARAFE differ from traditional upsampling methods like deconvolution?",
+        "answer": "Unlike fixed kernels used in deconvolution, CARAFE generates adaptive kernels specific to the content of each instance, offering better object shape representation and lower computational cost."
+    },
+    {
+        "question": "In which tasks is CARAFE evaluated?",
+        "answer": [
+            "Object detection",
+            "Instance segmentation",
+            "Semantic segmentation",
+            "Image inpainting"
+        ]
+    },
+    {
+        "question": "Which architectures benefit from CARAFE?",
+        "answer": [
+            "Faster R-CNN",
+            "Mask R-CNN",
+            "Feature Pyramid Network (FPN)",
+            "UperNet",
+            "Global&Local inpainting network",
+            "Partial Convolution (PConv)"
+        ]
+    },
+    {
+        "question": "What improvements does CARAFE bring to Faster R-CNN and Mask R-CNN?",
+        "answer": "CARAFE improves Faster R-CNN by 1.2% AP and Mask R-CNN by 1.3% mask AP."
+    },
+    {
+        "question": "How computationally efficient is CARAFE compared to deconvolution?",
+        "answer": "For a 256-channel H×W feature map upsampled by 2×, CARAFE costs H×W×199k FLOPs, while deconvolution costs H×W×1180k FLOPs."
+    },
+    {
+        "question": "How does CARAFE compare to dynamic filters?",
+        "answer": "Both are content-aware, but dynamic filters have heavier parameterization, whereas CARAFE is lightweight and uses a different kernel generation process."
+    },
+    {
+        "question": "How does spatial attention differ from CARAFE?",
+        "answer": "Spatial attention provides point-wise rescaling, while CARAFE performs region-wise feature reassembly with adaptive kernels."
+    },
+    {
+        "question": "Which benchmarks are used to evaluate CARAFE?",
+        "answer": [
+            "ADE20K for semantic segmentation",
+            "Places dataset for image inpainting",
+            "COCO-style benchmarks via Faster R-CNN and Mask R-CNN"
+        ]
+    },
+    {
+        "question": "How does CARAFE perform in UperNet?",
+        "answer": "Replacing UperNet’s upsampling operations with CARAFE yields better performance than baselines like PSPNet and PSANet."
+    },
+    {
+        "question": "What kernel normalizers were tested for CARAFE?",
+        "answer": "Softmax, sigmoid, and sigmoid with normalization. Softmax and sigmoid-normalized performed the best."
+    },
+    {
+        "question": "What future work is suggested for CARAFE?",
+        "answer": "Exploring its applicability to low-level vision tasks such as image restoration and super-resolution."
+    }
+]
