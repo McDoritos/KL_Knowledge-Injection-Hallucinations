@@ -42,4 +42,7 @@ A directory under the directory ```./PRAG/data/``` should be created for our dat
 ```
 # Data Augmentation
 
+This is the process of creating variations of my original questions for the dataset using the retrieved documents, to train more more parametric representations:
+
+```python .\src\augment.py --model_name Mistralai/Mistral-7b-Instruct-v0.2 --dataset scierc --data_path ./data/scierc/questions.json --sample 5 --topk 3```
 
