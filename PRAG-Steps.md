@@ -40,9 +40,21 @@ A directory under the directory ```./PRAG/data/``` should be created for our dat
     }
 ]
 ```
-# Data Augmentation
+# 5. Data Augmentation
 
 This is the process of creating variations of my original questions for the dataset using the retrieved documents, to train more more parametric representations:
 
-```python .\src\augment.py --model_name Mistralai/Mistral-7b-Instruct-v0.2 --dataset scierc --data_path ./data/scierc/questions.json --sample 5 --topk 3```
+```bash
+python .\src\augment.py --model_name Qwen/Qwen2.5-1.5B-Instruct2 --dataset scierc --data_path ./data/scierc/questions.json --sample 5 --topk 3
+```
+
+# 6. Data Encoding
+
+This will create a parameterized representation of the documents (LoRa) for the given dataset.
+
+The output of the last phase will be under: ```F:\Universidade\CL\Git-proj\PRAG\data_aug\scierc\Qwen\Qwen2.5-1.5B-Instruct``` for the inference the file must be named ```total.json```
+
+```bash
+python .\src\encode.py --model_name Qwen/Qwen2.5-1.5B-Instruct --dataset scierc --data_type questions --per_device_train_batch_size 1 --num_train_epochs 2 --num_train_epochs 2 --learning_rate 1e-4 --lora_rank 8 --lora_alpha 16 --sample 10
+```
 

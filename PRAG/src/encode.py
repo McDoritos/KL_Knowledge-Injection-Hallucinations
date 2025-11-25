@@ -136,9 +136,19 @@ def main(args):
     )
     if not os.path.exists(os.path.join(init_adapter_path, "adapter_model.safetensors")):
         print("No LoRA base weight, creating...")
+        # Added this code section
+        from transformers import AutoModelForCausalLM
+
+        model = AutoModelForCausalLM.from_pretrained(
+            args.model_name,
+            torch_dtype=torch.float16,
+            low_cpu_mem_usage=True,
+            trust_remote_code=True
+        )
+        #end of added code section
         peft_config = LoraConfig(
             task_type=TaskType.CAUSAL_LM,
-            target_modules=['down_proj', 'gate_proj', 'up_proj'],
+            target_modules=['q_proj', 'k_proj', 'v_proj', 'o_proj', 'gate_proj', 'up_proj', 'down_proj'], # target_modules=['down_proj', 'gate_proj', 'up_proj'],
             inference_mode=False,
             r=args.lora_rank,
             lora_alpha=args.lora_alpha,
@@ -147,6 +157,7 @@ def main(args):
         model = get_peft_model(model, peft_config)
         model.is_parallelizable = True
         model.model_parallel = True
+
         print(f'Save LoRA base weight to {init_adapter_path}')
         os.makedirs(init_adapter_path, exist_ok=True)
         model.save_pretrained(init_adapter_path)
