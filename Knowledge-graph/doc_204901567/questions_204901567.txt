@@ -1,59 +1,63 @@
-What method is used to transfer a transformer-based masked language model to a new language?
-
-Which task is the proposed model evaluated on?
-
-What dataset is used as the source for creating XQuAD?
-
-What relationship exists between multilingual BERT (mBERT) and the zero-shot cross-lingual transfer task?
-
-Which method introduces a new embedding matrix while freezing other model layers?
-
-What datasets are used to benchmark the multilingual and monolingual transfer models?
-
-What is the relationship between the Cross-lingual Question Answering Dataset (XQuAD) and the SQuAD v1.1 dataset?
-
-What method incorporates adapter modules for language-specific transformations?
-
-Which method achieves competitive results with multilingual pre-training approaches?
-
-What datasets are used to evaluate the joint multilingual models (JOINTMULTI) and monolingual transfer models (MONOTRANS)?
-
-What relationship exists between the Word in Context (WiC) task and the evaluation of contextual representations?
-
-Which datasets are used for semantic probing of learned representations?
-
-What relationship exists between Cross-lingual Question Answering and language understanding?
-
-What methods are compared in the experiments (e.g., JOINTMULTI, MONOTRANS, CLWE)?
-
-What dataset is used to train the models with masked language modeling (MLM) and next sentence prediction (NSP)?
-
-What relationship exists between JOINTPAIR models and shared subword vocabulary?
-
-Which method performs poorly compared to other models in cross-lingual benchmarks?
-
-What dataset is used to evaluate the model’s performance in natural language inference?
-
-Which method demonstrates that modeling multiple languages does not harm representation quality?
-
-What relationship exists between monolingual transformer models and multilingual performance?
-
-Which dataset is introduced as a comprehensive benchmark for cross-lingual model evaluation?
-
-Which method uses feed-forward adapter modules during language transfer?
-
-What relationship exists between semantic probing tasks (WiC, SCWS) and model evaluation?
-
-Which methods use Wikipedia as the primary training corpus?
-
-What datasets are used to test zero-shot cross-lingual transfer performance?
-
-Which method aligns cross-lingual word embeddings using VecMap?
-
-Which dataset helps evaluate cross-lingual generalization ability?
-
-Which methods include multilingual joint training compared to lexical-level mapping?
-
-What relationship exists between cross-lingual transfer and masked language modeling objectives?
-
-Which task involves identifying answer spans in context paragraphs across multiple languages?
+Which method is part of a transformer-based masked language model?
+Which method is used for cross-lingual classification?
+Which dataset benchmarks cross-lingual classification?
+What is another name for the Cross-lingual Question Answering Dataset?
+Which method is evaluated with the Cross-lingual Question Answering Dataset?
+What is another name for multilingual BERT?
+Which method is used for zero-shot cross-lingual transfer?
+Which task is used for masked language modeling?
+Which method is used for masked language modeling?
+Which method is trained with MLM?
+Which method is a subclass of monolingual transformer?
+Which dataset benchmarks zero-shot cross-lingual transfer?
+Which dataset benchmarks zero-shot cross-lingual transfer for PAWS-X?
+Which dataset benchmarks zero-shot cross-lingual transfer for MLDoc?
+Which task is a subtask of language understanding?
+Which methods are evaluated with XQuAD?
+Which method includes adapter modules as part?
+Which method is a subclass of transformer?
+Which task is synonymous with MLM?
+Which method is trained with masked language modeling?
+Which task is synonymous with next sentence prediction?
+Which method is trained with next sentence prediction?
+Which method is trained with MLM?
+Which method is trained with NSP?
+Which method includes feed-forward layers as part?
+Which method includes multi-headed attention as part?
+Which method includes a feed-forward adapter module as part?
+Which method includes adapter modules as part of a transformer?
+Which datasets benchmark classification: XNLI, MLDoc, PAWS-X?
+What is another name for JOINTMULTI?
+What is another name for CLWE?
+Which method is trained with MLM in BERT?
+Which method is trained with NSP in BERT?
+What is another name for MONOTRANS?
+Which methods are trained with Wikipedia: mBERT, XLM?
+Which method is compared with mBERT?
+What is another name for NLI?
+Which task is a subtask of NLI?
+Which methods are used for natural language inference: mBERT, XLM?
+Which methods are used for entailment: mBERT, XLM?
+Which methods are compared with JOINTMULTI?
+Which method is compared with JOINTMULTI?
+Which method is compared with JOINTMULTI?
+Which method is used for classification: MONOTRANS, JOINTMULTI?
+Which method is used for classification: JOINTPAIR?
+Which method is compared with JOINTMULTI: MONOTRANS?
+Which method is compared with JOINTPAIR: MONOTRANS?
+Which dataset is another name for XQuAD?
+Which task is a subtask of natural language understanding: Question answering?
+Which task is compared with classification: Question answering?
+Which methods are evaluated with XNLI: JOINTMULTI, JOINTPAIR?
+Which methods are compared with JOINTPAIR: JOINTMULTI?
+Which datasets are synonyms: WiC, Word in Context; SCWS, Stanford Contextual Word Similarity?
+Which method is compared with MONOTRANS: CLWE?
+Which method is evaluated with MLDoc: CLWE?
+Which method is evaluated with XNLI: CLWE?
+Which method is evaluated with XQuAD: CLWE?
+Which datasets are trained with cross-lingual word embedding: MLDoc, PAWS-X?
+Which method is evaluated with XQuAD: cross-lingual word embedding?
+Which datasets benchmark semantic probing: Word in Context, Stanford Contextual Word Similarity?
+Which datasets are synonyms: WiC = Word in Context, SCWS = Stanford Contextual Word Similarity?
+Which dataset benchmarks binary classification: WiC?
+Which dataset benchmarks semantic similarity: SCWS?

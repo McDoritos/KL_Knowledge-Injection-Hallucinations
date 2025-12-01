@@ -1,0 +1,516 @@
+{
+    "results": [
+        {
+            "question": "Which method is part of a transformer-based masked language model?",
+            "triplets": {
+                "triplets": [
+                    "[Transformer Model:Method, Part-Of, Masked Language Modeling:Task]",
+                    "[Skip-gram Method:Method, Part-Of, Masked Language Modeling:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is used for cross-lingual classification?",
+            "triplets": {
+                "triplets": [
+                    "[MONOTRANS:Method, Used-For, Cross-Lingual Classification:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which dataset benchmarks cross-lingual classification?",
+            "triplets": {
+                "triplets": [
+                    "[XQuAD:Dataset, Benchmark-For, cross-lingual classification:Task]"
+                ]
+            }
+        },
+        {
+            "question": "What is another name for the Cross-lingual Question Answering Dataset?",
+            "triplets": {
+                "triplets": []
+            }
+        },
+        {
+            "question": "Which method is evaluated with the Cross-lingual Question Answering Dataset?",
+            "triplets": {
+                "triplets": [
+                    "[XQuAD:Dataset, Evaluated-With, Method]"
+                ]
+            }
+        },
+        {
+            "question": "What is another name for multilingual BERT?",
+            "triplets": {
+                "triplets": [
+                    "[multilingual BERT:Method, Synonym-Of, ALBERT:Method]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is used for zero-shot cross-lingual transfer?",
+            "triplets": {
+                "triplets": [
+                    "[MONOTRANS:Method, Used-For, Task:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which task is used for masked language modeling?",
+            "triplets": {
+                "triplets": [
+                    "[Task, Used-For, Masked Language Modeling]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is used for masked language modeling?",
+            "triplets": {
+                "triplets": [
+                    "[transformer model:Method, Used-For, masked language modeling:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is trained with MLM?",
+            "triplets": {
+                "triplets": [
+                    "[Method:Trained-With, MLM]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is a subclass of monolingual transformer?",
+            "triplets": {
+                "triplets": [
+                    "[MONOTRANS:Method, SubClass-Of, monolingual transformer:Method]"
+                ]
+            }
+        },
+        {
+            "question": "Which dataset benchmarks zero-shot cross-lingual transfer?",
+            "triplets": {
+                "triplets": [
+                    "[Cross - lingual Question Answering Dataset:Dataset, Benchmark-For, XQuAD:Dataset]"
+                ]
+            }
+        },
+        {
+            "question": "Which dataset benchmarks zero-shot cross-lingual transfer for PAWS-X?",
+            "triplets": {
+                "triplets": [
+                    "[XQuAD:Dataset, Benchmark-For, PAWS-X:Dataset]"
+                ]
+            }
+        },
+        {
+            "question": "Which dataset benchmarks zero-shot cross-lingual transfer for MLDoc?",
+            "triplets": {
+                "triplets": [
+                    "[MLDoc:Dataset, Benchmark-For, zero-shot cross-lingual transfer:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which task is a subtask of language understanding?",
+            "triplets": {
+                "triplets": [
+                    "[Question answering as a task:SubTask-Of, language understanding:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which methods are evaluated with XQuAD?",
+            "triplets": {
+                "triplets": [
+                    "[LASSO ranking method:Method, Evaluated-With, XQuAD:Dataset]",
+                    "[BQD ranking method:Method, Evaluated-With, XQuAD:Dataset]"
+                ]
+            }
+        },
+        {
+            "question": "Which method includes adapter modules as part?",
+            "triplets": {
+                "triplets": [
+                    "[CARAFE:Method, Part-Of, adapter modules:Part]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is a subclass of transformer?",
+            "triplets": {
+                "triplets": [
+                    "[ALBERT:Method, SubClass-Of, Transformer:Method]"
+                ]
+            }
+        },
+        {
+            "question": "Which task is synonymous with MLM?",
+            "triplets": {
+                "triplets": [
+                    "[MLM:Task, Synonym-Of, sentence classification:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is trained with masked language modeling?",
+            "triplets": {
+                "triplets": [
+                    "[Transformer Model:Method, Used-For, Masked Language Modeling:Task]",
+                    "[BERT:Method, Used-For, Masked Language Modeling:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which task is synonymous with next sentence prediction?",
+            "triplets": {
+                "triplets": [],
+                "raw_output": "The two tasks mentioned in the context are **Masked Language Modeling (MLM)** and **Next Sentence Prediction (NSP)**. The question asks which task is **synonymous with Next Sentence Prediction**. \n\nSince the context explicitly states that the embedding is trained on these two tasks, **Next Sentence Prediction (NSP)** is the target, and the **other task** (MLM) is the one that is **synonymous with it** in the context of the problem. \n\nThus, the correct triplet is:\n\n**[Next Sentence Prediction:Task, Synonym-Of, Masked Language Modeling:Task]**\n\n---\n\n### Final Answer:\n```json\n{\n  \"triplets\": [\n    \"[Next Sentence Prediction:Task, Synonym-Of, Masked Language Modeling:Task]\"\n  ]\n}\n```"
+            }
+        },
+        {
+            "question": "Which method is trained with next sentence prediction?",
+            "triplets": {
+                "triplets": [
+                    "[BERT:Method, Trained-With, NSP:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is trained with MLM?",
+            "triplets": {
+                "triplets": [
+                    "[Method:Trained-With, MLM]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is trained with NSP?",
+            "triplets": {
+                "triplets": [
+                    "[Method:Method, Trained-With, Task:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method includes feed-forward layers as part?",
+            "triplets": {
+                "triplets": [
+                    "[L1 Transformer:Method, Part-Of, Feed-Forward Layers:Method]"
+                ]
+            }
+        },
+        {
+            "question": "Which method includes multi-headed attention as part?",
+            "triplets": {
+                "triplets": []
+            }
+        },
+        {
+            "question": "Which method includes a feed-forward adapter module as part?",
+            "triplets": {
+                "triplets": [
+                    "[A Lite BERT:Method, Part-Of, Method]"
+                ]
+            }
+        },
+        {
+            "question": "Which method includes adapter modules as part of a transformer?",
+            "triplets": {
+                "triplets": [
+                    "[parameter-sharing transformer:Method, Used-For, transformer]"
+                ]
+            }
+        },
+        {
+            "question": "Which datasets benchmark classification: XNLI, MLDoc, PAWS-X?",
+            "triplets": {
+                "triplets": [
+                    "[XNLI:Dataset, Used-For, classification:Task]",
+                    "[MLDoc:Dataset, Used-For, classification:Task]",
+                    "[PAWS-X:Dataset, Used-For, classification:Task]"
+                ]
+            }
+        },
+        {
+            "question": "What is another name for JOINTMULTI?",
+            "triplets": {
+                "triplets": []
+            }
+        },
+        {
+            "question": "What is another name for CLWE?",
+            "triplets": {
+                "triplets": []
+            }
+        },
+        {
+            "question": "Which method is trained with MLM in BERT?",
+            "triplets": {
+                "triplets": [
+                    "[English BERT:Method, Trained-With, Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is trained with NSP in BERT?",
+            "triplets": {
+                "triplets": [],
+                "raw_output": "### Summary\n\nThe question requires identifying a valid triplet using the **allowed entity labels** (`Method`, `Task`, `Dataset`) that reflects the relationship between **BERT** (a method) and **NSP** (a training objective). \n\n---\n\n### Key Points from the Context\n\n- BERT is a method used for **training**.\n- It uses **NSP** (Next Sentence Prediction) as one of its **training objectives**.\n- The triplet must be in the form: `[Method, Relation, Entity]`.\n\n---\n\n### Analysis\n\n- **Method**: \"BERT\" is the method.\n- **Relation**: It is trained with **NSP** as an objective.\n- **Entity**: The objective \"NSP\" is **not** one of the allowed entities (`Method`, `Task`, `Dataset`).\n\nThus, the triplet `[BERT:Method, Trained-With, NSP:Loss]` is **not valid** because the **object (NSP)** is **not** among the allowed entities.\n\n---\n\n### Conclusion\n\nSince the **object must be one of the allowed entities** (`Method`, `Task`, `Dataset`), and **NSP is not among them**, **no valid triplet** can be formed under the given constraints.\n\n---\n\n### Final Answer\n\n```json\n[]\n```\n\nThis indicates **no valid triplet** can be generated based on the given constraints."
+            }
+        },
+        {
+            "question": "What is another name for MONOTRANS?",
+            "triplets": {
+                "triplets": []
+            }
+        },
+        {
+            "question": "Which methods are trained with Wikipedia: mBERT, XLM?",
+            "triplets": {
+                "triplets": [
+                    "[mBERT:Method, Trained-With, Wikipedia:Dataset]",
+                    "[XLM:Method, Trained-With, Wikipedia:Dataset]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is compared with mBERT?",
+            "triplets": {
+                "triplets": [
+                    "[JOINTMULTI:Method, Compare-With, mBERT:Method]"
+                ]
+            }
+        },
+        {
+            "question": "What is another name for NLI?",
+            "triplets": {
+                "triplets": [
+                    "[NLI:Task, Synonym-Of, NLI:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which task is a subtask of NLI?",
+            "triplets": {
+                "triplets": [
+                    "[Question answering:Task, SubTask-Of, NLI:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which methods are used for natural language inference: mBERT, XLM?",
+            "triplets": {
+                "triplets": [
+                    "[JOINTMULTI:Method, Used-For, Natural Language Inference:Task]",
+                    "[MONOTRANS:Method, Used-For, Natural Language Inference:Task]",
+                    "[JOINTMULTI:Method, Compare-With, mBERT:Method]",
+                    "[JOINTMULTI:Method, Compare-With, XLM:Method]",
+                    "[MONOTRANS:Method, Compare-With, mBERT:Method]",
+                    "[MONOTRANS:Method, Compare-With, XLM:Method]"
+                ]
+            }
+        },
+        {
+            "question": "Which methods are used for entailment: mBERT, XLM?",
+            "triplets": {
+                "triplets": [
+                    "[mBERT:Method, Used-For, Entailment:Task]",
+                    "[XLM:Method, Used-For, Entailment:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which methods are compared with JOINTMULTI?",
+            "triplets": {
+                "triplets": [
+                    "[MONOTRANS:Method, Compare-With, JOINTMULTI:Task]",
+                    "[JOINTPAIR:Method, Compare-With, JOINTMULTI:Task]",
+                    "[CLWE variants (768d ident):Method, Compare-With, JOINTMULTI:Task]",
+                    "[CLWE variants (32k):Method, Compare-With, JOINTMULTI:Task]",
+                    "[CLWE variants (200k):Method, Compare-With, JOINTMULTI:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is compared with JOINTMULTI?",
+            "triplets": {
+                "triplets": [
+                    "[JOINTPAIR:Method, Compare-With, JOINTMULTI:Method]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is compared with JOINTMULTI?",
+            "triplets": {
+                "triplets": [
+                    "[JOINTMULTI:Compare-With, MONOTRANS]",
+                    "[JOINTMULTI:Compare-With, JOINTPAIR]",
+                    "[JOINTMULTI:Compare-With, CLWE variant]",
+                    "[JOINTMULTI:Compare-With, JOINTMULTI with 3 2 k and 2 0 0 k voc]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is used for classification: MONOTRANS, JOINTMULTI?",
+            "triplets": {
+                "triplets": [
+                    "[MONOTRANS:Method, Used-For, classification:Task]",
+                    "[JOINTMULTI:Method, Used-For, classification:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is used for classification: JOINTPAIR?",
+            "triplets": {
+                "triplets": [
+                    "[JOINTPAIR:Method, Used-For, classification:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is compared with JOINTMULTI: MONOTRANS?",
+            "triplets": {
+                "triplets": [
+                    "[MONOTRANS:Task, Compare-With, JOINTMULTI:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is compared with JOINTPAIR: MONOTRANS?",
+            "triplets": {
+                "triplets": [
+                    "[MONOTRANS:Method, Compare-With, JOINTPAIR:Method]"
+                ]
+            }
+        },
+        {
+            "question": "Which dataset is another name for XQuAD?",
+            "triplets": {
+                "triplets": []
+            }
+        },
+        {
+            "question": "Which task is a subtask of natural language understanding: Question answering?",
+            "triplets": {
+                "triplets": [
+                    "[Question answering:Task, SubTask-Of, natural language understanding:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which task is compared with classification: Question answering?",
+            "triplets": {
+                "triplets": [
+                    "[Question answering:Compare-With, classification]"
+                ]
+            }
+        },
+        {
+            "question": "Which methods are evaluated with XNLI: JOINTMULTI, JOINTPAIR?",
+            "triplets": {
+                "triplets": [
+                    "[JOINTMULTI:Method, Evaluated-With, XNLI:Task]",
+                    "[JOINTPAIR:Method, Evaluated-With, XNLI:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which methods are compared with JOINTPAIR: JOINTMULTI?",
+            "triplets": {
+                "triplets": [
+                    "[JOINTPAIR:Compare-With, JOINTMULTI:Method]"
+                ]
+            }
+        },
+        {
+            "question": "Which datasets are synonyms: WiC, Word in Context; SCWS, Stanford Contextual Word Similarity?",
+            "triplets": {
+                "triplets": [
+                    "[WiC:Dataset, Synonym-Of, Word in Context:Dataset]",
+                    "[SCWS:Dataset, Synonym-Of, Stanford Contextual Word Similarity:Dataset]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is compared with MONOTRANS: CLWE?",
+            "triplets": {
+                "triplets": [
+                    "[CLWE:Method, Compared-With, MONOTRANS:Method]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is evaluated with MLDoc: CLWE?",
+            "triplets": {
+                "triplets": [
+                    "[CLWE:Method, Evaluated-With, MLDoc:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is evaluated with XNLI: CLWE?",
+            "triplets": {
+                "triplets": [
+                    "[CLWE:Method, Evaluated-With, XNLI:Dataset]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is evaluated with XQuAD: CLWE?",
+            "triplets": {
+                "triplets": [
+                    "[CLWE:Method, Evaluated-With, XQuAD:Dataset]"
+                ]
+            }
+        },
+        {
+            "question": "Which datasets are trained with cross-lingual word embedding: MLDoc, PAWS-X?",
+            "triplets": {
+                "triplets": [
+                    "[MLDoc:Dataset, Used-For, cross-lingual word embedding:Method]",
+                    "[PAWS-X:Dataset, Used-For, cross-lingual word embedding:Method]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is evaluated with XQuAD: cross-lingual word embedding?",
+            "triplets": {
+                "triplets": [
+                    "[Method:Method, Evaluated-With, XQuAD:Dataset]"
+                ]
+            }
+        },
+        {
+            "question": "Which datasets benchmark semantic probing: Word in Context, Stanford Contextual Word Similarity?",
+            "triplets": {
+                "triplets": [
+                    "[Stanford Contextual Word Similarity:Dataset, Benchmark-For, Word in Context:Task]",
+                    "[Word in Context:Dataset, Benchmark-For, Stanford Contextual Word Similarity:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which datasets are synonyms: WiC = Word in Context, SCWS = Stanford Contextual Word Similarity?",
+            "triplets": {
+                "triplets": [
+                    "[WiC:Dataset, Synonym-Of, SCWS:Dataset]"
+                ]
+            }
+        },
+        {
+            "question": "Which dataset benchmarks binary classification: WiC?",
+            "triplets": {
+                "triplets": []
+            }
+        },
+        {
+            "question": "Which dataset benchmarks semantic similarity: SCWS?",
+            "triplets": {
+                "triplets": [
+                    "[Word in Context:Dataset, Benchmark-For, Stanford Contextual Word Similarity:Dataset]"
+                ]
+            }
+        }
+    ]
+}

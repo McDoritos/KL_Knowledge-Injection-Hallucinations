@@ -1,0 +1,537 @@
+{
+    "results": [
+        {
+            "question": "What is a subtask of VL?",
+            "triplets": {
+                "triplets": [
+                    "[image-sentence retrieval:Task, SubTask-Of, Visual Question Answering:Task]",
+                    "[image captioning:Task, SubTask-Of, Visual Question Answering:Task]",
+                    "[visual question answering:Task, SubTask-Of, Visual Question Answering:Task]",
+                    "[phrase grounding:Task, SubTask-Of, Visual Question Answering:Task]",
+                    "[text-to-clip retrieval:Task, SubTask-Of, Visual Question Answering:Task]"
+                ]
+            }
+        },
+        {
+            "question": "What method is used for retrieval-style tasks?",
+            "triplets": {
+                "triplets": [
+                    "[Average Embedding:Method, Used-For, Task]",
+                    "[Self-Attention:Method, Used-For, Task]",
+                    "[LSTM:Method, Used-For, Task]"
+                ]
+            }
+        },
+        {
+            "question": "What method is used for vision-language tasks?",
+            "triplets": {
+                "triplets": [
+                    "[GrOVLE:Method, Used-For, vision-language tasks:Task]"
+                ]
+            }
+        },
+        {
+            "question": "What is another name for Graph Oriented Vision-Language Embedding?",
+            "triplets": {
+                "triplets": [
+                    "[Graph Oriented Vision-Language Embedding:Entity, Synonym-Of, GrOVLE:Entity]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is trained with WordNet?",
+            "triplets": {
+                "triplets": [
+                    "[GrOVLE:Method, Trained-With, WordNet:Dataset]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is trained with Visual Genome?",
+            "triplets": {
+                "triplets": [
+                    "[GrOVLE:Method, Trained-With, Visual Genome:Dataset]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is used for vision-language embedding?",
+            "triplets": {
+                "triplets": [
+                    "[GrOVLE:Method, Used-For, Task]"
+                ]
+            }
+        },
+        {
+            "question": "What is a subtask of vision-language tasks?",
+            "triplets": {
+                "triplets": [
+                    "[image-sentence retrieval:SubTaskOf, vision-language tasks:Task]",
+                    "[visual question answering:SubTaskOf, vision-language tasks:Task]",
+                    "[phrase grounding:SubTaskOf, vision-language tasks:Task]",
+                    "[image captioning:SubTaskOf, vision-language tasks:Task]",
+                    "[text-to-clip retrieval:SubTaskOf, vision-language tasks:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is a subclass of pretrained dense vector representations?",
+            "triplets": {
+                "triplets": [
+                    "[Visual Word 2 Vec:Method, SubClass-Of, pretrained dense vector representations:Dataset]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is used for sentiment analysis?",
+            "triplets": {
+                "triplets": [
+                    "[LASSO BQ Ranking Method:Method, Used-For, Sentiment Analysis:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is used for question answering?",
+            "triplets": {
+                "triplets": [
+                    "[LASSO-based ranking method:Method, Used-For, Question answering:Task]",
+                    "[LASSO basic question ranking method:Method, Used-For, Question answering:Task]",
+                    "[basic question generation approach:Method, Used-For, Question answering:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is used for image-sentence retrieval?",
+            "triplets": {
+                "triplets": [
+                    "[InferSent:Method, Used-For, image-sentence retrieval:Task]",
+                    "[BERT:Method, Used-For, image-sentence retrieval:Task]",
+                    "[Word2Vec:Method, Used-For, image-sentence retrieval:Task]",
+                    "[Visual Word2Vec:Method, Used-For, image-sentence retrieval:Task]",
+                    "[HGLMM:Method, Used-For, image-sentence retrieval:Task]",
+                    "[FastText:Method, Used-For, image-sentence retrieval:Task]",
+                    "[GrOVLE:Method, Used-For, image-sentence retrieval:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is used for visual question answering?",
+            "triplets": {
+                "triplets": [
+                    "[Word2Vec:Method, Used-For, Task]",
+                    "[FastText:Method, Used-For, Task]",
+                    "[Visual Word2Vec:Method, Used-For, Task]",
+                    "[HGLMM:Method, Used-For, Task]",
+                    "[InferSent:Method, Used-For, Task]",
+                    "[BERT:Method, Used-For, Task]",
+                    "[GrOVLE:Method, Used-For, Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is used for phrase grounding?",
+            "triplets": {
+                "triplets": [
+                    "[Method:Used-For, phrase grounding:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is used for image captioning?",
+            "triplets": {
+                "triplets": [
+                    "[encoding and decoding:Method, Used-For, image captioning:Task]",
+                    "[word-level attention:Method, Used-For, image captioning:Task]",
+                    "[LSTM:Method, Used-For, image captioning:Task]",
+                    "[multi-layer perceptron:Method, Used-For, image captioning:Task]",
+                    "[Visual Word 2 Vec:Method, Used-For, image captioning:Task]",
+                    "[BERT:Method, Used-For, image captioning:Task]",
+                    "[InferSent:Method, Used-For, image captioning:Task]",
+                    "[GrOVLE:Method, Used-For, image captioning:Task]",
+                    "[Global&Local:Method, Used-For, image captioning:Task]",
+                    "[Paritial Conv:Method, Used-For, image captioning:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is used for text-to-clip retrieval?",
+            "triplets": {
+                "triplets": [
+                    "[Word2Vec:Method, Used-For, text-to-clip retrieval:Task]",
+                    "[Visual Word2Vec:Method, Used-For, text-to-clip retrieval:Task]",
+                    "[HGLMM:Method, Used-For, text-to-clip retrieval:Task]",
+                    "[InferSent:Method, Used-For, text-to-clip retrieval:Task]",
+                    "[BERT:Method, Used-For, text-to-clip retrieval:Task]",
+                    "[GrOVLE:Method, Used-For, text-to-clip retrieval:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is part of LSTM?",
+            "triplets": {
+                "triplets": [
+                    "[LSTM:Method, Used-For, language model:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is compared with PackNet?",
+            "triplets": {
+                "triplets": [
+                    "[PackNet:Method, Compare-With, GrOVLE:Method]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is used for vision-language tasks?",
+            "triplets": {
+                "triplets": [
+                    "[Word2Vec:Method, Used-For, image-sentence retrieval:Task]",
+                    "[WordNet retrofitted Word2Vec:Method, Used-For, visual question answering:Task]",
+                    "[FastText:Method, Used-For, phrase grounding:Task]",
+                    "[Visual Word2Vec:Method, Used-For, image captioning:Task]",
+                    "[HGLMM:Method, Used-For, text-to-clip retrieval:Task]",
+                    "[InferSent:Method, Used-For, image-sentence retrieval:Task]",
+                    "[BERT:Method, Used-For, visual question answering:Task]",
+                    "[GrOVLE:Method, Used-For, phrase grounding:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is used for image captioning using word-level attention?",
+            "triplets": {
+                "triplets": [
+                    "[Word2Vec:Method, Used-For, image captioning:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is used for VQA tasks using dual attention?",
+            "triplets": {
+                "triplets": [
+                    "[Dual Attention:Method, Used-For, VQA Tasks]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is part of a fully connected layer?",
+            "triplets": {
+                "triplets": []
+            }
+        },
+        {
+            "question": "What is another name for Continuous Bag of Words?",
+            "triplets": {
+                "triplets": []
+            }
+        },
+        {
+            "question": "Which method is a subclass of Word 2 Vec?",
+            "triplets": {
+                "triplets": [
+                    "[Retrofitting:Method, SubClass-Of, Word 2 Vec:Method]",
+                    "[HGLMM Fisher Vectors:Method, SubClass-Of, Word 2 Vec:Method]",
+                    "[GrOVLE:Method, SubClass-Of, Word 2 Vec:Method]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is part of InferSent?",
+            "triplets": {
+                "triplets": [
+                    "[InferSent:Method, Part-Of, NLI task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is used for sentence-level embedding?",
+            "triplets": {
+                "triplets": [
+                    "[InferSent:Method, Used-For, sentence-level embedding:Task]"
+                ]
+            }
+        },
+        {
+            "question": "What is another name for Natural Language Inference?",
+            "triplets": {
+                "triplets": []
+            }
+        },
+        {
+            "question": "Which method is used for NLI?",
+            "triplets": {
+                "triplets": [
+                    "[BiLSTM:Method, Used-For, NLI:Task]"
+                ]
+            }
+        },
+        {
+            "question": "What is another name for Masked Language Modeling?",
+            "triplets": {
+                "triplets": []
+            }
+        },
+        {
+            "question": "Which dataset benchmarks phrase grounding?",
+            "triplets": {
+                "triplets": [],
+                "raw_output": "The question asks for the **dataset** that benchmarks **phrase grounding**. Based on the provided context:\n\n- The context mentions that experiments are conducted on **five vision-language tasks**, including **phrase grounding**.\n- However, the dataset name (e.g., \"GLUE\", \"SQuAD\", or a custom dataset) is **not explicitly mentioned** in the text.\n- The allowed entities are **Dataset**, **Task**, and **Method**, but the **Dataset** is not clearly identified in the text.\n\n### Key Observations:\n1. **Task vs. Dataset**:  \n   - The phrase \"phrase grounding\" is explicitly identified as a **task** (e.g., a specific vision-language task).  \n   - The **dataset** is implicitly referenced through the context (e.g., \"benchmarks for natural language understanding\" and \"vision-language tasks\"), but no specific dataset name is provided.\n\n2. **Entity Constraints**:  \n   - The rules prohibit inventing **entities** not explicitly mentioned.  \n   - While the **task** (\"phrase grounding\") is clear, the **dataset** is not explicitly named in the text.\n\n### Conclusion:\nGiven the ambiguity and lack of a specific dataset name in the text, the most accurate triplet under the constraints is:\n\n**[Phrase Grounding: Task, Evaluated With, ?]**  \n(However, the **Dataset** entity is not explicitly mentioned and thus cannot be included.)\n\n### Final Answer:\n$$\n\\boxed{[Phrase\\ Grounding: Task, Evaluated\\ With, ?]}\n$$\n\n**Note**: The dataset name is not explicitly provided in the text, so the triplet cannot include the **Dataset** entity. The task (\"phrase grounding\") is identified, but the dataset is not."
+            }
+        },
+        {
+            "question": "Which dataset is used to train Word 2 Vec?",
+            "triplets": {
+                "triplets": [
+                    "[Visual Genome:Dataset, Used-For, Word2Vec:Method]",
+                    "[WordNet:Dataset, Used-For, Word2Vec:Method]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is compared with FastText?",
+            "triplets": {
+                "triplets": [
+                    "[Word2Vec:Method, Compare-With, FastText]",
+                    "[InferSent:Method, Compare-With, FastText]",
+                    "[BERT:Method, Compare-With, FastText]",
+                    "[ALBERTbase:Method, Compare-With, FastText]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is a subclass of Word 2 Vec?",
+            "triplets": {
+                "triplets": [
+                    "[Retrofitting:Method, SubClass-Of, Word 2 Vec:Method]",
+                    "[HGLMM Fisher Vectors:Method, SubClass-Of, Word 2 Vec:Method]",
+                    "[GrOVLE:Method, SubClass-Of, Word 2 Vec:Method]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is compared with an LSTM-based approach?",
+            "triplets": {
+                "triplets": [
+                    "[Average Embedding:Method, Compared-With, LSTM-based approach:Method]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is compared with BERT?",
+            "triplets": {
+                "triplets": [
+                    "[ALBERT:Method, Compare-With, BERT:Method]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is used for vision-language tasks?",
+            "triplets": {
+                "triplets": [
+                    "[Method:Used-For, Task:vision-language tasks]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is used for image-sentence retrieval?",
+            "triplets": {
+                "triplets": [
+                    "[InferSent:Method, Used-For, image-sentence retrieval:Task]",
+                    "[BERT:Method, Used-For, image-sentence retrieval:Task]",
+                    "[Word2Vec:Method, Used-For, image-sentence retrieval:Task]",
+                    "[Visual Word2Vec:Method, Used-For, image-sentence retrieval:Task]",
+                    "[HGLMM:Method, Used-For, image-sentence retrieval:Task]",
+                    "[GrOVLE:Method, Used-For, image-sentence retrieval:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which dataset benchmarks image-sentence retrieval?",
+            "triplets": {
+                "triplets": [
+                    "[Flickr 3 0 K:Dataset, Benchmark-For, image-sentence retrieval:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is evaluated with Flickr30K?",
+            "triplets": {
+                "triplets": [
+                    "[InferSent:Method, Evaluated-With, Flickr30K:Dataset]",
+                    "[BERT:Method, Evaluated-With, Flickr30K:Dataset]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is evaluated with MSCOCO?",
+            "triplets": {
+                "triplets": []
+            }
+        },
+        {
+            "question": "Which method is used for phrase grounding?",
+            "triplets": {
+                "triplets": [
+                    "[Self-Attention:Method, Used-For, phrase grounding:Task]"
+                ]
+            }
+        },
+        {
+            "question": "What is another name for Hybrid Gaussian-Laplacian Mixture Model?",
+            "triplets": {
+                "triplets": []
+            }
+        },
+        {
+            "question": "Which method is part of Word 2 Vec?",
+            "triplets": {
+                "triplets": [
+                    "[Retrofitting:Method, Part-Of, Word 2 Vec:Method]",
+                    "[HGLMM Fisher Vectors:Method, Part-Of, Word 2 Vec:Method]",
+                    "[GrOVLE:Method, Part-Of, Word 2 Vec:Method]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is used for VL tasks with PCA?",
+            "triplets": {
+                "triplets": [
+                    "[PCA:Method, Used-For, VL tasks:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is trained with WordNet and Visual Genome?",
+            "triplets": {
+                "triplets": [
+                    "[GrOVLE:Method, Trained-With, WordNet:Dataset]",
+                    "[GrOVLE:Method, Trained-With, Visual Genome:Dataset]"
+                ]
+            }
+        },
+        {
+            "question": "What is a subtask of generation-based tasks?",
+            "triplets": {
+                "triplets": [
+                    "[Question Generation Algorithm:Task, SubTask-Of, Generation-Based Tasks:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is used for generation tasks?",
+            "triplets": {
+                "triplets": [
+                    "[RNN:Method, Used-For, generation:Task]",
+                    "[CNN:Method, Used-For, generation:Task]",
+                    "[Visual Word 2 Vec:Method, Used-For, generation:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is used for image captioning in generation tasks?",
+            "triplets": {
+                "triplets": [
+                    "[Visual Word 2 Vec:Method, Used-For, image captioning:Task]",
+                    "[word-level attention:Method, Used-For, image captioning:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is used for VQA in generation tasks?",
+            "triplets": {
+                "triplets": [
+                    "[Visual Word 2 Vec:Method, Used-For, generation tasks:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is part of GrOVLE?",
+            "triplets": {
+                "triplets": [
+                    "[Word2Vec:Method, Part-Of, GrOVLE:Method]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is used for image-sentence retrieval as part of GrOVLE?",
+            "triplets": {
+                "triplets": [
+                    "[GrOVLE:Method, Used-For, image-sentence retrieval:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is used for phrase grounding as part of GrOVLE?",
+            "triplets": {
+                "triplets": [
+                    "[GrOVLE:Method, Used-For, phrase grounding:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is used for text-to-clip tasks using LSTM language model?",
+            "triplets": {
+                "triplets": [
+                    "[text-to-clip tasks:Task, Used-For, LSTM language model:Method]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is used for image captioning using LSTM language model?",
+            "triplets": {
+                "triplets": [
+                    "[LSTM Language Model:Method, Used-For, Image Captioning:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is used for VQA using LSTM language model?",
+            "triplets": {
+                "triplets": [
+                    "[LSTM language model:Method, Used-For, VQA:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which dataset benchmarks image-sentence retrieval with Flickr30K?",
+            "triplets": {
+                "triplets": [
+                    "[Flickr30K:Dataset, Benchmark-For, image-sentence retrieval:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which dataset benchmarks image-sentence retrieval with MSCOCO?",
+            "triplets": {
+                "triplets": [
+                    "[MSCOCO:Dataset, Benchmark-For, image-sentence retrieval:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is used for retrieval-style tasks using Average Embedding?",
+            "triplets": {
+                "triplets": [
+                    "[Average Embedding:Method, Used-For, retrieval-style tasks:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is used for retrieval-style tasks using Self-Attention language model?",
+            "triplets": {
+                "triplets": [
+                    "[Self-Attention:Method, Used-For, retrieval-style tasks:Task]"
+                ]
+            }
+        },
+        {
+            "question": "Which method is compared with LSTM?",
+            "triplets": {
+                "triplets": [
+                    "[Average Embedding:Method, Compare-With, LSTM:Method]",
+                    "[Self-Attention:Method, Compare-With, LSTM:Method]"
+                ]
+            }
+        }
+    ]
+}

@@ -1,79 +1,93 @@
-What task is addressed by the Visual Question Answering (VQA) framework?
-
-Which method is proposed to rank basic questions in the dataset?
-
-What datasets are introduced in this paper for VQA robustness evaluation?
-
-Which method is formulated as a LASSO optimization problem?
-
-What relationship exists between the LASSO ranking method and text similarity ranking?
-
-Which datasets are used to compare different question ranking metrics?
-
-What relationship exists between GBQD and YNBQD and the main VQA dataset?
-
-What methods are compared with the proposed LASSO ranking approach?
-
-Which dataset serves as the foundation for constructing the VQA dataset?
-
-Which metrics are used to evaluate sentence similarity in the ranking process?
-
-What relationship exists between BLEU, METEOR, ROUGE, and CIDEr in the context of ranking performance evaluation?
-
-Which method measures the robustness of VQA models?
-
-What datasets are used to compute the robustness measure (R score)?
-
-What relationship exists between R score and the performance accuracy of VQA models?
-
-Which method is found to be most robust among the tested VQA models?
-
-Which dataset is used to evaluate HieCoAtt model performance?
-
-What relationship exists between attention-based models and robustness or accuracy?
-
-Which models are compared in terms of robustness (e.g., HieCoAtt, MUTAN, LQI, MUA)?
-
-Which method is used to preprocess question sentences before applying LASSO ranking?
-
-What relationship exists between question preprocessing and LASSO ranking accuracy?
-
-Which datasets are generated using the testing images of MS COCO?
-
-What relationship exists between MS COCO and VQA dataset construction?
-
-Which task involves multimodal input of image and text?
-
-What methods are compared for bilinear interaction between image and text embeddings?
-
-Which method uses tensor-based low-rank bilinear pooling?
-
-Which datasets are used for early VQA benchmarking (e.g., DAQUAR, Visual 7W, Visual Madlibs)?
-
-What relationship exists between Visual 7W and Visual Genome datasets?
-
-Which dataset focuses on six types of “W” questions (what, where, when, who, why, how)?
-
-Which methods are used as sentence evaluation metrics for comparing ranking quality?
-
-What relationship exists between LASSO ranking performance and semantic similarity?
-
-Which methods are used as text encoders for sentence embeddings?
-
-What relationship exists between Skip-thoughts or Word2Vec and question embedding generation?
-
-What dataset is used as the main benchmark for VQA models?
-
-Which method shows higher accuracy among attention-based VQA models?
-
-What relationship exists between MUTAN with Attention and VQA model accuracy?
-
-What datasets are evaluated using standard and partial testing sets?
-
-What relationship exists between LASSO ranking and future semantic encoders?
-
-What method combines NLP, computer vision, and machine learning for the VQA task?
-
-Which datasets are used for robustness comparison across different similarity metrics?
-
-What relationship exists between LASSO-based question ranking and robustness analysis?
+What task is synonymous with VQA?
+Which task is a subtask of ranking?
+Which task is a subtask of computer vision?
+Which dataset is used for the Noise Generator method: basic question dataset?
+Which dataset is used for the Noise Generator method: main question?
+What is another name for main question dataset?
+What is another name for basic question dataset?
+What is another name for General Basic Question Dataset?
+What is another name for Yes/No Basic Question Dataset?
+Which method is used for BQD ranking?
+Which dataset is another name for General Basic Question Dataset?
+Which dataset is another name for Yes/No Basic Question Dataset?
+Which task is synonymous with NLP?
+What is another name for BLEU?
+Which method is used for machine translation?
+Which method is used for stemming and synonym matching?
+Which method is compared with BLEU?
+What is another name for ROUGE?
+Which method is used for image captioning: CIDEr?
+Which method is evaluated with BQs dataset: BQ ranking?
+Which method is evaluated with BQs dataset: LASSO ranking?
+Which method is compared with BQ ranking?
+Which method is used for image captioning: BLEU?
+Which method is used for fine-grained classification: deep learning?
+Which method is used for multimodal language modeling: deep learning?
+What is another name for Multimodal Low-rank Bi-linear?
+What is another name for Recurrent Neural Networks?
+What is another name for Convolutional Neural Networks?
+Which method is used for question generation: RNN?
+Which method is used for question generation: CNN?
+Which method is used for VQA: RNN?
+What is another name for GRU?
+Which method is a subclass of RNN: Gated Recurrent Unit?
+What is another name for DAQUAR?
+Which dataset benchmarks VQA: DAQUAR?
+Which dataset benchmarks VQA: VQA test set?
+Which dataset benchmarks VQA: Visual Madlibs?
+What is another name for QA?
+Which dataset benchmarks question answering: Visual Madlibs?
+Which dataset is compared with Visual Madlibs?
+Which method is part of Noise Generator: ranking methods?
+Which method is a subclass of ranking methods: BLEU-1?
+Which method is a subclass of ranking methods: BLEU-2?
+Which method is a subclass of ranking methods: BLEU-3?
+Which method is a subclass of ranking methods: BLEU-4?
+Which method is a subclass of ranking methods: ROUGE?
+Which method is a subclass of ranking methods: CIDEr?
+Which method is a subclass of ranking methods: METEOR?
+Which method is a subclass of ranking methods: LASSO ranking?
+Which method is a subclass of text encoders: GloVe?
+Which method is a subclass of text encoders: Word2Vec?
+Which method is used for Skip-thoughts model: RNN encoder?
+Which method is part of RNN encoder: GRU?
+Which method is a subclass of textual similarity measures: BLEU?
+Which method is a subclass of textual similarity measures: CIDEr?
+Which method is a subclass of textual similarity measures: METEOR?
+Which method is a subclass of textual similarity measures: ROUGE?
+Which dataset is another name for basic question dataset?
+Which dataset benchmarks question generation: Yes/No Basic Question dataset?
+Which dataset is a subclass of General and Yes/No BQ datasets: MS COCO?
+Which dataset is a subclass of General and Yes/No BQ datasets: VQA dataset?
+Which dataset is a subclass of General and Yes/No basic questions: VQA dataset?
+Which dataset benchmarks VQA: VQA dataset?
+Which dataset is a subclass of VQA dataset: MS COCO?
+Which dataset is a subclass of GBQD: General and Yes/No BQs?
+Which dataset is a subclass of YNBQD: General and Yes/No BQs?
+Which method is compared with LASSO-based ranking: LASSO basic question ranking?
+Which method is a subclass of sentence evaluation metrics: BLEU-1?
+Which method is a subclass of sentence evaluation metrics: BLEU-2?
+Which method is a subclass of sentence evaluation metrics: BLEU-3?
+Which method is a subclass of sentence evaluation metrics: BLEU-4?
+Which method is a subclass of sentence evaluation metrics: ROUGE?
+Which method is a subclass of sentence evaluation metrics: CIDEr?
+Which method is a subclass of sentence evaluation metrics: METEOR?
+Which dataset is another name for GBQD?
+Which methods are evaluated with GBQD: pretrained VQA models?
+Which methods are evaluated with VQA dataset: pretrained VQA models?
+Which methods are evaluated with GBQD: VQA model?
+Which methods are evaluated with VQA dataset: VQA model?
+Which method is a subclass of similarity metrics: BLEU?
+Which method is a subclass of similarity metrics: ROUGE?
+Which method is a subclass of similarity metrics: CIDEr?
+Which method is a subclass of similarity metrics: METEOR?
+Which method is compared with MUA: MU?
+Which method is compared with MU: MUA?
+Which method is a subclass of VQA model: HieCoAtt?
+Which method is part of HieCoAtt: co-attention mechanism?
+Which method is compared with LSTM Q+I: MUTAN with Attention?
+Which method is used for question ranking: LASSO basic question ranking?
+Which method is used for ranking: LASSO ranking method?
+Which method is used with BQs dataset: LASSO ranking method?
+Which methods are evaluated with General Basic Question Dataset: VQA models?
+Which methods are evaluated with Yes/No Basic Question Dataset: VQA models?
