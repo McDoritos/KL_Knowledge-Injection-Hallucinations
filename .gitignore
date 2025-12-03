@@ -3,6 +3,7 @@
 
 Models/offload/
 Models/qwen34_lora_adapter/
+Models/qwen317_lora_adapter/
 
 ./PRAG/data/dpr/
 ./PRAG/data/dpr/psgs_w100.tsv
