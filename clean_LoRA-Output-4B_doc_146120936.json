@@ -1,0 +1,436 @@
+{
+  "results": [
+    {
+      "question": "What is a subtask of dense prediction tasks?",
+      "triplets": {
+        "triplets": [
+          "[subject:Dense-Pixel-Labeling, RELATION_LABEL, object:Dense-Prediction-Tasks]"
+        ]
+      }
+    },
+    {
+      "question": "What is another name for Content-Aware ReAssembly of FEatures?",
+      "triplets": {
+        "triplets": [
+          "[subject:Content-Aware ReAssembly of FEatures, Synonym-Of, CARAFE]"
+        ]
+      }
+    },
+    {
+      "question": "What method is used for Feature Pyramid Network?",
+      "triplets": {
+        "triplets": [
+          "[subject:Feature Pyramid Network, Used-For, Task:Object Detection]"
+        ]
+      }
+    },
+    {
+      "question": "What method is used for U-Net?",
+      "triplets": {
+        "triplets": [
+          "[subject:U-Net, Method, Task]"
+        ]
+      }
+    },
+    {
+      "question": "What method is used for instance segmentation?",
+      "triplets": {
+        "triplets": [
+          "[subject:Mask R-CNN, RELATION_LABEL, object:Instance Segmentation]"
+        ]
+      }
+    },
+    {
+      "question": "What task is used for dense prediction tasks?",
+      "triplets": {
+        "triplets": [
+          "[subject:Dense Prediction Task, Used-For, Task]"
+        ]
+      }
+    },
+    {
+      "question": "Which method is part of Faster RCNN?",
+      "triplets": {
+        "triplets": [
+          "[subject:Faster RCNN, Part-Of, Method]"
+        ]
+      }
+    },
+    {
+      "question": "Which method is compared with Global&Local?",
+      "triplets": {
+        "triplets": [
+          "[subject:Global&Local, Compare-With, object:Method]"
+        ]
+      }
+    },
+    {
+      "question": "Which dataset is used to evaluate Faster RCNN?",
+      "triplets": {
+        "triplets": [
+          "[subject:Faster RCNN, Evaluated-With, MS COCO]"
+        ]
+      }
+    },
+    {
+      "question": "Which dataset is used to evaluate Global&Local?",
+      "triplets": {
+        "triplets": [
+          "[subject:ENTITY_LABEL, RELATION_LABEL, object:ENTITY_LABEL]"
+        ]
+      }
+    },
+    {
+      "question": "Which dataset benchmarks image inpainting?",
+      "triplets": {
+        "triplets": [
+          "[subject:ImageInpainting, Benchmark-For, object:ImageInpaintingDataset]"
+        ]
+      }
+    },
+    {
+      "question": "What is another name for guided upsampling?",
+      "triplets": {
+        "triplets": [
+          "[subject:GuidedUpsampling, Synonym-Of, object:GUS]"
+        ]
+      }
+    },
+    {
+      "question": "What is a subtask of Object detection?",
+      "triplets": {
+        "triplets": [
+          "[subject:Object detection, SubTask-Of, Instance segmentation]"
+        ]
+      }
+    },
+    {
+      "question": "What is another name for Region Proposal Network?",
+      "triplets": {
+        "triplets": [
+          "[subject:Region Proposal Network, Synonym-Of, RPN]"
+        ]
+      }
+    },
+    {
+      "question": "Which method is part of PSPNet?",
+      "triplets": {
+        "triplets": [
+          "[subject:PSPNet, Part-Of, DeepLabV3]"
+        ]
+      }
+    },
+    {
+      "question": "Which method is a subclass of upsampling operators?",
+      "triplets": {
+        "triplets": [
+          "[subject:Method, SubClass-Of, object:Upsampling-Operator]"
+        ]
+      }
+    },
+    {
+      "question": "Which method is compared with interpolations?",
+      "triplets": {
+        "triplets": [
+          "[subject:Interpolations, Compare-With, object:Method]"
+        ]
+      }
+    },
+    {
+      "question": "Which method is compared with deconvolution?",
+      "triplets": {
+        "triplets": [
+          "[subject:Deconvolution, Compare-With, object:Variance-Explaining-Neural-Net]"
+        ]
+      }
+    },
+    {
+      "question": "Which method is a subclass of content-aware operators?",
+      "triplets": {
+        "triplets": [
+          "[subject:Method, SubClass-Of, object:Content-Aware-Operators]"
+        ]
+      }
+    },
+    {
+      "question": "Which method is a subclass of CARAFE?",
+      "triplets": {
+        "triplets": [
+          "[subject:CARAFE, SubClass-Of, Method]"
+        ]
+      }
+    },
+    {
+      "question": "What is another name for Spatial Transformer Networks?",
+      "triplets": {
+        "triplets": [
+          "[subject:Spatial Transformer Networks, Synonym-Of, STN]"
+        ]
+      }
+    },
+    {
+      "question": "What is another name for Deformable Convolutional Networks?",
+      "triplets": {
+        "triplets": [
+          "[subject:Deformable Convolutional Networks, Synonym-Of, Deformable ConvNets]"
+        ]
+      }
+    },
+    {
+      "question": "Which method is used for image inpainting?",
+      "triplets": {
+        "triplets": [
+          "[subject:Image-Inpainting, Used-For, Image-Inpainting]"
+        ]
+      }
+    },
+    {
+      "question": "Which method is part of feature pyramids?",
+      "triplets": {
+        "triplets": [
+          "[subject:Feature-Pyramids, RELATION_LABEL, object:Task]"
+        ]
+      }
+    },
+    {
+      "question": "Which method is part of Mask R-CNN?",
+      "triplets": {
+        "triplets": [
+          "[subject:Mask R-CNN, Part-Of, Method]"
+        ]
+      }
+    },
+    {
+      "question": "Which method is part of UperNet?",
+      "triplets": {
+        "triplets": [
+          "[subject:ENTITY_LABEL, RELATION_LABEL, object:ENTITY_LABEL]"
+        ]
+      }
+    },
+    {
+      "question": "What is another name for Pyramid Pooling Module?",
+      "triplets": {
+        "triplets": [
+          "[subject:Pyramid Pooling Module, Synonym-Of, Pyramid Pooling]"
+        ]
+      }
+    },
+    {
+      "question": "What is another name for Multi-level Feature Fusion?",
+      "triplets": {
+        "triplets": [
+          "[subject:Multi-level Feature Fusion, Synonym-Of, Method]"
+        ]
+      }
+    },
+    {
+      "question": "Which dataset benchmarks semantic segmentation?",
+      "triplets": {
+        "triplets": [
+          "[subject:Cityscapes, Benchmark-For, semantic segmentation]"
+        ]
+      }
+    },
+    {
+      "question": "Which method is part of Global&Local?",
+      "triplets": {
+        "triplets": [
+          "[subject:Global&Local, Part-Of, Task]"
+        ]
+      }
+    },
+    {
+      "question": "Which method is part of Partial Conv?",
+      "triplets": {
+        "triplets": [
+          "[subject:Partial Conv, Part-Of, Task:Semantic Segmentation]"
+        ]
+      }
+    },
+    {
+      "question": "What is another name for Nearest + Conv?",
+      "triplets": {
+        "triplets": [
+          "[subject:Nearest + Conv, Synonym-Of, Nearest + Convolutional]"
+        ]
+      }
+    },
+    {
+      "question": "What is another name for Bilinear + Conv?",
+      "triplets": {
+        "triplets": [
+          "[subject:Bilinear + Conv, Synonym-Of, Bilinear Conv]"
+        ]
+      }
+    },
+    {
+      "question": "What is another name for Pixel Shuffle?",
+      "triplets": {
+        "triplets": [
+          "[subject:Pixel Shuffle, Synonym-Of, object:Pixel Shuffle Layer]"
+        ]
+      }
+    },
+    {
+      "question": "Which method is a subclass of representative learning based upsampling?",
+      "triplets": {
+        "triplets": [
+          "[subject:Representative Learning Based Upsampling, SubClass-Of, Method]"
+        ]
+      }
+    },
+    {
+      "question": "Which method is compared with CARAFE?",
+      "triplets": {
+        "triplets": [
+          "[subject:CARAFE, Compare-With, U-Net]"
+        ]
+      }
+    },
+    {
+      "question": "Which method is used for object detection?",
+      "triplets": {
+        "triplets": [
+          "[subject:YOLOv3, RELATION_LABEL, object:Object Detection]"
+        ]
+      }
+    },
+    {
+      "question": "Which method is part of ResNet-50?",
+      "triplets": {
+        "triplets": [
+          "[subject:ResNet-50, Part-Of, Method]"
+        ]
+      }
+    },
+    {
+      "question": "Which method is evaluated with ADE 2 0 k?",
+      "triplets": {
+        "triplets": [
+          "[subject:ADE 2 0 k, Evaluated-With, Method]"
+        ]
+      }
+    },
+    {
+      "question": "Which method is compared with PSPNet?",
+      "triplets": {
+        "triplets": [
+          "[subject:DeepLabV3+, RELATION_LABEL, object:PSPNet]"
+        ]
+      }
+    },
+    {
+      "question": "Which method is compared with PSANet?",
+      "triplets": {
+        "triplets": [
+          "[subject:PSANet, Compare-With, DASNet]"
+        ]
+      }
+    },
+    {
+      "question": "Which method is a subclass of kernel normalizer?",
+      "triplets": {
+        "triplets": [
+          "[subject:Kernel Normalizer, SubClass-Of, subject:Method]"
+        ]
+      }
+    },
+    {
+      "question": "Which method is compared with Sigmoid?",
+      "triplets": {
+        "triplets": [
+          "[subject:Method, Compare-With, object:Sigmoid]"
+        ]
+      }
+    },
+    {
+      "question": "What method is a subclass of upsampling operator?",
+      "triplets": {
+        "triplets": [
+          "[subject:Method, SubClass-Of, object:UpsamplingOperator]"
+        ]
+      }
+    },
+    {
+      "question": "What method is used for image restoration?",
+      "triplets": {
+        "triplets": [
+          "[subject:ENTITY_LABEL, RELATION_LABEL, object:ENTITY_LABEL]"
+        ]
+      }
+    },
+    {
+      "question": "What method is used for super-resolution?",
+      "triplets": {
+        "triplets": [
+          "[subject:Super-Resolution, Used-For, Task]"
+        ]
+      }
+    },
+    {
+      "question": "Which method is used for semantic segmentation?",
+      "triplets": {
+        "triplets": [
+          "[subject:U-Net, RELATION_LABEL, object:Semantic Segmentation]"
+        ]
+      }
+    },
+    {
+      "question": "Which method is used for image inpainting?",
+      "triplets": {
+        "triplets": [
+          "[subject:Image-Inpainting, Method, Contextual-Attention]"
+        ]
+      }
+    },
+    {
+      "question": "Which method is part of FPN?",
+      "triplets": {
+        "triplets": [
+          "[subject:FPN, Part-Of, Method]"
+        ]
+      }
+    },
+    {
+      "question": "Which method is part of UperNet?",
+      "triplets": {
+        "triplets": [
+          "[subject:UperNet, Part-Of, Method]"
+        ]
+      }
+    },
+    {
+      "question": "Which method is part of Global&Local?",
+      "triplets": {
+        "triplets": [
+          "[subject:Global&Local, Part-Of, Method]"
+        ]
+      }
+    },
+    {
+      "question": "Which method is part of Partial Conv?",
+      "triplets": {
+        "triplets": [
+          "[subject:Partial Conv, Part-Of, Task:Segmentation]"
+        ]
+      }
+    },
+    {
+      "question": "Which method is part of Mask R-CNN?",
+      "triplets": {
+        "triplets": [
+          "[subject:Mask R-CNN, Part-Of, Method]"
+        ]
+      }
+    },
+    {
+      "question": "Which method is used for instance segmentation?",
+      "triplets": {
+        "triplets": [
+          "[subject:Mask R-CNN, RELATION_LABEL, object:Instance Segmentation]"
+        ]
+      }
+    }
+  ]
+}
