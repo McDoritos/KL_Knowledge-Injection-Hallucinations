@@ -177,14 +177,6 @@
       }
     },
     {
-      "question": "Which method is used for image inpainting?",
-      "triplets": {
-        "triplets": [
-          "[subject:Image-Inpainting, Used-For, Image-Inpainting]"
-        ]
-      }
-    },
-    {
       "question": "Which method is part of feature pyramids?",
       "triplets": {
         "triplets": [
@@ -389,38 +381,6 @@
       "triplets": {
         "triplets": [
           "[subject:FPN, Part-Of, Method]"
-        ]
-      }
-    },
-    {
-      "question": "Which method is part of UperNet?",
-      "triplets": {
-        "triplets": [
-          "[subject:UperNet, Part-Of, Method]"
-        ]
-      }
-    },
-    {
-      "question": "Which method is part of Global&Local?",
-      "triplets": {
-        "triplets": [
-          "[subject:Global&Local, Part-Of, Method]"
-        ]
-      }
-    },
-    {
-      "question": "Which method is part of Partial Conv?",
-      "triplets": {
-        "triplets": [
-          "[subject:Partial Conv, Part-Of, Task:Segmentation]"
-        ]
-      }
-    },
-    {
-      "question": "Which method is part of Mask R-CNN?",
-      "triplets": {
-        "triplets": [
-          "[subject:Mask R-CNN, Part-Of, Method]"
         ]
       }
     },

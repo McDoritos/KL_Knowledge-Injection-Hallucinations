@@ -166,36 +166,10 @@
       }
     },
     {
-      "question": "Which method is used for image inpainting?",
-      "triplets": {
-        "triplets": [
-          "[Global&Local:Method, Used-For, image_inpainting:Task]",
-          "[Partial Conv:Method, Used-For, image_inpainting:Task]",
-          "[CARAFE:Method, Used-For, image_inpainting:Task]"
-        ]
-      }
-    },
-    {
       "question": "Which method is part of feature pyramids?",
       "triplets": {
         "triplets": [
           "[Feature upsampling:Method, Part-Of, feature pyramids:Method]"
-        ]
-      }
-    },
-    {
-      "question": "Which method is part of Mask R-CNN?",
-      "triplets": [
-        [
-          "[Deconv:Method, Part-Of, Mask R-CNN:Method]"
-        ]
-      ]
-    },
-    {
-      "question": "Which method is part of UperNet?",
-      "triplets": {
-        "triplets": [
-          "[UperNet, Part-Of, PSPNet]"
         ]
       }
     },
@@ -219,18 +193,6 @@
       "question": "Which dataset benchmarks semantic segmentation?",
       "triplets": {
         "triplets": [] 
-      }
-    },
-    {
-      "question": "Which method is part of Global&Local?",
-      "triplets": {
-        "triplets": []
-      }
-    },
-    {
-      "question": "Which method is part of Partial Conv?",
-      "triplets": {
-        "triplets": []
       }
     },
     {

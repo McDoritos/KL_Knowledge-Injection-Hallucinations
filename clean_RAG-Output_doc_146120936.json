@@ -161,14 +161,6 @@
       }
     },
     {
-      "question": "Which method is used for image inpainting?",
-      "triplets": {
-        "triplets": [
-          "[CARAFE:Method, Used-For, image inpainting:Task]"
-        ]
-      }
-    },
-    {
       "question": "Which method is part of feature pyramids?",
       "triplets": {
         "triplets": []
@@ -179,14 +171,6 @@
       "triplets": {
         "triplets": [
           "[CARAFE:Method, Used-For, FPN:Structure]"
-        ]
-      }
-    },
-    {
-      "question": "Which method is part of UperNet?",
-      "triplets": {
-        "triplets": [
-          "[CARAFE:Method, Used-For, UperNet]"
         ]
       }
     },
@@ -215,14 +199,6 @@
       "triplets": {
         "triplets": [
           "[Paritial Conv:Method, Part-Of, Global&Local:Method]"
-        ]
-      }
-    },
-    {
-      "question": "Which method is part of Partial Conv?",
-      "triplets": {
-        "triplets": [
-          "[Partial Conv:Method, Used-For, CARAFE:Method]"
         ]
       }
     },
@@ -384,30 +360,10 @@
       }
     },
     {
-      "question": "Which method is part of Global&Local?",
-      "triplets": {
-        "triplets": [
-          [
-            "Paritial Conv:Method",
-            "Part-Of",
-            "Global&Local:Method"
-          ]
-        ]
-      }
-    },
-    {
       "question": "Which method is part of Partial Conv?",
       "triplets": {
         "triplets": [
           "[Partial Conv:Method, Part-Of, CARAFE:Method]"
-        ]
-      }
-    },
-    {
-      "question": "Which method is part of Mask R-CNN?",
-      "triplets": {
-        "triplets": [
-          "[CARAFE:Method, Used-For, Task]"
         ]
       }
     },
